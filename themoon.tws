@@ -5,7 +5,7 @@ S''
 p2
 sS'saveDestination'
 p3
-VZ:\u005chome\u005ctom\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
+VC:\u005cTom McHenry's Dropbox\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
 p4
 sS'metadata'
 p5
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V[[New Game]]
+V[[New Game]]\u000a[[Credits]]
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2014
 I11
 I16
-I13
 I14
-I3
+I25
+I9
 I6
 I320
 I0
@@ -185,20 +185,37 @@ g14
 I00
 sg15
 (lp69
-F262.0
-aF10.0
+F261.0
+aF11.0
 asg17
 (itiddlywiki
 Tiddler
 p70
 (dp71
 g21
-V
+VWhere are you from?\u000a[[Earth|Earth Start]][[Moon|Moon Start]]\u000a\u000a
 p72
 sg23
 VNew Game
 p73
 sg25
+g26
+((I2014
+I11
+I17
+I12
+I7
+I27
+I0
+I321
+I0
+tp74
+(dp75
+tp76
+Rp77
+sg31
+(lp78
+sg33
 g26
 ((I2014
 I11
@@ -209,18 +226,474 @@ I9
 I6
 I320
 I0
-tp74
-(dp75
-tp76
-Rp77
+tp79
+(dp80
+tp81
+Rp82
+sbsa(dp83
+g14
+I01
+sg15
+(lp84
+F548.0
+aF64.0
+asg17
+(itiddlywiki
+Tiddler
+p85
+(dp86
+g21
+V<<display Crops Init>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a/%<<display Display Crops>>%/\u000a\u000aCorrected <<print $cotton.name>> Price Per Unit: <<nobr>>\u000a<<set $cotton.pricePerUnit = Math.round(0.5*(Math.pow(($cotton.inStore - $cotton.hValue), 2))) >>\u000a<<if $cotton.pricePerUnit gt 0>>\u000a<<print $cotton.pricePerUnit>>\u000a<<else>>\u000aWe're not buying <<print $cotton.name>> at this time.\u000a<<endif>>\u000a<<endnobr>>\u000a
+p87
+sg23
+VMoon Start
+p88
+sg25
+g26
+((I2014
+I11
+I17
+I14
+I51
+I24
+I0
+I321
+I0
+tp89
+(dp90
+tp91
+Rp92
 sg31
-(lp78
+(lp93
+Vmoon
+p94
+asg33
+g26
+((I2014
+I11
+I16
+I14
+I14
+I41
+I6
+I320
+I0
+tp95
+(dp96
+tp97
+Rp98
+sbsa(dp99
+g14
+I00
+sg15
+(lp100
+F352.0
+aF211.0
+asg17
+(itiddlywiki
+Tiddler
+p101
+(dp102
+g21
+VThis is for Earth.
+p103
+sg23
+VEarth Start
+p104
+sg25
+g26
+((I2014
+I11
+I17
+I11
+I44
+I54
+I0
+I321
+I0
+tp105
+(dp106
+tp107
+Rp108
+sg31
+(lp109
+Vearth
+p110
+asg33
+g26
+((I2014
+I11
+I16
+I14
+I14
+I41
+I6
+I320
+I0
+tp111
+(dp112
+tp113
+Rp114
+sbsa(dp115
+g14
+I00
+sg15
+(lp116
+F150.0
+aF562.0
+asg17
+(itiddlywiki
+Tiddler
+p117
+(dp118
+g21
+VMade for Antholojam 2014 \u000aby Tom McHenry
+p119
+sg23
+VCredits
+p120
+sg25
+g26
+((I2014
+I11
+I16
+I14
+I25
+I29
+I6
+I320
+I0
+tp121
+(dp122
+tp123
+Rp124
+sg31
+(lp125
 sg33
-g77
+g26
+((I2014
+I11
+I16
+I14
+I25
+I14
+I6
+I320
+I0
+tp126
+(dp127
+tp128
+Rp129
+sbsa(dp130
+g14
+I00
+sg15
+(lp131
+F155.0
+aF286.0
+asg17
+(itiddlywiki
+Tiddler
+p132
+(dp133
+g21
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a	max-width: 600px;\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	font-family: 'Press Start 2P', cursive;\u000a}\u000a\u000a#sidebar{\u000adisplay:none;\u000a}\u000a#passages{\u000amargin-left: 0em;\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #F10026; \u000a	color: #FFFFFF; \u000a	font-family: 'Press Start 2P', cursive;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	font-family: 'Press Start 2P', cursive;\u000a}
+p134
+sg23
+VMain Styles
+p135
+sg25
+g26
+((I2014
+I11
+I17
+I12
+I7
+I54
+I0
+I321
+I0
+tp136
+(dp137
+tp138
+Rp139
+sg31
+(lp140
+Vstylesheet
+p141
+asg33
+g26
+((I2014
+I11
+I17
+I11
+I40
+I59
+I0
+I321
+I0
+tp142
+(dp143
+tp144
+Rp145
+sbsa(dp146
+g14
+I00
+sg15
+(lp147
+I20
+aI551
+asg17
+(itiddlywiki
+Tiddler
+p148
+(dp149
+g21
+V(function(){ var render2 = Passage.prototype.render; Passage.prototype.render = function () { var b = render2.call(this); var t = this.tags.join(" "); document.body.setAttribute("data-tags", t); return b; }}());
+p150
+sg23
+VSpecific Stylesheet
+p151
+sg25
+g26
+((I2014
+I11
+I17
+I11
+I42
+I22
+I0
+I321
+I0
+tp152
+(dp153
+tp154
+Rp155
+sg31
+(lp156
+Vscript
+p157
+asg33
+g26
+((I2014
+I11
+I17
+I11
+I42
+I8
+I0
+I321
+I0
+tp158
+(dp159
+tp160
+Rp161
+sbsa(dp162
+g14
+I00
+sg15
+(lp163
+F15.0
+aF421.0
+asg17
+(itiddlywiki
+Tiddler
+p164
+(dp165
+g21
+V WebFontConfig = {\u000a    google: { families: [ 'Press+Start+2P::latin' ] }\u000a  };\u000a  (function() {\u000a    var wf = document.createElement('script');\u000a    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +\u000a      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';\u000a    wf.type = 'text/javascript';\u000a    wf.async = 'true';\u000a    var s = document.getElementsByTagName('script')[0];\u000a    s.parentNode.insertBefore(wf, s);\u000a  })(); 
+p166
+sg23
+VFonts
+p167
+sg25
+g26
+((I2014
+I11
+I17
+I11
+I43
+I29
+I0
+I321
+I0
+tp168
+(dp169
+tp170
+Rp171
+sg31
+(lp172
+Vscript
+p173
+asg33
+g26
+((I2014
+I11
+I17
+I11
+I43
+I19
+I0
+I321
+I0
+tp174
+(dp175
+tp176
+Rp177
+sbsa(dp178
+g14
+I00
+sg15
+(lp179
+I746
+aI34
+asg17
+(itiddlywiki
+Tiddler
+p180
+(dp181
+g21
+VWe're not supposed to ever call it "Earth" here, that's the first thing you should learn.\u000a\u000aThey want us to call that place "Before." Some former ad executive thought that up. It was ridiculous at first, but now it's almost working. \u000a\u000aYou definitely never call it "Home." Home is here. It's not "The Moon," either. Moon of what? Satellite of whom? By whose eyes? It's Luna, Mona, or Selene. And Selene is at war with Before. Before is a past that does not understand it is the past yet. Before is a hungry blue ghost chasing us but falling behind forever.\u000a\u000a***\u000a\u000aNewfound Lunar patriotism meant that almost every girl in that first generation had a name that was Luna, Mona, Selene. Not a lot of Elizabeths, Carols, or JoAnnes. \u000a\u000aThe first women on Luna thought they were going to menstruate to death. Constant forever bleeding, cramps worse than they had ever been. Half the pioneer workforce laid low immediately on landing, right when they were needed most. For all the universal terraforming provisions in huge unbranded government regulation bins, no sanitary napkins. The very concept of menstruation too messy and imprecise for the all-male generals and scientists to consider until it had been overlooked entirely. \u000a\u000aA planet of bleeding women, doubled over, working anyway. Miserable and forced to work anyway, the entire enterprise looking more and more unlikely. \u000a\u000aAnd then it passed. Six weeks of uterine purging, now resolved. It was the end of the age of glamor and the beginning of the unravelling of gender altogether. \u000a\u000a\u000a\u000a\u000a 
+p182
+sg23
+VLoose Moon Passage Text
+p183
+sg25
+g26
+((I2014
+I11
+I17
+I13
+I1
+I20
+I0
+I321
+I0
+tp184
+(dp185
+tp186
+Rp187
+sg31
+(lp188
+sg33
+g26
+((I2014
+I11
+I17
+I12
+I31
+I30
+I0
+I321
+I0
+tp189
+(dp190
+tp191
+Rp192
+sbsa(dp193
+g14
+I00
+sg15
+(lp194
+F634.0
+aF344.0
+asg17
+(itiddlywiki
+Tiddler
+p195
+(dp196
+g21
+V<<set //initialize\u000a//hValue is the value of the parabola shift -- it must be bigger than the max available or shit goes screwy\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	hValue: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	hValue: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$wheat = {\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	hValue: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
+p197
+sg23
+VCrops Init
+p198
+sg25
+g26
+((I2014
+I11
+I17
+I14
+I38
+I55
+I0
+I321
+I0
+tp199
+(dp200
+tp201
+Rp202
+sg31
+(lp203
+sg33
+g26
+((I2014
+I11
+I17
+I12
+I35
+I36
+I0
+I321
+I0
+tp204
+(dp205
+tp206
+Rp207
+sbsa(dp208
+g14
+I00
+sg15
+(lp209
+F765.0
+aF170.0
+asg17
+(itiddlywiki
+Tiddler
+p210
+(dp211
+g21
+V<<if $cropsDisplay eq 0>>\u000a<<print $allCrops[0].name>>\u000aPrice:<<print $allCrops[$cropsDisplay].pricePerUnit>>\u000aOn Hand:<<print $allCrops[$cropsDisplay].onHand>>\u000aIn Store:<<print $allCrops[$cropsDisplay].inStore>>\u000aH-Value: <<print $allCrops[$cropsDisplay].hValue>>\u000a<<else>>\u000a<<print $allCrops[$cropsDisplay].name>>\u000aPrice:<<print $allCrops[$cropsDisplay].pricePerUnit>>\u000aOn Hand:<<print $allCrops[$cropsDisplay].onHand>>\u000aIn Store:<<print $allCrops[$cropsDisplay].inStore>>\u000aH-Value: <<print $allCrops[$cropsDisplay].hValue>>\u000a<<set $cropsDisplay = $cropsDisplay - 1>>\u000a<<display Display Crops>>\u000a<<endif>>
+p212
+sg23
+VDisplay Crops
+p213
+sg25
+g26
+((I2014
+I11
+I17
+I14
+I36
+I44
+I0
+I321
+I0
+tp214
+(dp215
+tp216
+Rp217
+sg31
+(lp218
+sg33
+g26
+((I2014
+I11
+I17
+I12
+I54
+I32
+I0
+I321
+I0
+tp219
+(dp220
+tp221
+Rp222
 sbsasS'scale'
-p79
+p223
 I1
 sS'snapping'
-p80
+p224
 I00
 ss.
