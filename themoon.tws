@@ -232,18 +232,18 @@ tp81
 Rp82
 sbsa(dp83
 g14
-I01
+I00
 sg15
 (lp84
-F548.0
-aF64.0
+F542.0
+aF145.0
 asg17
 (itiddlywiki
 Tiddler
 p85
 (dp86
 g21
-V<<display Crops Init>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a/%<<display Display Crops>>%/\u000a\u000aCorrected <<print $cotton.name>> Price Per Unit: <<nobr>>\u000a<<set $cotton.pricePerUnit = Math.round(0.5*(Math.pow(($cotton.inStore - $cotton.hValue), 2))) >>\u000a<<if $cotton.pricePerUnit gt 0>>\u000a<<print $cotton.pricePerUnit>>\u000a<<else>>\u000aWe're not buying <<print $cotton.name>> at this time.\u000a<<endif>>\u000a<<endnobr>>\u000a
+V<div style="width: 200px; float:left;">\u000a<<display Crops Init>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a<<display Display Crops>>\u000a</div>\u000a<div style="width: 400px; float:left;">\u000a[img[moon]]\u000a</div>
 p87
 sg23
 VMoon Start
@@ -253,9 +253,9 @@ g26
 ((I2014
 I11
 I17
-I14
-I51
-I24
+I16
+I12
+I33
 I0
 I321
 I0
@@ -287,8 +287,8 @@ g14
 I00
 sg15
 (lp100
-F352.0
-aF211.0
+F311.0
+aF183.0
 asg17
 (itiddlywiki
 Tiddler
@@ -397,7 +397,7 @@ Tiddler
 p132
 (dp133
 g21
-V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a	max-width: 600px;\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	font-family: 'Press Start 2P', cursive;\u000a}\u000a\u000a#sidebar{\u000adisplay:none;\u000a}\u000a#passages{\u000amargin-left: 0em;\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #F10026; \u000a	color: #FFFFFF; \u000a	font-family: 'Press Start 2P', cursive;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	font-family: 'Press Start 2P', cursive;\u000a}
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a	max-width: 600px;\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000adisplay:none;\u000a}\u000a#passages{\u000amargin-left: 0em;\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #F10026; \u000a	color: #FFFFFF; \u000a	font-family: 'Press Start 2P', cursive;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}
 p134
 sg23
 VMain Styles
@@ -407,9 +407,9 @@ g26
 ((I2014
 I11
 I17
-I12
-I7
-I54
+I16
+I13
+I57
 I0
 I321
 I0
@@ -595,15 +595,15 @@ g14
 I00
 sg15
 (lp194
-F634.0
-aF344.0
+F764.0
+aF358.0
 asg17
 (itiddlywiki
 Tiddler
 p195
 (dp196
 g21
-V<<set //initialize\u000a//hValue is the value of the parabola shift -- it must be bigger than the max available or shit goes screwy\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	hValue: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	hValue: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$wheat = {\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	hValue: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
+V<<set //initialize\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$wheat = {\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
 p197
 sg23
 VCrops Init
@@ -613,9 +613,9 @@ g26
 ((I2014
 I11
 I17
-I14
-I38
-I55
+I15
+I52
+I16
 I0
 I321
 I0
@@ -653,7 +653,7 @@ Tiddler
 p210
 (dp211
 g21
-V<<if $cropsDisplay eq 0>>\u000a<<print $allCrops[0].name>>\u000aPrice:<<print $allCrops[$cropsDisplay].pricePerUnit>>\u000aOn Hand:<<print $allCrops[$cropsDisplay].onHand>>\u000aIn Store:<<print $allCrops[$cropsDisplay].inStore>>\u000aH-Value: <<print $allCrops[$cropsDisplay].hValue>>\u000a<<else>>\u000a<<print $allCrops[$cropsDisplay].name>>\u000aPrice:<<print $allCrops[$cropsDisplay].pricePerUnit>>\u000aOn Hand:<<print $allCrops[$cropsDisplay].onHand>>\u000aIn Store:<<print $allCrops[$cropsDisplay].inStore>>\u000aH-Value: <<print $allCrops[$cropsDisplay].hValue>>\u000a<<set $cropsDisplay = $cropsDisplay - 1>>\u000a<<display Display Crops>>\u000a<<endif>>
+V<<if $cropsDisplay eq 0>>\u000a<<print $allCrops[0].name>>\u000aPrice Per Unit: <<nobr>>\u000a<<set $allCrops[0].pricePerUnit = Math.round(0.5*(Math.pow(($allCrops[0].inStore - $cotton.need), 2))) >>\u000a<<if $cotton.pricePerUnit gt 0>>\u000a<<print $cotton.pricePerUnit>>\u000a<<else>>\u000aWe're not buying <<print $cotton.name>> at this time.\u000a<<endif>>\u000a<<endnobr>>\u000aOn Hand:<<print $allCrops[$cropsDisplay].onHand>>\u000aIn Store:<<print $allCrops[$cropsDisplay].inStore>>\u000aNeed: <<print $allCrops[$cropsDisplay].need>>\u000a<<else>>\u000a<<print $allCrops[$cropsDisplay].name>>\u000aPrice Per Unit: <<nobr>>\u000a<<set $allCrops[$cropsDisplay].pricePerUnit = Math.round(0.5*(Math.pow(($allCrops[$cropsDisplay].inStore - $allCrops[$cropsDisplay].need), 2))) >>\u000a<<if $allCrops[$cropsDisplay].pricePerUnit gt 0>>\u000a<<print $allCrops[$cropsDisplay].pricePerUnit>>\u000a<<else>>\u000aWe're not buying <<print $allCrops[$cropsDisplay].name>> at this time.\u000a<<endif>>\u000a<<endnobr>>\u000aOn Hand:<<print $allCrops[$cropsDisplay].onHand>>\u000aIn Store:<<print $allCrops[$cropsDisplay].inStore>>\u000aNeed: <<print $allCrops[$cropsDisplay].need>>\u000a<<set $cropsDisplay = $cropsDisplay - 1>>\u000a<<display Display Crops>>\u000a<<endif>>
 p212
 sg23
 VDisplay Crops
@@ -663,9 +663,9 @@ g26
 ((I2014
 I11
 I17
-I14
-I36
-I44
+I15
+I55
+I43
 I0
 I321
 I0
@@ -690,10 +690,49 @@ tp219
 (dp220
 tp221
 Rp222
+sbsa(dp223
+g14
+I00
+sg15
+(lp224
+F402.0
+aF11.0
+asg17
+(itiddlywiki
+Tiddler
+p225
+(dp226
+g21
+Vdata:image/png;base64,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
+p227
+sg23
+Vmoon
+p228
+sg25
+g26
+((I2014
+I11
+I17
+I16
+I10
+I5
+I0
+I321
+I0
+tp229
+(dp230
+tp231
+Rp232
+sg31
+(lp233
+S'Twine.image'
+p234
+asg33
+g232
 sbsasS'scale'
-p223
+p235
 I1
 sS'snapping'
-p224
+p236
 I00
 ss.
