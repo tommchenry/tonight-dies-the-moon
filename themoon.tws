@@ -232,7 +232,7 @@ tp81
 Rp82
 sbsa(dp83
 g14
-I00
+I01
 sg15
 (lp84
 F542.0
@@ -243,7 +243,7 @@ Tiddler
 p85
 (dp86
 g21
-V<div style="width: 200px; float:left;">\u000a<<display Crops Init>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a/%<<display Display Crops>>%/\u000a<<set $cotton.inStore = 10>>\u000a% = <<print $cotton.inStore / $cotton.need>>\u000aCurve Model\u000ay = <<print Math.pow(($cotton.inStore / $cotton.need - 1),2)>>\u000aMaxPrice = <<print Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>>\u000a\u000aLinear Model\u000ay = <<print (0-$cotton.inStore/$cotton.need)+1>>\u000aMaxPrice = <<print 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>>\u000a</div>\u000a<div style="width: 400px; float:left;">\u000a[img[moon]]\u000a</div>
+V<div style="width: 200px; float:left;">\u000a<<display Crops Init>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a/%<<display Display Crops>>%/\u000a<<set $cotton.inStore = 90>>\u000a% = <<print $cotton.inStore / $cotton.need>>\u000aCurve Model\u000ay = <<print Math.pow(($cotton.inStore / $cotton.need - 1),2)>>\u000aMaxPrice = <<print Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>>\u000a\u000aLinear Model\u000ay = <<print (0-$cotton.inStore/$cotton.need)+1>>\u000aMaxPrice = <<print 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>>\u000a</div>\u000a<div style="width: 400px; float:left;">\u000a[img[moon]]\u000a</div>
 p87
 sg23
 VMoon Start
@@ -255,7 +255,7 @@ I11
 I17
 I22
 I17
-I28
+I51
 I0
 I321
 I0
