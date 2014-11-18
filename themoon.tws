@@ -5,7 +5,7 @@ S''
 p2
 sS'saveDestination'
 p3
-VC:\u005cTom McHenry's Dropbox\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
+VZ:\u005chome\u005ctom\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
 p4
 sS'metadata'
 p5
@@ -243,7 +243,7 @@ Tiddler
 p85
 (dp86
 g21
-V<div style="width: 200px; float:left;">\u000a<<display Crops Init>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a<<display Display Crops>>\u000a</div>\u000a<div style="width: 400px; float:left;">\u000a[img[moon]]\u000a</div>
+V<div style="width: 200px; float:left;">\u000a<<display Crops Init>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a/%<<display Display Crops>>%/\u000a<<set $cotton.inStore = 10>>\u000a% = <<print $cotton.inStore / $cotton.need>>\u000aCurve Model\u000ay = <<print Math.pow(($cotton.inStore / $cotton.need - 1),2)>>\u000aMaxPrice = <<print Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>>\u000a\u000aLinear Model\u000ay = <<print (0-$cotton.inStore/$cotton.need)+1>>\u000aMaxPrice = <<print 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>>\u000a</div>\u000a<div style="width: 400px; float:left;">\u000a[img[moon]]\u000a</div>
 p87
 sg23
 VMoon Start
@@ -253,9 +253,9 @@ g26
 ((I2014
 I11
 I17
-I16
-I12
-I33
+I22
+I17
+I28
 I0
 I321
 I0
@@ -595,15 +595,15 @@ g14
 I00
 sg15
 (lp194
-F764.0
-aF358.0
+F565.25
+aF334.25
 asg17
 (itiddlywiki
 Tiddler
 p195
 (dp196
 g21
-V<<set //initialize\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$wheat = {\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
+V<<set //initialize\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	onHand: 0,\u000a	inStore: 100,\u000a	need: 300\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$wheat = {\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
 p197
 sg23
 VCrops Init
@@ -613,9 +613,9 @@ g26
 ((I2014
 I11
 I17
-I15
-I52
-I16
+I20
+I8
+I51
 I0
 I321
 I0
@@ -731,7 +731,7 @@ asg33
 g232
 sbsasS'scale'
 p235
-I1
+F0.8
 sS'snapping'
 p236
 I00
