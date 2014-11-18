@@ -5,7 +5,7 @@ S''
 p2
 sS'saveDestination'
 p3
-VZ:\u005chome\u005ctom\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
+VC:\u005cTom McHenry's Dropbox\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
 p4
 sS'metadata'
 p5
@@ -232,18 +232,18 @@ tp81
 Rp82
 sbsa(dp83
 g14
-I01
+I00
 sg15
 (lp84
-F542.0
-aF145.0
+F463.25
+aF167.5
 asg17
 (itiddlywiki
 Tiddler
 p85
 (dp86
 g21
-V<div style="width: 200px; float:left;">\u000a<<display Crops Init>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a/%<<display Display Crops>>%/\u000a<<set $cotton.inStore = 90>>\u000a% = <<print $cotton.inStore / $cotton.need>>\u000aCurve Model\u000ay = <<print Math.pow(($cotton.inStore / $cotton.need - 1),2)>>\u000aMaxPrice = <<print Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>>\u000a\u000aLinear Model\u000ay = <<print (0-$cotton.inStore/$cotton.need)+1>>\u000aMaxPrice = <<print 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>>\u000a</div>\u000a<div style="width: 400px; float:left;">\u000a[img[moon]]\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold;">\u000a<<nobr>><<display Crops Init>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a/%<<display Display Crops>>%/\u000a<<set $player1.cash = 0>>\u000a<<set $cotton.inStore = Math.floor(Math.random() * 50) + 10>>\u000a<<set $cotton.need = Math.floor(Math.random() * 30) + 100>>\u000a<<set $cotton.onHand = 10>><<endnobr>>\u000a% = <<print $cotton.inStore / $cotton.need>>\u000aCurve Model\u000a--------------\u000ay = <<print Math.pow(($cotton.inStore / $cotton.need - 1),2)>>\u000aMaxPrice = <<set $curvePrice = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<print $curvePrice>>\u000a\u000aLinear Model\u000a--------------\u000ay = <<print (0-$cotton.inStore/$cotton.need)+1>>\u000aMaxPrice = <<set $linearPrice = 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>><<print $linearPrice>>\u000a\u000aYou Have\u000a--------------\u000aOn Hand = <<print $cotton.onHand>>\u000a$ = <<print $player1.cash>>\u000a[[Sell]]\u000a[[Buy]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
 p87
 sg23
 VMoon Start
@@ -252,12 +252,12 @@ sg25
 g26
 ((I2014
 I11
-I17
-I22
-I17
-I51
-I0
-I321
+I18
+I16
+I8
+I30
+I1
+I322
 I0
 tp89
 (dp90
@@ -592,18 +592,18 @@ tp191
 Rp192
 sbsa(dp193
 g14
-I00
+I01
 sg15
 (lp194
-F565.25
-aF334.25
+F460.25
+aF335.5
 asg17
 (itiddlywiki
 Tiddler
 p195
 (dp196
 g21
-V<<set //initialize\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	onHand: 0,\u000a	inStore: 100,\u000a	need: 300\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$wheat = {\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
+V<<set //initialize\u000a\u000a$player1 = {\u000a	cash: 0,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	onHand: 0,\u000a	inStore: 100,\u000a	need: 300\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$wheat = {\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
 p197
 sg23
 VCrops Init
@@ -612,12 +612,12 @@ sg25
 g26
 ((I2014
 I11
-I17
-I20
-I8
-I51
-I0
-I321
+I18
+I15
+I42
+I24
+I1
+I322
 I0
 tp199
 (dp200
@@ -729,10 +729,218 @@ S'Twine.image'
 p234
 asg33
 g232
+sbsa(dp235
+g14
+I00
+sg15
+(lp236
+F602.5
+aF433.75
+asg17
+(itiddlywiki
+Tiddler
+p237
+(dp238
+g21
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold;">\u000aYou sold <<print $cotton.onHand>> <<print $cotton.name>>. \u000a<<set $cotton.inStore = $cotton.inStore + $cotton.onHand>>\u000aCurve Model\u000a-----------\u000aYou made <<print $curvePrice * $cotton.onHand>>\u000aOld Price = <<print $curvePrice>>\u000aNew Price = <<set $curvePrice = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<print $curvePrice>>\u000a\u000a\u000aLinear Model\u000a--------------\u000aYou made <<print $linearPrice * $cotton.onHand>>\u000aOld Price = <<print $linearPrice>>\u000aNew Price = <<set $linearPrice = 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>><<print $linearPrice>>\u000a\u000a[[Market Shift]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a\u000a
+p239
+sg23
+VSell
+p240
+sg25
+g26
+((I2014
+I11
+I18
+I15
+I49
+I35
+I1
+I322
+I0
+tp241
+(dp242
+tp243
+Rp244
+sg31
+(lp245
+Vmoon
+p246
+asg33
+g26
+((I2014
+I11
+I18
+I15
+I28
+I2
+I1
+I322
+I0
+tp247
+(dp248
+tp249
+Rp250
+sbsa(dp251
+g14
+I00
+sg15
+(lp252
+F989.5
+aF85.5
+asg17
+(itiddlywiki
+Tiddler
+p253
+(dp254
+g21
+V
+p255
+sg23
+VBuy
+p256
+sg25
+g26
+((I2014
+I11
+I18
+I15
+I37
+I22
+I1
+I322
+I0
+tp257
+(dp258
+tp259
+Rp260
+sg31
+(lp261
+Vmoon
+p262
+asg33
+g26
+((I2014
+I11
+I18
+I15
+I28
+I2
+I1
+I322
+I0
+tp263
+(dp264
+tp265
+Rp266
+sbsa(dp267
+g14
+I00
+sg15
+(lp268
+F982.0
+aF431.25
+asg17
+(itiddlywiki
+Tiddler
+p269
+(dp270
+g21
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold;">\u000aOh no! Sudden famine on the other end of the moon! We need wheat badly to support your guals!\u000a\u000a<<set $cotton.need = $cotton.need + 500>>\u000a[[Economy Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a
+p271
+sg23
+VMarket Shift
+p272
+sg25
+g26
+((I2014
+I11
+I18
+I15
+I51
+I13
+I1
+I322
+I0
+tp273
+(dp274
+tp275
+Rp276
+sg31
+(lp277
+Vmoon
+p278
+asg33
+g26
+((I2014
+I11
+I18
+I15
+I47
+I27
+I1
+I322
+I0
+tp279
+(dp280
+tp281
+Rp282
+sbsa(dp283
+g14
+I00
+sg15
+(lp284
+F575.0
+aF37.5
+asg17
+(itiddlywiki
+Tiddler
+p285
+(dp286
+g21
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold;">\u000a<<nobr>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a/%<<display Display Crops>>%/\u000a<<endnobr>>\u000a% = <<print $cotton.inStore / $cotton.need>>\u000aCurve Model\u000a--------------\u000ay = <<print Math.pow(($cotton.inStore / $cotton.need - 1),2)>>\u000aMaxPrice = <<set $curvePrice = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<print $curvePrice>>\u000a\u000aLinear Model\u000a--------------\u000ay = <<print (0-$cotton.inStore/$cotton.need)+1>>\u000aMaxPrice = <<set $linearPrice = 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>><<print $linearPrice>>\u000a\u000aYou Have\u000a--------------\u000aOn Hand = <<print $cotton.onHand>>\u000a$ = <<print $player1.cash>>\u000a[[Sell]]\u000a[[Buy]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
+p287
+sg23
+VEconomy Debug
+p288
+sg25
+g26
+((I2014
+I11
+I18
+I15
+I52
+I12
+I1
+I322
+I0
+tp289
+(dp290
+tp291
+Rp292
+sg31
+(lp293
+Vmoon
+p294
+asg33
+g26
+((I2014
+I11
+I18
+I15
+I50
+I39
+I1
+I322
+I0
+tp295
+(dp296
+tp297
+Rp298
 sbsasS'scale'
-p235
+p299
 F0.8
 sS'snapping'
-p236
+p300
 I00
 ss.
