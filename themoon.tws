@@ -235,8 +235,8 @@ g14
 I00
 sg15
 (lp84
-F463.25
-aF167.5
+F538.25
+aF182.5
 asg17
 (itiddlywiki
 Tiddler
@@ -287,15 +287,15 @@ g14
 I00
 sg15
 (lp100
-F311.0
-aF183.0
+F312.25
+aF184.25
 asg17
 (itiddlywiki
 Tiddler
 p101
 (dp102
 g21
-VThis is for Earth.
+VThis is for Earth.\u000a<<display Starfighter Init>>\u000a[[Starfighter Debug]]\u000a[[Variables Missing]]\u000a
 p103
 sg23
 VEarth Start
@@ -304,12 +304,12 @@ sg25
 g26
 ((I2014
 I11
-I17
-I11
-I44
-I54
-I0
-I321
+I19
+I16
+I4
+I35
+I2
+I323
 I0
 tp105
 (dp106
@@ -397,7 +397,7 @@ Tiddler
 p132
 (dp133
 g21
-V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a	max-width: 600px;\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000adisplay:none;\u000a}\u000a#passages{\u000amargin-left: 0em;\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #F10026; \u000a	color: #FFFFFF; \u000a	font-family: 'Press Start 2P', cursive;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a	max-width: 600px;\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000adisplay:none;\u000a}\u000a#passages{\u000amargin-left: 0em;\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #2f3030; \u000a	color: #22f000; \u000a	font-family: Terminal, Courier;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}
 p134
 sg23
 VMain Styles
@@ -406,12 +406,12 @@ sg25
 g26
 ((I2014
 I11
-I17
-I16
+I19
 I13
-I57
-I0
-I321
+I46
+I39
+I2
+I323
 I0
 tp136
 (dp137
@@ -592,11 +592,11 @@ tp191
 Rp192
 sbsa(dp193
 g14
-I01
+I00
 sg15
 (lp194
-F460.25
-aF335.5
+F817.75
+aF299.25
 asg17
 (itiddlywiki
 Tiddler
@@ -734,8 +734,8 @@ g14
 I00
 sg15
 (lp236
-F602.5
-aF433.75
+F778.75
+aF421.25
 asg17
 (itiddlywiki
 Tiddler
@@ -937,10 +937,447 @@ tp295
 (dp296
 tp297
 Rp298
+sbsa(dp299
+g14
+I01
+sg15
+(lp300
+F485.5
+aF863.75
+asg17
+(itiddlywiki
+Tiddler
+p301
+(dp302
+g21
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>><<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a[[Up|Starfighter Up]]\u000a[[Down|Starfighter Down]]\u000a[[Left|Starfighter Left]]\u000a[[Right|Starfighter Right]]
+p303
+sg23
+VStarfighter Debug
+p304
+sg25
+g26
+((I2014
+I11
+I19
+I16
+I12
+I29
+I2
+I323
+I0
+tp305
+(dp306
+tp307
+Rp308
+sg31
+(lp309
+Vearth
+p310
+asg33
+g26
+((I2014
+I11
+I19
+I13
+I20
+I17
+I2
+I323
+I0
+tp311
+(dp312
+tp313
+Rp314
+sbsa(dp315
+g14
+I00
+sg15
+(lp316
+F472.0
+aF331.0
+asg17
+(itiddlywiki
+Tiddler
+p317
+(dp318
+g21
+V<<set //initialize\u000a$fighter = {\u000a	display: '[img[fighter]]',\u000a	solid: 1\u000a}\u000a\u000a$space = {\u000a	display: '[img[starfield]]',\u000a	solid: 0\u000a}\u000a\u000a$slot1 = $space\u000a$slot2 = $space\u000a$slot3 = $space\u000a$slot4 = $space\u000a$slot5 = $space\u000a$slot6 = $space\u000a$slot7 = $space\u000a$slot8 = $space\u000a$slot9 = $space\u000a$slot10 = $space\u000a$slot11 = $space\u000a$slot12 = $space\u000a$slot13 = $fighter\u000a$slot14 = $space\u000a$slot15 = $space\u000a$slot16 = $space\u000a$slot17 = $space\u000a$slot18 = $space\u000a$slot19 = $space\u000a$slot20 = $space\u000a\u000a\u000a$map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]\u000a>>\u000a\u000a/%\u000a\u000a$map = [[$space, $space, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		[$space, $fighter, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		]\u000a\u000a%/
+p319
+sg23
+VStarfighter Init
+p320
+sg25
+g26
+((I2014
+I11
+I19
+I16
+I11
+I10
+I2
+I323
+I0
+tp321
+(dp322
+tp323
+Rp324
+sg31
+(lp325
+sg33
+g26
+((I2014
+I11
+I19
+I13
+I22
+I30
+I2
+I323
+I0
+tp326
+(dp327
+tp328
+Rp329
+sbsa(dp330
+g14
+I00
+sg15
+(lp331
+F475.25
+aF541.25
+asg17
+(itiddlywiki
+Tiddler
+p332
+(dp333
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJZJREFUeNrsmbENgDAMBBNEyyxkhIzOCOzCArTBxTcOgVj3HYqETnr/x4i8l5IaXcfZPm71cTpMS/qlwAqAtepjkwCtjvnARLDeUjYt7xn5jgnARLA+anmPdFx0IDARrFEj76l1PdTmzfqjARPBmrDlPVcCJoI14S7vuRIwEaxwLc8uD1b0XR4TwZqh5fkVBVY0rFuAAQB2pCAdyWxrLQAAAABJRU5ErkJggg==
+p334
+sg23
+Vfighter
+p335
+sg25
+g26
+((I2014
+I11
+I19
+I13
+I58
+I54
+I2
+I323
+I0
+tp336
+(dp337
+tp338
+Rp339
+sg31
+(lp340
+S'Twine.image'
+p341
+asg33
+g339
+sbsa(dp342
+g14
+I00
+sg15
+(lp343
+F644.5
+aF531.5
+asg17
+(itiddlywiki
+Tiddler
+p344
+(dp345
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAF1JREFUeNrs0sEJwCAQBEAT/KYWr4SUnhLsJQ349SshIjL7u88xsHuUiLRezrRksLCwsLCwsLCwsLCwsLCwsGYk//f6fWp/XncoEWvryQ9tXIlYWFhYWFhYn9MEGADyvgR0ZwnUNQAAAABJRU5ErkJggg==
+p346
+sg23
+Vstarfield
+p347
+sg25
+g26
+((I2014
+I11
+I19
+I13
+I59
+I1
+I2
+I323
+I0
+tp348
+(dp349
+tp350
+Rp351
+sg31
+(lp352
+g341
+asg33
+g351
+sbsa(dp353
+g14
+I00
+sg15
+(lp354
+F644.5
+aF862.5
+asg17
+(itiddlywiki
+Tiddler
+p355
+(dp356
+g21
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>><<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a[[Up|Starfighter Up]]\u000a[[Down|Starfighter Down]]\u000a[[Left|Starfighter Left]]\u000a[[Right|Starfighter Debug]]
+p357
+sg23
+VStarfighter Right
+p358
+sg25
+g26
+((I2014
+I11
+I19
+I16
+I12
+I13
+I2
+I323
+I0
+tp359
+(dp360
+tp361
+Rp362
+sg31
+(lp363
+Vearth
+p364
+asg33
+g26
+((I2014
+I11
+I19
+I14
+I47
+I26
+I2
+I323
+I0
+tp365
+(dp366
+tp367
+Rp368
+sbsa(dp369
+g14
+I00
+sg15
+(lp370
+F484.5
+aF715.25
+asg17
+(itiddlywiki
+Tiddler
+p371
+(dp372
+g21
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>><<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a[[Up|Starfighter Debug]]\u000a[[Down|Starfighter Down]]\u000a[[Left|Starfighter Left]]\u000a[[Right|Starfighter Right]]
+p373
+sg23
+VStarfighter Up
+p374
+sg25
+g26
+((I2014
+I11
+I19
+I16
+I12
+I25
+I2
+I323
+I0
+tp375
+(dp376
+tp377
+Rp378
+sg31
+(lp379
+Vearth
+p380
+asg33
+g26
+((I2014
+I11
+I19
+I14
+I47
+I26
+I2
+I323
+I0
+tp381
+(dp382
+tp383
+Rp384
+sbsa(dp385
+g14
+I00
+sg15
+(lp386
+F492.0
+aF1021.25
+asg17
+(itiddlywiki
+Tiddler
+p387
+(dp388
+g21
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>><<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a[[Up|Starfighter Up]]\u000a[[Down|Starfighter Debug]]\u000a[[Left|Starfighter Left]]\u000a[[Right|Starfighter Right]]
+p389
+sg23
+VStarfighter Down
+p390
+sg25
+g26
+((I2014
+I11
+I19
+I16
+I12
+I17
+I2
+I323
+I0
+tp391
+(dp392
+tp393
+Rp394
+sg31
+(lp395
+Vearth
+p396
+asg33
+g26
+((I2014
+I11
+I19
+I14
+I47
+I26
+I2
+I323
+I0
+tp397
+(dp398
+tp399
+Rp400
+sbsa(dp401
+g14
+I00
+sg15
+(lp402
+F318.25
+aF859.75
+asg17
+(itiddlywiki
+Tiddler
+p403
+(dp404
+g21
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>><<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a[[Up|Starfighter Up]]\u000a[[Down|Starfighter Down]]\u000a[[Left|Starfighter Debug]]\u000a[[Right|Starfighter Right]]
+p405
+sg23
+VStarfighter Left
+p406
+sg25
+g26
+((I2014
+I11
+I19
+I16
+I12
+I21
+I2
+I323
+I0
+tp407
+(dp408
+tp409
+Rp410
+sg31
+(lp411
+Vearth
+p412
+asg33
+g26
+((I2014
+I11
+I19
+I14
+I47
+I26
+I2
+I323
+I0
+tp413
+(dp414
+tp415
+Rp416
+sbsa(dp417
+g14
+I00
+sg15
+(lp418
+F268.75
+aF418.75
+asg17
+(itiddlywiki
+Tiddler
+p419
+(dp420
+g21
+V<<print $slot1.display>>\u000a<<print $map>>
+p421
+sg23
+VVariables Missing
+p422
+sg25
+g26
+((I2014
+I11
+I19
+I15
+I33
+I6
+I2
+I323
+I0
+tp423
+(dp424
+tp425
+Rp426
+sg31
+(lp427
+sg33
+g26
+((I2014
+I11
+I19
+I15
+I14
+I2
+I2
+I323
+I0
+tp428
+(dp429
+tp430
+Rp431
 sbsasS'scale'
-p299
+p432
 F0.8
 sS'snapping'
-p300
+p433
 I00
 ss.
