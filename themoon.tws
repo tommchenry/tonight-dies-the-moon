@@ -5,7 +5,7 @@ S''
 p2
 sS'saveDestination'
 p3
-VC:\u005cTom McHenry's Dropbox\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
+VZ:\u005chome\u005ctom\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
 p4
 sS'metadata'
 p5
@@ -950,7 +950,7 @@ Tiddler
 p301
 (dp302
 g21
-V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>><<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a[[Up|Starfighter Up]]\u000a[[Down|Starfighter Down]]\u000a[[Left|Starfighter Left]]\u000a[[Right|Starfighter Right]]
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/\u000a\u000a\u000a\u000a\u000a
 p303
 sg23
 VStarfighter Debug
@@ -959,12 +959,12 @@ sg25
 g26
 ((I2014
 I11
-I19
-I16
-I12
-I29
+I20
+I11
+I51
 I2
-I323
+I3
+I324
 I0
 tp305
 (dp306
@@ -1002,7 +1002,7 @@ Tiddler
 p317
 (dp318
 g21
-V<<set //initialize\u000a$fighter = {\u000a	display: '[img[fighter]]',\u000a	solid: 1\u000a}\u000a\u000a$space = {\u000a	display: '[img[starfield]]',\u000a	solid: 0\u000a}\u000a\u000a$slot1 = $space\u000a$slot2 = $space\u000a$slot3 = $space\u000a$slot4 = $space\u000a$slot5 = $space\u000a$slot6 = $space\u000a$slot7 = $space\u000a$slot8 = $space\u000a$slot9 = $space\u000a$slot10 = $space\u000a$slot11 = $space\u000a$slot12 = $space\u000a$slot13 = $fighter\u000a$slot14 = $space\u000a$slot15 = $space\u000a$slot16 = $space\u000a$slot17 = $space\u000a$slot18 = $space\u000a$slot19 = $space\u000a$slot20 = $space\u000a\u000a\u000a$map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]\u000a>>\u000a\u000a/%\u000a\u000a$map = [[$space, $space, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		[$space, $fighter, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		]\u000a\u000a%/
+V<<set //initialize\u000a$fighter = {\u000a	display: '[img[fighter]]',\u000a	solid: 1,\u000a	x: 2,\u000a	y: 2\u000a}\u000a\u000a$space = {\u000a	display: '[img[starfield]]',\u000a	solid: 0\u000a}\u000a\u000a$slot1 = $space\u000a$slot2 = $space\u000a$slot3 = $space\u000a$slot4 = $space\u000a$slot5 = $space\u000a$slot6 = $space\u000a$slot7 = $space\u000a$slot8 = $space\u000a$slot9 = $space\u000a$slot10 = $space\u000a$slot11 = $space\u000a$slot12 = $space\u000a$slot13 = $space\u000a$slot14 = $space\u000a$slot15 = $space\u000a$slot16 = $space\u000a$slot17 = $space\u000a$slot18 = $space\u000a$slot19 = $space\u000a$slot20 = $space\u000a\u000a\u000a$map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]\u000a>>\u000a\u000a/%\u000a\u000a$map = [[$space, $space, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		[$space, $fighter, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		]\u000a\u000a%/
 p319
 sg23
 VStarfighter Init
@@ -1011,12 +1011,12 @@ sg25
 g26
 ((I2014
 I11
-I19
-I16
-I11
+I20
 I10
-I2
-I323
+I57
+I42
+I3
+I324
 I0
 tp321
 (dp322
@@ -1129,7 +1129,7 @@ Tiddler
 p355
 (dp356
 g21
-V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>><<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a[[Up|Starfighter Up]]\u000a[[Down|Starfighter Down]]\u000a[[Left|Starfighter Left]]\u000a[[Right|Starfighter Debug]]
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.x lt 4>>\u000a<<set $fighter.x = $fighter.x + 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/
 p357
 sg23
 VStarfighter Right
@@ -1138,12 +1138,12 @@ sg25
 g26
 ((I2014
 I11
-I19
-I16
-I12
-I13
-I2
-I323
+I20
+I11
+I50
+I49
+I3
+I324
 I0
 tp359
 (dp360
@@ -1181,7 +1181,7 @@ Tiddler
 p371
 (dp372
 g21
-V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>><<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a[[Up|Starfighter Debug]]\u000a[[Down|Starfighter Down]]\u000a[[Left|Starfighter Left]]\u000a[[Right|Starfighter Right]]
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.y gt 0>>\u000a<<set $fighter.y = $fighter.y - 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/
 p373
 sg23
 VStarfighter Up
@@ -1190,12 +1190,12 @@ sg25
 g26
 ((I2014
 I11
-I19
-I16
-I12
-I25
-I2
-I323
+I20
+I11
+I50
+I36
+I3
+I324
 I0
 tp375
 (dp376
@@ -1233,7 +1233,7 @@ Tiddler
 p387
 (dp388
 g21
-V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>><<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a[[Up|Starfighter Up]]\u000a[[Down|Starfighter Debug]]\u000a[[Left|Starfighter Left]]\u000a[[Right|Starfighter Right]]
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.y lt 3>>\u000a<<set $fighter.y = $fighter.y  + 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>><<nobr>>\u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/\u000a<<endnobr>>
 p389
 sg23
 VStarfighter Down
@@ -1242,12 +1242,12 @@ sg25
 g26
 ((I2014
 I11
-I19
-I16
-I12
-I17
-I2
-I323
+I20
+I11
+I53
+I3
+I3
+I324
 I0
 tp391
 (dp392
@@ -1285,7 +1285,7 @@ Tiddler
 p403
 (dp404
 g21
-V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>><<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a[[Up|Starfighter Up]]\u000a[[Down|Starfighter Down]]\u000a[[Left|Starfighter Debug]]\u000a[[Right|Starfighter Right]]
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.x gt 0>>\u000a<<set $fighter.x = $fighter.x - 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/
 p405
 sg23
 VStarfighter Left
@@ -1294,12 +1294,12 @@ sg25
 g26
 ((I2014
 I11
-I19
-I16
-I12
+I20
+I11
+I51
 I21
-I2
-I323
+I3
+I324
 I0
 tp407
 (dp408
