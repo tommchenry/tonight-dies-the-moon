@@ -731,7 +731,7 @@ asg33
 g232
 sbsa(dp235
 g14
-I01
+I00
 sg15
 (lp236
 F810.0
@@ -1439,7 +1439,7 @@ Tiddler
 p450
 (dp451
 g21
-V<<set //initialize\u000a$season = 1;\u000a\u000a$playerCrops = {\u000a	acreage: 10, \u000a	crop: 'Cotton',\u000a	quality: 10\u000a} \u000a\u000a$ownerCrops = {\u000a	acreage: 90,\u000a	crop: 'Tobacco',\u000a	quality: 10\u000a}\u000a\u000a$player1 = {\u000a	cash: 0,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 50) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$wheat = {	\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
+V<<set //initialize\u000a$season = 1;\u000a\u000a$playerCrops = {\u000a	acreage: 10, \u000a	crop: 'Cotton',\u000a	quality: 10\u000a} \u000a\u000a$ownerCrops = {\u000a	acreage: 90,\u000a	crop: 'Tobacco',\u000a	quality: 10\u000a}\u000a\u000a$player1 = {\u000a	cash: 300,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 50) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$wheat = {	\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	onHand: 0,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
 p452
 sg23
 VFarm Init
@@ -1448,12 +1448,12 @@ sg25
 g26
 ((I2014
 I11
+I22
 I21
-I16
-I35
-I20
-I4
-I325
+I34
+I36
+I5
+I326
 I0
 tp454
 (dp455
@@ -1535,15 +1535,15 @@ g14
 I00
 sg15
 (lp481
-F1433.75
-aF185.0
+F1407.5
+aF193.75
 asg17
 (itiddlywiki
 Tiddler
 p482
 (dp483
 g21
-V<<display Farm Init>>\u000aSeason: <<print $season>>\u000aCotton: <<set $cotton.ratio = $cotton.inStore/$cotton.need>><<print $cotton.ratio>>\u000aMarijuana: <<set $marijuana.ratio = $marijuana.inStore/$marijuana.need>><<print $marijuana.ratio>> \u000aWheat: <<set $wheat.ratio = $wheat.inStore/$wheat.need>><<print $wheat.ratio>>\u000a<<set $cropRatio = [$cotton, $marijuana, $wheat]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000aThe Agricultural Commission has instructed you to grow <<print $cropRatio[0].name>> this season due to shortages.\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a\u000aWhat will you plant for your <<$playerCrops.acreage>> acres?\u000a[[Cotton|Plant Cotton]]\u000a[[Marijuana|Plant Marijuana]]\u000a[[Wheat|Plant Wheat]]
+V<<display Farm Init>>\u000a<<display Price Update>>\u000aSeason: <<print $season>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aMarijuana: $<<print $marijuana.pricePerUnit>> \u000aWheat: $<<print $wheat.pricePerUnit>>\u000a<<set $cropRatio = [$cotton, $marijuana, $wheat]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000aThe Agricultural Commission has instructed you to grow <<print $cropRatio[0].name>> this season due to shortages.\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a\u000aWhat will you plant for your <<$playerCrops.acreage>> acres?\u000a[[Cotton|Plant Cotton]]\u000a[[Marijuana|Plant Marijuana]]\u000a[[Wheat|Plant Wheat]]
 p484
 sg23
 VPlanting Start
@@ -1552,12 +1552,12 @@ sg25
 g26
 ((I2014
 I11
+I22
 I21
-I16
-I35
-I46
-I4
-I325
+I56
+I58
+I5
+I326
 I0
 tp486
 (dp487
@@ -1842,10 +1842,62 @@ tp572
 (dp573
 tp574
 Rp575
+sbsa(dp576
+g14
+I01
+sg15
+(lp577
+F1416.25
+aF10.0
+asg17
+(itiddlywiki
+Tiddler
+p578
+(dp579
+g21
+V<<nobr>>\u000a/%Set Ratio%/\u000a<<set $cotton.ratio = $cotton.inStore/$cotton.need>><<set $marijuana.ratio = $marijuana.inStore/$marijuana.need>><<set $wheat.ratio = $wheat.inStore/$wheat.need>>\u000a/%Set Price%/\u000a<<set $cotton.pricePerUnit = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<set $wheat.pricePerUnit = Math.floor(100 * Math.pow(($wheat.inStore / $cotton.need - 1),2))>><<set $marijuana.pricePerUnit = Math.floor(100 * Math.pow(($marijuana.inStore / $cotton.need - 1),2))>>\u000a<<endnobr>>
+p580
+sg23
+VPrice Update
+p581
+sg25
+g26
+((I2014
+I11
+I22
+I21
+I55
+I31
+I5
+I326
+I0
+tp582
+(dp583
+tp584
+Rp585
+sg31
+(lp586
+Vmoon
+p587
+asg33
+g26
+((I2014
+I11
+I22
+I21
+I15
+I32
+I5
+I326
+I0
+tp588
+(dp589
+tp590
+Rp591
 sbsasS'scale'
-p576
+p592
 F0.8
 sS'snapping'
-p577
+p593
 I00
 ss.
