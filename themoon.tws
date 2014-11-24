@@ -1428,7 +1428,7 @@ tp446
 Rp447
 sbsa(dp448
 g14
-I00
+I01
 sg15
 (lp449
 F1255.0
@@ -1439,7 +1439,7 @@ Tiddler
 p450
 (dp451
 g21
-V<<set //initialize\u000a$season = 1;\u000a\u000a$playerCrops = {\u000a	acreage: 10, \u000a	crop: 'Cotton',\u000a	quality: 10,\u000a	maxAcres: 10\u000a} \u000a\u000a$ownerCrops = {\u000a	acreage: 90,\u000a	crop: 'Tobacco',\u000a	quality: 10,\u000a	maxAcres: 90\u000a}\u000a\u000a$player1 = {\u000a	cash: 300,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 50) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$wheat = {	\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 10\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
+V<<set //initialize\u000a$season = 1;\u000a\u000a$playerCrops = {\u000a	acreage: 10, \u000a	crop: 'Cotton',\u000a	quality: 10,\u000a	maxAcres: 10\u000a} \u000a\u000a$ownerCrops = {\u000a	acreage: 90,\u000a	crop: 'Tobacco',\u000a	quality: 10,\u000a	maxAcres: 90\u000a}\u000a\u000a$player1 = {\u000a	cash: 300,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 50) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$wheat = {	\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
 p452
 sg23
 VFarm Init
@@ -1449,9 +1449,9 @@ g26
 ((I2014
 I11
 I23
-I15
-I14
-I32
+I19
+I27
+I41
 I6
 I327
 I0
@@ -1532,10 +1532,10 @@ tp478
 Rp479
 sbsa(dp480
 g14
-I01
+I00
 sg15
 (lp481
-F1412.5
+F1473.75
 aF170.0
 asg17
 (itiddlywiki
@@ -1751,7 +1751,7 @@ Tiddler
 p546
 (dp547
 g21
-V<<display Price Update>>\u000aSeason: <<print $season>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aMarijuana: $<<print $marijuana.pricePerUnit>> \u000aWheat: $<<print $wheat.pricePerUnit>>\u000a<<set $cropRatio = [$cotton, $marijuana, $wheat]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000aThe Agricultural Commission has instructed you to grow <<print $cropRatio[0].name>> this season due to shortages.\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a\u000a<<display Seed Pricing>>\u000a\u000aCash on hand: $<<print $player1.cash>>\u000a\u000aWhat will you plant for your <<$playerCrops.acreage>> acres?\u000a[[Cotton|Plant Cotton]]\u000a[[Marijuana|Plant Marijuana]]\u000a[[Wheat|Plant Wheat]]
+V<<display Price Update>>\u000aSeason: <<print $season>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>,<<print $cotton.ratio>>\u000aMarijuana: $<<print $marijuana.pricePerUnit>>, <<print $marijuana.ratio>>\u000aWheat: $<<print $wheat.pricePerUnit>>, <<print $wheat.ratio>>\u000a<<set $cropRatio = [$cotton, $marijuana, $wheat]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000a<<print $cropRatio[0].name>>,<<print $cropRatio[1].name>>,<<print $cropRatio[2].name>>\u000a\u000aThe Agricultural Commission has instructed you to grow <<print $cropRatio[0].name>> this season due to shortages.\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a\u000a<<display Seed Pricing>>\u000a\u000aCash on hand: $<<print $player1.cash>>\u000a\u000aWhat will you plant for your <<$playerCrops.acreage>> acres?\u000a[[Cotton|Plant Cotton]]\u000a[[Marijuana|Plant Marijuana]]\u000a[[Wheat|Plant Wheat]]
 p548
 sg23
 VPlanting Again
@@ -1761,9 +1761,9 @@ g26
 ((I2014
 I11
 I23
-I18
-I53
-I53
+I19
+I20
+I17
 I6
 I327
 I0
