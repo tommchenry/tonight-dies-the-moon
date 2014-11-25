@@ -397,7 +397,7 @@ Tiddler
 p132
 (dp133
 g21
-V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a	max-width: 600px;\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000adisplay:none;\u000a}\u000a#passages{\u000amargin-left: 0em;\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #2f3030; \u000a	color: #22f000; \u000a	font-family: Terminal, Courier;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a	max-width: 600px;\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000adisplay:none;\u000a}\u000a#passages{\u000amargin-left: 0em;\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #2f3030; \u000a	color: #22f000; \u000a	font-family: Terminal, Courier;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a#bg-test \u000a{ background-image: [img[stars-bg]]; }\u000a
 p134
 sg23
 VMain Styles
@@ -406,12 +406,12 @@ sg25
 g26
 ((I2014
 I11
-I19
-I13
-I46
-I39
-I2
-I323
+I24
+I16
+I0
+I49
+I0
+I328
 I0
 tp136
 (dp137
@@ -731,7 +731,7 @@ asg33
 g232
 sbsa(dp235
 g14
-I00
+I01
 sg15
 (lp236
 F810.0
@@ -742,7 +742,7 @@ Tiddler
 p237
 (dp238
 g21
-V<<display Price Update>>\u000a<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold;">\u000a<<if $playerCrops.crop eq 'Cotton'>>\u000aYou sold <<print $playerCrops.acreage>><<print $cotton.name>>. \u000a<<set $cotton.inStore = $cotton.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $cotton.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Wheat'>>You sold <<print $playerCrops.acreage>> <<print $wheat.name>><<set $wheat.inStore = $wheat.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $wheat.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Marijuana'>>You sold <<print $playerCrops.acreage>> <<print $marijuana.name>><<set $marijuana.inStore = $marijuana.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $marijuana.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>>\u000a\u000a\u000aTotal Cash on Hand: <<set $player1.cash = $player1.cash + $profit>><<print $player1.cash>>\u000a\u000a<<nobr>>\u000a/%Old Price = <<print $curvePrice>>\u000aNew Price = <<set $curvePrice = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<print $curvePrice>>\u000a\u000aLinear Model\u000a--------------\u000aYou made <<print $linearPrice * $cotton.onHand>>\u000aOld Price = <<print $linearPrice>>\u000aNew Price = <<set $linearPrice = 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>><<print $linearPrice>>\u000a%/<<endnobr>>\u000a[[Planting Again]]\u000a[[Market Shift]]\u000a<<set $season = $season + 1>>\u000aConsume\u000a------------\u000aCotton: <<set $cotton.inStore = $cotton.inStore - Math.floor(Math.random() * 30) + 10>><<if $cotton.inStore lt 0>><<set $cotton.inStore = 0>><<endif>><<print $cotton.inStore>>\u000aWheat: <<set $wheat.inStore = $wheat.inStore - Math.floor(Math.random() * 30) + 10>><<if $wheat.inStore lt 0>><<set $wheat.inStore = 0>><<endif>><<print $wheat.inStore>>\u000aMarijuana: <<set $marijuana.inStore = $marijuana.inStore - Math.floor(Math.random() * 30) + 10>><<if $marijuana.inStore lt 0>><<set $marijuana.inStore = 0>><<endif>><<print $marijuana.inStore>>\u000a\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a\u000a<<set $playerCrops.acreage = $playerCrops.maxAcres>><<set $playerCrops.acreage = $playerCrops.maxAcres>>\u000a
+V<<display Price Update>>\u000a<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold;">\u000a<<if $playerCrops.crop eq 'Cotton'>>\u000aYou sold <<print $playerCrops.acreage>> <<print $cotton.name>>. \u000a<<set $cotton.inStore = $cotton.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $cotton.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Wheat'>>You sold <<print $playerCrops.acreage>> <<print $wheat.name>><<set $wheat.inStore = $wheat.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $wheat.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Marijuana'>>You sold <<print $playerCrops.acreage>> <<print $marijuana.name>><<set $marijuana.inStore = $marijuana.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $marijuana.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>>\u000a\u000a\u000aTotal Cash on Hand: <<set $player1.cash = $player1.cash + $profit>><<print $player1.cash>>\u000a\u000a<<nobr>>\u000a/%Old Price = <<print $curvePrice>>\u000aNew Price = <<set $curvePrice = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<print $curvePrice>>\u000a\u000aLinear Model\u000a--------------\u000aYou made <<print $linearPrice * $cotton.onHand>>\u000aOld Price = <<print $linearPrice>>\u000aNew Price = <<set $linearPrice = 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>><<print $linearPrice>>\u000a%/<<endnobr>>\u000a[[Planting Again]]\u000a[[Market Shift]]\u000a<<set $season = $season + 1>>\u000aConsume\u000a------------\u000aCotton: <<set $cotton.inStore = $cotton.inStore - Math.floor(Math.random() * 30) + 10>><<if $cotton.inStore lt 0>><<set $cotton.inStore = 0>><<endif>><<print $cotton.inStore>>\u000aWheat: <<set $wheat.inStore = $wheat.inStore - Math.floor(Math.random() * 30) + 10>><<if $wheat.inStore lt 0>><<set $wheat.inStore = 0>><<endif>><<print $wheat.inStore>>\u000aMarijuana: <<set $marijuana.inStore = $marijuana.inStore - Math.floor(Math.random() * 30) + 10>><<if $marijuana.inStore lt 0>><<set $marijuana.inStore = 0>><<endif>><<print $marijuana.inStore>>\u000a\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a\u000a<<set $playerCrops.acreage = $playerCrops.maxAcres>><<set $playerCrops.acreage = $playerCrops.maxAcres>>\u000a<<set $ownerCrops.acreage = $ownerCrops.maxAcres>><<set $ownerCrops.acreage = $ownerCrops.maxAcres>>
 p239
 sg23
 VSell
@@ -751,12 +751,12 @@ sg25
 g26
 ((I2014
 I11
-I23
+I24
+I19
+I58
 I0
-I18
-I34
-I6
-I327
+I0
+I328
 I0
 tp241
 (dp242
@@ -838,8 +838,8 @@ g14
 I00
 sg15
 (lp268
-F1059.5
-aF338.75
+F1069.5
+aF256.25
 asg17
 (itiddlywiki
 Tiddler
@@ -950,7 +950,7 @@ Tiddler
 p301
 (dp302
 g21
-V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/\u000a\u000a\u000a\u000a\u000a
+V<<display Starfighter Init>>\u000a<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<div id="bg-test" style="background-image: [img[stars-bg]];height:400px;width:400px;"><<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>\u000a</div>\u000a[img[lunarsurface]]\u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/\u000a\u000a\u000a\u000a\u000a
 p303
 sg23
 VStarfighter Debug
@@ -959,12 +959,12 @@ sg25
 g26
 ((I2014
 I11
-I20
-I11
-I51
-I2
-I3
-I324
+I24
+I16
+I10
+I22
+I0
+I328
 I0
 tp305
 (dp306
@@ -1002,7 +1002,7 @@ Tiddler
 p317
 (dp318
 g21
-V<<set //initialize\u000a$fighter = {\u000a	display: '[img[fighter]]',\u000a	solid: 1,\u000a	x: 2,\u000a	y: 2\u000a}\u000a\u000a$space = {\u000a	display: '[img[starfield]]',\u000a	solid: 0\u000a}\u000a\u000a$slot1 = $space\u000a$slot2 = $space\u000a$slot3 = $space\u000a$slot4 = $space\u000a$slot5 = $space\u000a$slot6 = $space\u000a$slot7 = $space\u000a$slot8 = $space\u000a$slot9 = $space\u000a$slot10 = $space\u000a$slot11 = $space\u000a$slot12 = $space\u000a$slot13 = $space\u000a$slot14 = $space\u000a$slot15 = $space\u000a$slot16 = $space\u000a$slot17 = $space\u000a$slot18 = $space\u000a$slot19 = $space\u000a$slot20 = $space\u000a\u000a\u000a$map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]\u000a>>\u000a\u000a/%\u000a\u000a$map = [[$space, $space, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		[$space, $fighter, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		]\u000a\u000a%/
+V<<set //initialize\u000a$fighter = {\u000a	display: '[img[fighter]]',\u000a	solid: 1,\u000a	x: 2,\u000a	y: 2\u000a}\u000a\u000a$space = {\u000a	display: '[img[blank]]',\u000a	solid: 0\u000a}\u000a\u000a$slot1 = $space\u000a$slot2 = $space\u000a$slot3 = $space\u000a$slot4 = $space\u000a$slot5 = $space\u000a$slot6 = $space\u000a$slot7 = $space\u000a$slot8 = $space\u000a$slot9 = $space\u000a$slot10 = $space\u000a$slot11 = $space\u000a$slot12 = $space\u000a$slot13 = $space\u000a$slot14 = $space\u000a$slot15 = $space\u000a$slot16 = $space\u000a$slot17 = $space\u000a$slot18 = $space\u000a$slot19 = $space\u000a$slot20 = $space\u000a\u000a\u000a$map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]\u000a>>\u000a\u000a/%\u000a\u000a$map = [[$space, $space, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		[$space, $fighter, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		]\u000a\u000a%/
 p319
 sg23
 VStarfighter Init
@@ -1011,12 +1011,12 @@ sg25
 g26
 ((I2014
 I11
-I20
-I10
-I57
-I42
-I3
-I324
+I24
+I16
+I6
+I39
+I0
+I328
 I0
 tp321
 (dp322
@@ -1044,7 +1044,7 @@ g14
 I00
 sg15
 (lp331
-F475.25
+F476.5
 aF541.25
 asg17
 (itiddlywiki
@@ -1052,7 +1052,7 @@ Tiddler
 p332
 (dp333
 g21
-Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJZJREFUeNrsmbENgDAMBBNEyyxkhIzOCOzCArTBxTcOgVj3HYqETnr/x4i8l5IaXcfZPm71cTpMS/qlwAqAtepjkwCtjvnARLDeUjYt7xn5jgnARLA+anmPdFx0IDARrFEj76l1PdTmzfqjARPBmrDlPVcCJoI14S7vuRIwEaxwLc8uD1b0XR4TwZqh5fkVBVY0rFuAAQB2pCAdyWxrLQAAAABJRU5ErkJggg==
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANxJREFUeNrs28ERgjAUhOEkYwO2YB16824lVmMl3j1aBy3QAeiVOCODgBH89hog88++5SVhiG3bhjGqm1vnAdt0jCWv71MKfybAa9dm7gmq5tzNYDi9Hd+lS+QwYMDlMpz3zW/fz2HAMjxM+dp26gyOXTsracCAAQO2Pfxc97kniGPPtIbuh/uAn/vhg5IGDPh3Xlr5GVYdrhwGDHhBGS6dWSUNWIb1YSUNWB/mMGDA+vA6Hd4racD6MIcBy3DBPpyPcxgw4EGa/fvwS1+e+B8GDgMGDBgw4AXrIcAAbJNAE+vLDgEAAAAASUVORK5CYII=
 p334
 sg23
 Vfighter
@@ -1428,7 +1428,7 @@ tp446
 Rp447
 sbsa(dp448
 g14
-I01
+I00
 sg15
 (lp449
 F1255.0
@@ -1946,10 +1946,227 @@ tp604
 (dp605
 tp606
 Rp607
+sbsa(dp608
+g14
+I00
+sg15
+(lp609
+F348.5
+aF557.5
+asg17
+(itiddlywiki
+Tiddler
+p610
+(dp611
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAACgCAIAAACt0K2CAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAArNJREFUeNrs3bFtKkEQgGFjXT9GutQJLdALVdCLWyBxej2RWCchEWCxdzs7830RwUse2L9mV8P58HU8fgCM4NNbAAgWgGABVU2v/KOf5Xt9fZ5/vWuACQtAsADBAtjTwR4WYMICECxAsACCm7L+x+yOgQkLQLAABAtIwx4WYMICECxAsACim7wF0NZtua6vT/PFG2LCAgQLQLAA3mcPC5LL9L1aExYgWACCBZTlDosHdogwYQEIFiBYAAG5wwrEc+jBhAUIFoBgATy1yR1WprsY90pgwgIQLECwALqzhwWYsAAECxAsgOj8XUKgma33Fk1YgCMhgGABZdnDgj++N2rCAhAsQLAAwnKHBZiwAAQLECwAwQIQLECwAILyeBnYm+8ACVZEt+W6vj7NF28IOBICggXgSAg7iHxP5N6qf7Ai39f0+tl1bwWOhIBgARQ5EkIo7olSengeln22mnzujPIz4EgIDEOwAMECaM0z3QETFoBgAYIFEJ3FUYbh+WKYsADBAhAsoCx7WIAJC0CwgLKsNcCrPIdHsPB7C46EgGABOBJCdM6/3dnDArr5732oIyEwDMECBAugNXdYgAkLQLAAwQKIbvjFUd9rAxMWgGABCBaQnj2swbizw4QFIFgA7XgeFvn5G/eCRR/urXAkBBAsgHasNQDDcIdFCPbLfC6OhEAqggUIFkBrLt0BExaAYAGCBRDdW3tYdmcAExaAYAFlj4RQlvuQ8YJV+XOK/PPqeXU4EgIIFsAOR0Ioy71VF75LSDPuoXEkBBAsQLAANjLMHZbdIsCEBQgWgGABZdnDojS7YyYsAMECBAtgCO6wABMWgGABggUQnQf4QXKZds1cugOOhACCBQgWgGABCBYgWACCBSBYgGABCBaAYAGCBSBYAIIFCBaAYAEIFiBYAB3cBRgABC1/zgoY1g0AAAAASUVORK5CYII=
+p612
+sg23
+Vstars-bg
+p613
+sg25
+g26
+((I2014
+I11
+I24
+I13
+I59
+I57
+I0
+I328
+I0
+tp614
+(dp615
+tp616
+Rp617
+sg31
+(lp618
+S'Twine.image'
+p619
+asg33
+g617
+sbsa(dp620
+g14
+I00
+sg15
+(lp621
+F264.5
+aF705.25
+asg17
+(itiddlywiki
+Tiddler
+p622
+(dp623
+g21
+S'jquery:off\nhash:off\nbookmark:on\nmodernizr:off\nundo:off\nobfuscate:off\nexitprompt:off\nblankcss:off\n'
+p624
+sg23
+VStorySettings
+p625
+sg25
+g26
+((I2014
+I11
+I24
+I15
+I51
+I54
+I0
+I328
+I0
+tp626
+(dp627
+tp628
+Rp629
+sg31
+(lp630
+sg33
+g26
+((I2014
+I11
+I24
+I15
+I51
+I49
+I0
+I328
+I0
+tp631
+(dp632
+tp633
+Rp634
+sbsa(dp635
+g14
+I00
+sg15
+(lp636
+F81.25
+aF798.75
+asg17
+(itiddlywiki
+Tiddler
+p637
+(dp638
+g21
+V<div id="bg-test" style="background-image: [img[stars-bg]];height:100px;width:400px;">\u000aTest Text Here.\u000a</div>\u000a[img[lunarsurface]]
+p639
+sg23
+VBackground Test
+p640
+sg25
+g26
+((I2014
+I11
+I24
+I16
+I4
+I7
+I0
+I328
+I0
+tp641
+(dp642
+tp643
+Rp644
+sg31
+(lp645
+Vearth
+p646
+asg33
+g26
+((I2014
+I11
+I24
+I15
+I57
+I24
+I0
+I328
+I0
+tp647
+(dp648
+tp649
+Rp650
+sbsa(dp651
+g14
+I00
+sg15
+(lp652
+F544.5
+aF5.25
+asg17
+(itiddlywiki
+Tiddler
+p653
+(dp654
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAAVCAIAAADn1y9EAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANhJREFUeNrs2LEJwlAQANB8cQEnMZDWxgkE57B1CncRrC1sbDOCK+gEATuxEZSfM8b/XpUqP7l/HHeX5nVdAYzBVAjgv+3bxeN53ZxH/S8T1wkoWAAKFlCqZOke59TuQt+/bLaCLB+KygcdFqBgAShYQLHStTsOcvCreTtizs+Z7fv6nlt16OU9s2pVbLJ+eo/RO6PS8uE5/kPFVocFGAkBFCygWOnSbUIPyJmxc+b8iNm+r70Dv58/vB//b8ZZhwUYCQEULKBY4TssAB0WoGABKFgAme4CDACaBSl4ADLmYQAAAABJRU5ErkJggg==
+p655
+sg23
+Vlunarsurface
+p656
+sg25
+g26
+((I2014
+I11
+I24
+I16
+I3
+I12
+I0
+I328
+I0
+tp657
+(dp658
+tp659
+Rp660
+sg31
+(lp661
+g619
+asg33
+g660
+sbsa(dp662
+g14
+I00
+sg15
+(lp663
+F348.5
+aF1041.25
+asg17
+(itiddlywiki
+Tiddler
+p664
+(dp665
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEVJREFUeNrsz0ERAAAIAyDXP/TM4NeDBqTtfBARERERERERERERERERERERERERERERERERERERERERERERERERkYsVYAASxZWd18D18QAAAABJRU5ErkJggg==
+p666
+sg23
+Vblank
+p667
+sg25
+g26
+((I2014
+I11
+I24
+I16
+I6
+I28
+I0
+I328
+I0
+tp668
+(dp669
+tp670
+Rp671
+sg31
+(lp672
+g619
+asg33
+g671
 sbsasS'scale'
-p608
+p673
 F0.8
 sS'snapping'
-p609
+p674
 I00
 ss.
