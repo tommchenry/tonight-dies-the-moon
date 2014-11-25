@@ -5,7 +5,7 @@ VZ:\u005chome\u005ctom\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moo
 p2
 sS'saveDestination'
 p3
-VZ:\u005chome\u005ctom\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
+VC:\u005cTom McHenry's Dropbox\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
 p4
 sS'metadata'
 p5
@@ -731,7 +731,7 @@ asg33
 g232
 sbsa(dp235
 g14
-I01
+I00
 sg15
 (lp236
 F810.0
@@ -939,18 +939,18 @@ tp297
 Rp298
 sbsa(dp299
 g14
-I00
+I01
 sg15
 (lp300
-F485.5
-aF863.75
+F486.75
+aF862.5
 asg17
 (itiddlywiki
 Tiddler
 p301
 (dp302
 g21
-V<<display Starfighter Init>>\u000a<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<div id="bg-test" style="background-image: [img[stars-bg]];height:400px;width:400px;"><<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>\u000a</div>\u000a[img[lunarsurface]]\u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/\u000a\u000a\u000a\u000a\u000a
+V<<display Starfighter Init>>\u000a<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<div id="bg-test" style="background-image:[img[stars-bg]]; background-position:bottom;height:310px;width:300px;background-repeat: repeat-x;"><<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>\u000a</div>\u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/\u000a\u000a\u000a\u000a\u000a
 p303
 sg23
 VStarfighter Debug
@@ -959,12 +959,12 @@ sg25
 g26
 ((I2014
 I11
-I24
-I16
-I10
-I22
-I0
-I328
+I25
+I14
+I20
+I23
+I1
+I329
 I0
 tp305
 (dp306
@@ -1002,7 +1002,7 @@ Tiddler
 p317
 (dp318
 g21
-V<<set //initialize\u000a$fighter = {\u000a	display: '[img[fighter]]',\u000a	solid: 1,\u000a	x: 2,\u000a	y: 2\u000a}\u000a\u000a$space = {\u000a	display: '[img[blank]]',\u000a	solid: 0\u000a}\u000a\u000a$slot1 = $space\u000a$slot2 = $space\u000a$slot3 = $space\u000a$slot4 = $space\u000a$slot5 = $space\u000a$slot6 = $space\u000a$slot7 = $space\u000a$slot8 = $space\u000a$slot9 = $space\u000a$slot10 = $space\u000a$slot11 = $space\u000a$slot12 = $space\u000a$slot13 = $space\u000a$slot14 = $space\u000a$slot15 = $space\u000a$slot16 = $space\u000a$slot17 = $space\u000a$slot18 = $space\u000a$slot19 = $space\u000a$slot20 = $space\u000a\u000a\u000a$map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]\u000a>>\u000a\u000a/%\u000a\u000a$map = [[$space, $space, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		[$space, $fighter, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		]\u000a\u000a%/
+V<<set //initialize\u000a$fighter = {\u000a	display: '[img[fighter]]',\u000a	solid: 1,\u000a	x: 2,\u000a	y: 2\u000a}\u000a\u000a$space = {\u000a	display: '[img[blank]]',\u000a	solid: 0\u000a}\u000a\u000a$ground1 = {\u000a	display: '[img[surface1]]',\u000a	solid: 1\u000a}\u000a\u000a\u000a$ground2 = {\u000a	display: '[img[surface2]]',\u000a	solid: 1\u000a}\u000a\u000a\u000a$ground3 = {\u000a	display: '[img[surface3]]',\u000a	solid: 1\u000a}\u000a\u000a$colonyLive = {\u000a	display: '[img[colony]]',\u000a	solid: 1\u000a}\u000a\u000a$slot1 = $space\u000a$slot2 = $space\u000a$slot3 = $space\u000a$slot4 = $space\u000a$slot5 = $space\u000a$slot6 = $space\u000a$slot7 = $space\u000a$slot8 = $space\u000a$slot9 = $space\u000a$slot10 = $space\u000a$slot11 = $space\u000a$slot12 = $space\u000a$slot13 = $space\u000a$slot14 = $space\u000a$slot15 = $space\u000a$slot16 = $ground1\u000a$slot17 = $colonyLive\u000a$slot18 = $ground1\u000a$slot19 = $space\u000a$slot20 = $colonyLive\u000a\u000a\u000a$map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]\u000a>>\u000a\u000a/%\u000a\u000a$map = [[$space, $space, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		[$space, $fighter, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		]\u000a\u000a%/
 p319
 sg23
 VStarfighter Init
@@ -1011,12 +1011,12 @@ sg25
 g26
 ((I2014
 I11
-I24
-I16
-I6
-I39
-I0
-I328
+I25
+I14
+I15
+I9
+I1
+I329
 I0
 tp321
 (dp322
@@ -1959,7 +1959,7 @@ Tiddler
 p610
 (dp611
 g21
-Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAACgCAIAAACt0K2CAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAArNJREFUeNrs3bFtKkEQgGFjXT9GutQJLdALVdCLWyBxej2RWCchEWCxdzs7830RwUse2L9mV8P58HU8fgCM4NNbAAgWgGABVU2v/KOf5Xt9fZ5/vWuACQtAsADBAtjTwR4WYMICECxAsACCm7L+x+yOgQkLQLAABAtIwx4WYMICECxAsACim7wF0NZtua6vT/PFG2LCAgQLQLAA3mcPC5LL9L1aExYgWACCBZTlDosHdogwYQEIFiBYAAG5wwrEc+jBhAUIFoBgATy1yR1WprsY90pgwgIQLECwALqzhwWYsAAECxAsgOj8XUKgma33Fk1YgCMhgGABZdnDgj++N2rCAhAsQLAAwnKHBZiwAAQLECwAwQIQLECwAILyeBnYm+8ACVZEt+W6vj7NF28IOBICggXgSAg7iHxP5N6qf7Ai39f0+tl1bwWOhIBgARQ5EkIo7olSengeln22mnzujPIz4EgIDEOwAMECaM0z3QETFoBgAYIFEJ3FUYbh+WKYsADBAhAsoCx7WIAJC0CwgLKsNcCrPIdHsPB7C46EgGABOBJCdM6/3dnDArr5732oIyEwDMECBAugNXdYgAkLQLAAwQKIbvjFUd9rAxMWgGABCBaQnj2swbizw4QFIFgA7XgeFvn5G/eCRR/urXAkBBAsgHasNQDDcIdFCPbLfC6OhEAqggUIFkBrLt0BExaAYAGCBRDdW3tYdmcAExaAYAFlj4RQlvuQ8YJV+XOK/PPqeXU4EgIIFsAOR0Ioy71VF75LSDPuoXEkBBAsQLAANjLMHZbdIsCEBQgWgGABZdnDojS7YyYsAMECBAtgCO6wABMWgGABggUQnQf4QXKZds1cugOOhACCBQgWgGABCBYgWACCBSBYgGABCBaAYAGCBSBYAIIFCBaAYAEIFiBYAB3cBRgABC1/zgoY1g0AAAAASUVORK5CYII=
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAEsCAIAAABi1XKVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABPpJREFUeNrs3TFuE0EUx2EH+T5EckvjK3AXn8J3QaKmcJPWV4ETINGgFZFS2Ozszn/mfV+VFsf89Gb0dnP8/Pp6GNm3+5fl56+ntwMwr08+AkCwABp7Gf1ICJiwAAQLQLCA6R19BPmsboAJCxAsAMECirOHBUXd7tfl5/PpYsICECxAsACSucNiE3bHMGEBggUgWAANucNiKsm7Re711vPws+8rOBICCBbgSAgzSH4mrvI9QKv7EMHyfQVHQgDBAsqyhwWYsAAECxAsgHQRaw2eWcnk94IJC0CwAMECCGEPCxiGZwnHNuLfwgRHQkCwABwJoRf7ZYJFH+6tcCQEECyAFexhweRmurMzYQGCBSBYQFnusAATFoBgAYIFkO6hR3M8ewWYsAAECxAsgI7sYbEr96Gs4X1Y/t+CIyGAYAGOhLAH51/WcOkOOBICCBZQljusovyNe0xYAIIFIFjAQKw1ACYsAMECBAsgXfQelnew4Dvg9/7v792EBTgSAggWUJY9LBhY8h3fFs+revjZdxccCQEECyjLkRAa6PV+seSz/xafg2A9J/meyL0VjoQAggXgSAj78178fVgcBRwJAQQLECwAwQIQLECwAELZwwrlXTFgwgIEC0CwABabPJrj/gUwYQGCBSBYAA15vQxgwgIQLECwANJ5lhA6m2lvcet/iwkLcCQEECygLHtY8AHPw5qwAAQLECyAKO6wiHO7X5efz6eLDwQTFiBYAIIFMPwdln0ZMGEBCBaAYAHTs4fVmB0iMGEBCBYgWADNucMCTFgAggUIFkA6f5cQJlHhuVoTFiBYAIIFlGUPCzBhAQgWIFgA6exhAd08uztmwgIcCQEECyjLHhZgwgIQLECwAAQLoJGHFkcrvBgMMGEBCBYgWACxLI4CJiwAwQIECyDdtC/wszsGJiwAwQIQLGAa9rAAExaAYAGCBZDOH1KFxm736/Lz+XTxgZiwAMECECyA9exhweRmeq7WhAUIFoBgAWW5w+IdO0SYsAAECxAsgEDusIJ4Dz2YsADBAhAsgA9tcoc1012MeyUwYQEIFiBYAN3ZwwJMWACCBQgWQDp/lxBoZuu9RRMW4EgIIFhAWfaw4C/PjZqwAAQLECyAWO6wABMWgGABggUgWACCBQgWQCivl4G9eQZIsBLd7tfl5/Pp4gMBR0JAsAAcCWEHyfdE7q36Byv5vqbXd9e9FTgSAoIFUORICFHcE03p3fuw7LPV5PfOKN8BR0JgGIIFCBZAa97pDpiwAAQLECyAdBZHGYb3i2HCAgQLQLCAsuxhASYsAMECyrLWAI/yHh7Bwv9bcCQEBAvAkRDSOf92Zw8L6ObZ+1BHQmAYggUIFkBr7rAAExaAYAGCBZBu+MVRz7WBCQtAsAAEC5iePazBuLPDhAUgWADteB8W8/M37gWLPtxb4UgIIFgA7VhrAIbhDosI9sv8XhwJgakIFiBYAK25dAdMWACCBQgWQLpVe1h2ZwATFoBgAWWPhFCW+5DxglX595T8ffW+OhwJAQQLYIcjIZTl3qoLzxLSjHtoHAkBBAsQLICNDHOHZbcIMGEBggUgWEBZ9rAoze6YCQtAsADBAhiCOyzAhAUgWIBgAQgWgGABggUgWACCBQgWgGABCBYwt5efv3/4FAATFoBgAYIFkOz46/DdpwCYsAAECxAsAMECECxAsAAEC+D//RFgAN4GAR4fmrDwAAAAAElFTkSuQmCC
 p612
 sg23
 Vstars-bg
@@ -2130,8 +2130,8 @@ g14
 I00
 sg15
 (lp663
-F348.5
-aF1041.25
+F671.0
+aF685.0
 asg17
 (itiddlywiki
 Tiddler
@@ -2163,10 +2163,163 @@ sg31
 g619
 asg33
 g671
+sbsa(dp673
+g14
+I00
+sg15
+(lp674
+F180.5
+aF948.75
+asg17
+(itiddlywiki
+Tiddler
+p675
+(dp676
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGdJREFUeNrs0kENgEAMBMAWByjhEhSgACN8EcYbLVgABZdggOeR3GNWQDvpNqdSor8M0WWwsLCwsLCwsLCwsLCwsLCwsLCwmifvev66YJl3JfqteOJoMnSMVYlYedXNtbCwsD7zCjAAs+ILa7YmKlMAAAAASUVORK5CYII=
+p677
+sg23
+Vsurface1
+p678
+sg25
+g26
+((I2014
+I11
+I25
+I13
+I23
+I5
+I1
+I329
+I0
+tp679
+(dp680
+tp681
+Rp682
+sg31
+(lp683
+S'Twine.image'
+p684
+asg33
+g682
+sbsa(dp685
+g14
+I00
+sg15
+(lp686
+F40.5
+aF948.75
+asg17
+(itiddlywiki
+Tiddler
+p687
+(dp688
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFJJREFUeNrs0MEJwCAQAMEz2E+u9bzTU6wgYAN+hRNmKxi23ZlRrytKhoWFhYWFhYWFhYWFhYWFhYWFhYWFdQyrff/rFtaO+ojHLSwsrGVTgAEAOWcFOoqQ/bUAAAAASUVORK5CYII=
+p689
+sg23
+Vsurface2
+p690
+sg25
+g26
+((I2014
+I11
+I25
+I13
+I23
+I14
+I1
+I329
+I0
+tp691
+(dp692
+tp693
+Rp694
+sg31
+(lp695
+g684
+asg33
+g694
+sbsa(dp696
+g14
+I00
+sg15
+(lp697
+F348.5
+aF1088.75
+asg17
+(itiddlywiki
+Tiddler
+p698
+(dp699
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFBJREFUeNrs0MENgDAMALGkYh+yet/sBBMgsQSt8vBNYF2eVdGvES3DwsLCwsLCwsLCwsLCwsLCwsLC+r2838strBUdT0y3sLCwsLC29gkwAFGBBTo7tI4uAAAAAElFTkSuQmCC
+p700
+sg23
+Vsurface3
+p701
+sg25
+g26
+((I2014
+I11
+I25
+I13
+I23
+I23
+I1
+I329
+I0
+tp702
+(dp703
+tp704
+Rp705
+sg31
+(lp706
+g684
+asg33
+g705
+sbsa(dp707
+g14
+I00
+sg15
+(lp708
+F824.5
+aF592.0
+asg17
+(itiddlywiki
+Tiddler
+p709
+(dp710
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPFJREFUeNpi1DcwYKAL8LpwAc7eRshSJoZBCUadRQpgoUpawQWQ09A2UhLxaCSOiLSFKw0Rk1bI1jsaiSOu3NpGYgWKrJ6Ycm40Eod/2iKpbURhOsNq/mgk0qiAuGB9iypWGhxVo2F7CxlUTf0GZ7dlc40WEIMtbVErSSEbWHWBLmmLKulpNG1R0VlUT0wEkxoEEU5byGmFWmUSSeaMpi0yyi06pyeCBSQL7dIHmvrRcotmgPHd3934VXQzu2IVLyWkkRK9hJ1FqpWkOn00bVFebr1n2Eg708k2nPHu35zRSBx11qizRp016qzh6iyAAAMAzkJQic4ql+UAAAAASUVORK5CYII=
+p711
+sg23
+Vcolony
+p712
+sg25
+g26
+((I2014
+I11
+I25
+I13
+I34
+I44
+I1
+I329
+I0
+tp713
+(dp714
+tp715
+Rp716
+sg31
+(lp717
+g684
+asg33
+g716
 sbsasS'scale'
-p673
+p718
 F0.8
 sS'snapping'
-p674
+p719
 I00
 ss.
