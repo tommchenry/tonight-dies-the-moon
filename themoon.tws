@@ -5,7 +5,7 @@ VZ:\u005chome\u005ctom\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moo
 p2
 sS'saveDestination'
 p3
-VC:\u005cTom McHenry's Dropbox\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
+VZ:\u005chome\u005ctom\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
 p4
 sS'metadata'
 p5
@@ -595,8 +595,8 @@ g14
 I00
 sg15
 (lp194
-F817.75
-aF299.25
+F935.25
+aF316.75
 asg17
 (itiddlywiki
 Tiddler
@@ -742,7 +742,7 @@ Tiddler
 p237
 (dp238
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em"><<display Price Update>>\u000a<<if $playerCrops.crop eq 'Cotton'>>\u000aYou sold <<print $playerCrops.acreage>> <<print $cotton.name>>. \u000a<<set $cotton.inStore = $cotton.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $cotton.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Wheat'>>You sold <<print $playerCrops.acreage>> <<print $wheat.name>><<set $wheat.inStore = $wheat.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $wheat.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Marijuana'>>You sold <<print $playerCrops.acreage>> <<print $marijuana.name>><<set $marijuana.inStore = $marijuana.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $marijuana.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>>\u000a\u000a\u000aTotal Cash on Hand: <<set $player1.cash = $player1.cash + $profit>><<print $player1.cash>>\u000a\u000a<<nobr>>\u000a/%Old Price = <<print $curvePrice>>\u000aNew Price = <<set $curvePrice = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<print $curvePrice>>\u000a\u000aLinear Model\u000a--------------\u000aYou made <<print $linearPrice * $cotton.onHand>>\u000aOld Price = <<print $linearPrice>>\u000aNew Price = <<set $linearPrice = 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>><<print $linearPrice>>\u000a%/<<endnobr>>\u000a[[Planting Again]]\u000a[[Market Shift]]\u000a<<set $season = $season + 1>>\u000aConsume\u000a------------\u000aCotton: <<set $cotton.inStore = $cotton.inStore - Math.floor(Math.random() * 30) + 10>><<if $cotton.inStore lt 0>><<set $cotton.inStore = 0>><<endif>><<print $cotton.inStore>>\u000aWheat: <<set $wheat.inStore = $wheat.inStore - Math.floor(Math.random() * 30) + 10>><<if $wheat.inStore lt 0>><<set $wheat.inStore = 0>><<endif>><<print $wheat.inStore>>\u000aMarijuana: <<set $marijuana.inStore = $marijuana.inStore - Math.floor(Math.random() * 30) + 10>><<if $marijuana.inStore lt 0>><<set $marijuana.inStore = 0>><<endif>><<print $marijuana.inStore>>\u000a\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a\u000a<<set $playerCrops.acreage = $playerCrops.maxAcres>><<set $playerCrops.acreage = $playerCrops.maxAcres>>\u000a<<set $ownerCrops.acreage = $ownerCrops.maxAcres>><<set $ownerCrops.acreage = $ownerCrops.maxAcres>>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em"><<display Price Update>>\u000a<<if $playerCrops.crop eq 'Cotton'>>\u000aYou sold <<print $playerCrops.acreage>> <<print $cotton.name>>. \u000a<<set $cotton.inStore = $cotton.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $cotton.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Wheat'>>You sold <<print $playerCrops.acreage>> <<print $wheat.name>><<set $wheat.inStore = $wheat.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $wheat.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Marijuana'>>You sold <<print $playerCrops.acreage>> <<print $marijuana.name>><<set $marijuana.inStore = $marijuana.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $marijuana.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Soybeans'>>You sold <<print $playerCrops.acreage>> <<print $beans.name>><<set $beans.inStore = $beans.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $beans.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>>\u000a<<if $playerCrops.crop eq 'Coffee'>>You sold <<print $playerCrops.acreage>> <<print $coffee.name>><<set $coffee.inStore = $coffee.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $coffee.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>>\u000a\u000aTotal Cash on Hand: <<set $player1.cash = $player1.cash + $profit>><<print $player1.cash>>\u000a\u000a<<nobr>>\u000a/%Old Price = <<print $curvePrice>>\u000aNew Price = <<set $curvePrice = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<print $curvePrice>>\u000a\u000aLinear Model\u000a--------------\u000aYou made <<print $linearPrice * $cotton.onHand>>\u000aOld Price = <<print $linearPrice>>\u000aNew Price = <<set $linearPrice = 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>><<print $linearPrice>>\u000a%/<<endnobr>>\u000a[[Planting Again]]\u000a[[Market Shift]]\u000a<<set $season = $season + 1>>\u000aConsume\u000a------------\u000aCotton: <<set $cotton.inStore = $cotton.inStore - Math.floor(Math.random() * 30) + 10>><<if $cotton.inStore lt 0>><<set $cotton.inStore = 0>><<endif>><<print $cotton.inStore>>\u000aWheat: <<set $wheat.inStore = $wheat.inStore - Math.floor(Math.random() * 30) + 10>><<if $wheat.inStore lt 0>><<set $wheat.inStore = 0>><<endif>><<print $wheat.inStore>>\u000aMarijuana: <<set $marijuana.inStore = $marijuana.inStore - Math.floor(Math.random() * 30) + 10>><<if $marijuana.inStore lt 0>><<set $marijuana.inStore = 0>><<endif>><<print $marijuana.inStore>>\u000aSoybeans: <<set $beans.inStore = $beans.inStore - Math.floor(Math.random() * 30) + 10>><<if $beans.inStore lt 0>><<set $beans.inStore = 0>><<endif>><<print $beans.inStore>>\u000aCoffee: <<set $coffee.inStore = $coffee.inStore - Math.floor(Math.random() * 30) + 10>><<if $coffee.inStore lt 0>><<set $coffee.inStore = 0>><<endif>><<print $coffee.inStore>>\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a\u000a<<set $playerCrops.acreage = $playerCrops.maxAcres>><<set $playerCrops.acreage = $playerCrops.maxAcres>>\u000a<<set $ownerCrops.acreage = $ownerCrops.maxAcres>><<set $ownerCrops.acreage = $ownerCrops.maxAcres>>
 p239
 sg23
 VSell
@@ -751,12 +751,12 @@ sg25
 g26
 ((I2014
 I11
-I24
-I22
-I24
-I41
-I0
-I328
+I26
+I17
+I23
+I4
+I2
+I330
 I0
 tp241
 (dp242
@@ -939,7 +939,7 @@ tp297
 Rp298
 sbsa(dp299
 g14
-I01
+I00
 sg15
 (lp300
 F486.75
@@ -1439,7 +1439,7 @@ Tiddler
 p450
 (dp451
 g21
-V<<set //initialize\u000a$season = 1;\u000a\u000a$playerCrops = {\u000a	acreage: 10, \u000a	crop: 'Cotton',\u000a	quality: 10,\u000a	maxAcres: 10\u000a} \u000a\u000a$ownerCrops = {\u000a	acreage: 90,\u000a	crop: 'Tobacco',\u000a	quality: 10,\u000a	maxAcres: 90\u000a}\u000a\u000a$player1 = {\u000a	cash: 300,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 50) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$marijuana = {\u000a	name:"Marijuana",\u000a	pricePerUnit: 10,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$wheat = {	\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 1,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat];\u000a\u000a>>
+V<<set //initialize\u000a$season = 1;\u000a\u000a$playerCrops = {\u000a	acreage: 10, \u000a	crop: 'Cotton',\u000a	quality: 10,\u000a	maxAcres: 10\u000a} \u000a\u000a$ownerCrops = {\u000a	acreage: 90,\u000a	crop: 'Tobacco',\u000a	quality: 10,\u000a	maxAcres: 90\u000a}\u000a\u000a$player1 = {\u000a	cash: 300,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 50) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$marijuana = {\u000a	name:"Cannabis",\u000a	pricePerUnit: 10,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$wheat = {	\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$coffee = {	\u000a	name: "Coffee",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$beans = {	\u000a	name: "Soybeans",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a\u000a$allCrops = [$cotton, $marijuana, $wheat, $coffee, $beans];\u000a\u000a>>
 p452
 sg23
 VFarm Init
@@ -1448,12 +1448,12 @@ sg25
 g26
 ((I2014
 I11
-I23
-I19
-I27
-I41
-I6
-I327
+I26
+I16
+I25
+I37
+I2
+I330
 I0
 tp454
 (dp455
@@ -1491,7 +1491,7 @@ Tiddler
 p466
 (dp467
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000aCrop: <<print $playerCrops.crop>>\u000aStarting Acreage: <<print $playerCrops.acreage>>\u000aQuality: <<print $playerCrops.quality>>\u000aDieoff: <<set $dieoff = Math.floor(Math.random() * (80 - $playerCrops.quality)) + 1>><<set $dieoff = $dieoff/100>><<print $dieoff>>\u000a<<if $playerCrops.crop eq 'Cotton'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Cotton: <<print $playerCrops.acreage>><<endif>><<if $playerCrops.crop eq 'Wheat'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Wheat: <<print $playerCrops.acreage>>\u000a<<endif>><<if $playerCrops.crop eq 'Marijuana'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Marijuana: <<print $playerCrops.acreage>>\u000a<<endif>>\u000a\u000a[[Owner Sell]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000aCrop: <<print $playerCrops.crop>>\u000aStarting Acreage: <<print $playerCrops.acreage>>\u000aQuality: <<print $playerCrops.quality>>\u000aDieoff: <<set $dieoff = Math.floor(Math.random() * (80 - $playerCrops.quality)) + 1>><<set $dieoff = $dieoff/100>><<print $dieoff>>\u000a<<if $playerCrops.crop eq 'Cotton'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Cotton: <<print $playerCrops.acreage>><<endif>><<if $playerCrops.crop eq 'Wheat'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Wheat: <<print $playerCrops.acreage>>\u000a<<endif>><<if $playerCrops.crop eq 'Marijuana'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Marijuana: <<print $playerCrops.acreage>>\u000a<<endif>><<if $playerCrops.crop eq 'Soybeans'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Soybeans: <<print $playerCrops.acreage>>\u000a<<endif>><<if $playerCrops.crop eq 'Coffee'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Coffee: <<print $playerCrops.acreage>>\u000a<<endif>>\u000a\u000a[[Owner Sell]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
 p468
 sg23
 VHarvest
@@ -1500,12 +1500,12 @@ sg25
 g26
 ((I2014
 I11
-I24
-I22
-I22
-I15
+I26
+I17
+I7
 I0
-I328
+I2
+I330
 I0
 tp470
 (dp471
@@ -1535,15 +1535,15 @@ g14
 I00
 sg15
 (lp481
-F1473.75
-aF170.0
+F1471.25
+aF151.25
 asg17
 (itiddlywiki
 Tiddler
 p482
 (dp483
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<nobr>><<display Farm Init>>\u000a<<display Price Update>>\u000a<<display Seed Pricing>>\u000aSeason: <<print $season>><<endnobr>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aMarijuana: $<<print $marijuana.pricePerUnit>>\u000aWheat: $<<print $wheat.pricePerUnit>><<set $cropRatio = [$cotton, $marijuana, $wheat]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000a\u000aThe Agricultural Commission has instructed you to grow <<$ownerCrops.acreage>> of <<print $cropRatio[0].name>> this season due to shortages.\u000a\u000aWhat will you plant for the <<$playerCrops.acreage>> acres you control?\u000aYou have $<<print $player1.cash>>.\u000a\u000a[[Cotton|Plant Cotton]]: $<<print $cotton.pricePerSeed >>\u000a[[Marijuana|Plant Marijuana]]: $<<print $marijuana.pricePerSeed>>\u000a[[Wheat|Plant Wheat]]: $<<print $wheat.pricePerSeed>>\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<nobr>><<display Farm Init>>\u000a<<display Price Update>>\u000a<<display Seed Pricing>>\u000aSeason: <<print $season>><<endnobr>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aCannabis: $<<print $marijuana.pricePerUnit>>\u000aWheat: $<<print $wheat.pricePerUnit>>\u000aSoybeans: $<<print $beans.pricePerUnit>>\u000aCoffee: $<<print $coffee.pricePerUnit>><<set $cropRatio = [$cotton, $marijuana, $wheat, $coffee, $beans]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000a\u000aThe Agricultural Commission has instructed you to grow <<$ownerCrops.acreage>> of <<print $cropRatio[0].name>> this season due to shortages.\u000a\u000aWhat will you plant for the <<$playerCrops.acreage>> acres you control?\u000aYou have $<<print $player1.cash>>.\u000a\u000a[[Cotton|Plant Cotton]]: $<<print $cotton.pricePerSeed >>\u000a[[Cannabis|Plant Marijuana]]: $<<print $marijuana.pricePerSeed>>\u000a[[Wheat|Plant Wheat]]: $<<print $wheat.pricePerSeed>>\u000a[[Soybeans|Plant Soybeans]]: $<<print $beans.pricePerSeed>>\u000a[[Coffee|Plant Coffee]]: $<<print $coffee.pricePerSeed>>\u000a\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
 p484
 sg23
 VPlanting Start
@@ -1552,12 +1552,12 @@ sg25
 g26
 ((I2014
 I11
-I24
+I26
+I16
+I42
 I22
-I15
-I54
-I0
-I328
+I2
+I330
 I0
 tp486
 (dp487
@@ -1740,18 +1740,18 @@ tp542
 Rp543
 sbsa(dp544
 g14
-I00
+I01
 sg15
 (lp545
-F1267.5
-aF276.25
+F1247.5
+aF333.75
 asg17
 (itiddlywiki
 Tiddler
 p546
 (dp547
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<nobr>>\u000a<<display Price Update>>\u000a<<display Seed Pricing>>\u000aSeason: <<print $season>><<endnobr>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aMarijuana: $<<print $marijuana.pricePerUnit>>\u000aWheat: $<<print $wheat.pricePerUnit>><<set $cropRatio = [$cotton, $marijuana, $wheat]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000a\u000aThe Agricultural Commission has instructed you to grow <<$ownerCrops.acreage>> of <<print $cropRatio[0].name>> this season due to shortages.\u000a\u000aWhat will you plant for the <<$playerCrops.acreage>> acres you control?\u000aYou have $<<print $player1.cash>>.\u000a\u000a[[Cotton|Plant Cotton]]: $<<print $cotton.pricePerSeed >>\u000a[[Marijuana|Plant Marijuana]]: $<<print $marijuana.pricePerSeed>>\u000a[[Wheat|Plant Wheat]]: $<<print $wheat.pricePerSeed>>\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<nobr>>\u000a<<display Price Update>>\u000a<<display Seed Pricing>>\u000aSeason: <<print $season>><<endnobr>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aCannabis: $<<print $marijuana.pricePerUnit>>\u000aWheat: $<<print $wheat.pricePerUnit>>\u000aSoybeans: $<<print $beans.pricePerUnit>>\u000aCoffee: $<<print $coffee.pricePerUnit>><<set $cropRatio = [$cotton, $marijuana, $wheat, $coffee, $beans]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000a\u000aThe Agricultural Commission has instructed you to grow <<$ownerCrops.acreage>> of <<print $cropRatio[0].name>> this season due to shortages.\u000a\u000aWhat will you plant for the <<$playerCrops.acreage>> acres you control?\u000aYou have $<<print $player1.cash>>.\u000a\u000a[[Cotton|Plant Cotton]]: $<<print $cotton.pricePerSeed >>\u000a[[Cannabis|Plant Marijuana]]: $<<print $marijuana.pricePerSeed>>\u000a[[Wheat|Plant Wheat]]: $<<print $wheat.pricePerSeed>>\u000a[[Soybeans|Plant Soybeans]]: $<<print $beans.pricePerSeed>>\u000a[[Coffee|Plant Coffee]]: $<<print $coffee.pricePerSeed>>\u000a\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
 p548
 sg23
 VPlanting Again
@@ -1760,12 +1760,12 @@ sg25
 g26
 ((I2014
 I11
-I24
-I22
-I16
-I31
-I0
-I328
+I26
+I17
+I26
+I41
+I2
+I330
 I0
 tp550
 (dp551
@@ -1803,7 +1803,7 @@ Tiddler
 p562
 (dp563
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<display Price Update>>\u000aCrop: <<print $ownerCrops.crop>>\u000aStarting Acreage: <<print $ownerCrops.acreage>>\u000aQuality: <<print $ownerCrops.quality>>\u000aDieoff: <<set $dieoff = Math.floor(Math.random() * (80 - $ownerCrops.quality)) + 1>><<set $dieoff = $dieoff/100>><<print $dieoff>>\u000a<<if $ownerCrops.crop eq 'Cotton'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Cotton: <<print $ownerCrops.acreage>><<endif>><<if $ownerCrops.crop eq 'Wheat'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Wheat: <<print $ownerCrops.acreage>>\u000a<<endif>><<if $ownerCrops.crop eq 'Marijuana'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Marijuana: <<print $ownerCrops.acreage>>\u000a<<endif>>\u000a\u000a<<if $ownerCrops.crop eq 'Cotton'>>Cotton Price = <<print $cotton.pricePerUnit >><br><<set $profit = $cotton.pricePerUnit  * $ownerCrops.acreage>><<set $cotton.inStore = $cotton.inStore + $ownerCrops.acreage>><<endif>>\u000a<<if $ownerCrops.crop eq 'Wheat'>>Wheat Price = <<print $wheat.pricePerUnit >><<set $profit = $wheat.pricePerUnit  * $ownerCrops.acreage>><<set $wheat.inStore = $wheat.inStore + $ownerCrops.acreage>><<endif>>\u000a<<if $ownerCrops.crop eq 'Marijuana'>>Marijuana Price = <<print $marijuana.pricePerUnit >><<set $profit = $marijuana.pricePerUnit  * $ownerCrops.acreage>><<set $marijuana.inStore = $marijuana.inStore + $ownerCrops.acreage>><<endif>>\u000a\u000aThe Agricultural Commission makes <<print $profit>> this season from your work. /%Some code to display price differential here.%/\u000a[[Sell]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<display Price Update>>\u000aCrop: <<print $ownerCrops.crop>>\u000aStarting Acreage: <<print $ownerCrops.acreage>>\u000aQuality: <<print $ownerCrops.quality>>\u000aDieoff: <<set $dieoff = Math.floor(Math.random() * (80 - $ownerCrops.quality)) + 1>><<set $dieoff = $dieoff/100>><<print $dieoff>>\u000a<<if $ownerCrops.crop eq 'Cotton'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Cotton: <<print $ownerCrops.acreage>><<endif>><<if $ownerCrops.crop eq 'Wheat'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Wheat: <<print $ownerCrops.acreage>>\u000a<<endif>><<if $ownerCrops.crop eq 'Marijuana'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Marijuana: <<print $ownerCrops.acreage>>\u000a<<endif>><<if $ownerCrops.crop eq 'Coffee'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Coffee: <<print $ownerCrops.acreage>>\u000a<<endif>><<if $ownerCrops.crop eq 'Soybeans'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Soybeans: <<print $ownerCrops.acreage>>\u000a<<endif>>\u000a\u000a<<if $ownerCrops.crop eq 'Cotton'>>Cotton Price = <<print $cotton.pricePerUnit >><br><<set $profit = $cotton.pricePerUnit  * $ownerCrops.acreage>><<set $cotton.inStore = $cotton.inStore + $ownerCrops.acreage>><<endif>>\u000a<<if $ownerCrops.crop eq 'Wheat'>>Wheat Price = <<print $wheat.pricePerUnit >><<set $profit = $wheat.pricePerUnit  * $ownerCrops.acreage>><<set $wheat.inStore = $wheat.inStore + $ownerCrops.acreage>><<endif>>\u000a<<if $ownerCrops.crop eq 'Marijuana'>>Marijuana Price = <<print $marijuana.pricePerUnit >><<set $profit = $marijuana.pricePerUnit  * $ownerCrops.acreage>><<set $marijuana.inStore = $marijuana.inStore + $ownerCrops.acreage>><<endif>>\u000a<<if $ownerCrops.crop eq 'Coffee'>>Coffee Price = <<print $coffee.pricePerUnit >><<set $profit = $coffee.pricePerUnit  * $ownerCrops.acreage>><<set $coffee.inStore = $coffee.inStore + $ownerCrops.acreage>><<endif>>\u000a<<if $ownerCrops.crop eq 'Soybeans'>>Soybeans Price = <<print $beans.pricePerUnit >><<set $profit = $beans.pricePerUnit  * $ownerCrops.acreage>><<set $beans.inStore = $beans.inStore + $ownerCrops.acreage>><<endif>>\u000aThe Agricultural Commission makes <<print $profit>> this season from your work. /%Some code to display price differential here.%/\u000a[[Sell]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a
 p564
 sg23
 VOwner Sell
@@ -1812,12 +1812,12 @@ sg25
 g26
 ((I2014
 I11
-I24
-I22
-I23
-I38
-I0
-I328
+I26
+I17
+I14
+I26
+I2
+I330
 I0
 tp566
 (dp567
@@ -1855,7 +1855,7 @@ Tiddler
 p578
 (dp579
 g21
-V<<nobr>>\u000a/%Set Ratio%/\u000a<<set $cotton.ratio = $cotton.inStore/$cotton.need>><<set $marijuana.ratio = $marijuana.inStore/$marijuana.need>><<set $wheat.ratio = $wheat.inStore/$wheat.need>>\u000a/%Set Price%/\u000a<<set $cotton.pricePerUnit = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<set $wheat.pricePerUnit = Math.floor(100 * Math.pow(($wheat.inStore / $cotton.need - 1),2))>><<set $marijuana.pricePerUnit = Math.floor(100 * Math.pow(($marijuana.inStore / $cotton.need - 1),2))>>\u000a<<endnobr>>
+V<<nobr>>\u000a/%Set Ratio%/\u000a<<set $cotton.ratio = $cotton.inStore/$cotton.need>><<set $marijuana.ratio = $marijuana.inStore/$marijuana.need>><<set $wheat.ratio = $wheat.inStore/$wheat.need>><<set $coffee.ratio = $coffee.inStore/$coffee.need>><<set $beans.ratio = $beans.inStore/$beans.need>>\u000a/%Set Price%/\u000a<<set $cotton.pricePerUnit = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<set $wheat.pricePerUnit = Math.floor(100 * Math.pow(($wheat.inStore / $wheat.need - 1),2))>><<set $marijuana.pricePerUnit = Math.floor(100 * Math.pow(($marijuana.inStore / $marijuana.need - 1),2))>><<set $coffee.pricePerUnit = Math.floor(100 * Math.pow(($coffee.inStore / $coffee.need - 1),2))>><<set $beans.pricePerUnit = Math.floor(100 * Math.pow(($beans.inStore / $beans.need - 1),2))>>\u000a<<endnobr>>
 p580
 sg23
 VPrice Update
@@ -1864,12 +1864,12 @@ sg25
 g26
 ((I2014
 I11
-I22
-I21
-I55
-I31
-I5
-I326
+I26
+I16
+I28
+I41
+I2
+I330
 I0
 tp582
 (dp583
@@ -1907,7 +1907,7 @@ Tiddler
 p594
 (dp595
 g21
-V<<nobr>>\u000a<<set $cotton.pricePerSeed = Math.floor($cotton.pricePerUnit/3)>>\u000a<<set $marijuana.pricePerSeed = Math.floor($marijuana.pricePerUnit/3)>>\u000a<<set $wheat.pricePerSeed = Math.floor($wheat.pricePerUnit/3)>>\u000a<<endnobr>>
+V<<nobr>>\u000a<<set $cotton.pricePerSeed = Math.floor($cotton.pricePerUnit/3)>>\u000a<<set $marijuana.pricePerSeed = Math.floor($marijuana.pricePerUnit/3)>>\u000a<<set $wheat.pricePerSeed = Math.floor($wheat.pricePerUnit/3)>>\u000a<<set $beans.pricePerSeed = Math.floor($beans.pricePerUnit/3)>>\u000a<<set $coffee.pricePerSeed = Math.floor($coffee.pricePerUnit/3)>>\u000a<<endnobr>>
 p596
 sg23
 VSeed Pricing
@@ -1916,12 +1916,12 @@ sg25
 g26
 ((I2014
 I11
-I24
-I22
-I0
-I43
-I0
-I328
+I26
+I16
+I39
+I46
+I2
+I330
 I0
 tp598
 (dp599
@@ -2316,10 +2316,114 @@ sg31
 g684
 asg33
 g716
+sbsa(dp718
+g14
+I00
+sg15
+(lp719
+F1725.75
+aF366.0
+asg17
+(itiddlywiki
+Tiddler
+p720
+(dp721
+g21
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $coffee.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Coffee'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $coffee.name>>. It costs $<<set $cost = Math.floor($player1.cash/$coffee.pricePerSeed) * $coffee.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $coffee.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $coffee.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$coffee.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$coffee.pricePerSeed)>> \u000a<<print ($player1.cash/$coffee.pricePerSeed)>>\u000aIt costs $<<set $cost = Math.floor($player1.cash/$coffee.pricePerSeed) * $coffee.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Coffee'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
+p722
+sg23
+VPlant Coffee
+p723
+sg25
+g26
+((I2014
+I11
+I26
+I17
+I0
+I25
+I2
+I330
+I0
+tp724
+(dp725
+tp726
+Rp727
+sg31
+(lp728
+Vmoon
+p729
+asg33
+g26
+((I2014
+I11
+I26
+I15
+I26
+I17
+I2
+I330
+I0
+tp730
+(dp731
+tp732
+Rp733
+sbsa(dp734
+g14
+I00
+sg15
+(lp735
+F1165.75
+aF2.0
+asg17
+(itiddlywiki
+Tiddler
+p736
+(dp737
+g21
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $beans.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Soybeans'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $beans.name>>. It costs $<<set $cost = Math.floor($player1.cash/$beans.pricePerSeed) * $beans.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $beans.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $beans.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$beans.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$beans.pricePerSeed)>> \u000a<<print ($player1.cash/$beans.pricePerSeed)>>\u000aIt costs $<<set $cost = Math.floor($player1.cash/$beans.pricePerSeed) * $beans.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Soybeans'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
+p738
+sg23
+VPlant Soybeans
+p739
+sg25
+g26
+((I2014
+I11
+I26
+I17
+I1
+I54
+I2
+I330
+I0
+tp740
+(dp741
+tp742
+Rp743
+sg31
+(lp744
+Vmoon
+p745
+asg33
+g26
+((I2014
+I11
+I26
+I15
+I26
+I17
+I2
+I330
+I0
+tp746
+(dp747
+tp748
+Rp749
 sbsasS'scale'
-p718
+p750
 F0.8
 sS'snapping'
-p719
+p751
 I00
 ss.
