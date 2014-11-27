@@ -235,15 +235,15 @@ g14
 I00
 sg15
 (lp84
-F538.25
-aF182.5
+F983.25
+aF215.8333333333333
 asg17
 (itiddlywiki
 Tiddler
 p85
 (dp86
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold;">\u000a<<nobr>><<display Crops Init>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a/%<<display Display Crops>>%/\u000a<<endnobr>>\u000a% = <<print $cotton.inStore / $cotton.need>>\u000aCurve Model\u000a--------------\u000ay = <<print Math.pow(($cotton.inStore / $cotton.need - 1),2)>>\u000aMaxPrice = <<set $curvePrice = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<print $curvePrice>>\u000a\u000aLinear Model\u000a--------------\u000ay = <<print (0-$cotton.inStore/$cotton.need)+1>>\u000aMaxPrice = <<set $linearPrice = 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>><<print $linearPrice>>\u000a\u000aYou Have\u000a--------------\u000aOn Hand = <<print $cotton.onHand>>\u000a$ = <<print $player1.cash>>\u000a[[Sell]]\u000a[[Buy]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold;">\u000a<<nobr>>\u000a<<set $cropsDisplay = $allCrops.length -1 >>\u000aEconomy Debug Mode!!!\u000a/%<<display Display Crops>>%/\u000a<<endnobr>>\u000a% = <<print $cotton.inStore / $cotton.need>>\u000aCurve Model\u000a--------------\u000ay = <<print Math.pow(($cotton.inStore / $cotton.need - 1),2)>>\u000aMaxPrice = <<set $curvePrice = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<print $curvePrice>>\u000a\u000aLinear Model\u000a--------------\u000ay = <<print (0-$cotton.inStore/$cotton.need)+1>>\u000aMaxPrice = <<set $linearPrice = 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>><<print $linearPrice>>\u000a\u000aYou Have\u000a--------------\u000aOn Hand = <<print $cotton.onHand>>\u000a$ = <<print $player1.cash>>\u000a[[Sell]]\u000a[[Buy]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
 p87
 sg23
 VMoon Start
@@ -252,12 +252,12 @@ sg25
 g26
 ((I2014
 I11
-I20
-I18
+I26
+I23
 I30
-I38
-I3
-I324
+I27
+I2
+I330
 I0
 tp89
 (dp90
@@ -339,8 +339,8 @@ g14
 I00
 sg15
 (lp116
-F150.0
-aF562.0
+F16.666666666666682
+aF683.6666666666667
 asg17
 (itiddlywiki
 Tiddler
@@ -389,8 +389,8 @@ g14
 I00
 sg15
 (lp131
-F155.0
-aF286.0
+F13.333333333333334
+aF1079.333333333333
 asg17
 (itiddlywiki
 Tiddler
@@ -595,29 +595,29 @@ g14
 I00
 sg15
 (lp194
-F602.75
-aF343.0
+F1523.3333333333333
+aF103.3333333333334
 asg17
 (itiddlywiki
 Tiddler
 p195
 (dp196
 g21
-V<<set //initialize\u000a>>\u000a
+V<<if $cropsDisplay eq 0>>\u000a<<print $allCrops[0].name>>\u000aPrice Per Unit: <<nobr>>\u000a<<set $allCrops[0].pricePerUnit = Math.round(0.5*(Math.pow(($allCrops[0].inStore - $cotton.need), 2))) >>\u000a<<if $cotton.pricePerUnit gt 0>>\u000a<<print $cotton.pricePerUnit>>\u000a<<else>>\u000aWe're not buying <<print $cotton.name>> at this time.\u000a<<endif>>\u000a<<endnobr>>\u000aOn Hand:<<print $allCrops[$cropsDisplay].onHand>>\u000aIn Store:<<print $allCrops[$cropsDisplay].inStore>>\u000aNeed: <<print $allCrops[$cropsDisplay].need>>\u000a<<else>>\u000a<<print $allCrops[$cropsDisplay].name>>\u000aPrice Per Unit: <<nobr>>\u000a<<set $allCrops[$cropsDisplay].pricePerUnit = Math.round(0.5*(Math.pow(($allCrops[$cropsDisplay].inStore - $allCrops[$cropsDisplay].need), 2))) >>\u000a<<if $allCrops[$cropsDisplay].pricePerUnit gt 0>>\u000a<<print $allCrops[$cropsDisplay].pricePerUnit>>\u000a<<else>>\u000aWe're not buying <<print $allCrops[$cropsDisplay].name>> at this time.\u000a<<endif>>\u000a<<endnobr>>\u000aOn Hand:<<print $allCrops[$cropsDisplay].onHand>>\u000aIn Store:<<print $allCrops[$cropsDisplay].inStore>>\u000aNeed: <<print $allCrops[$cropsDisplay].need>>\u000a<<set $cropsDisplay = $cropsDisplay - 1>>\u000a<<display Display Crops>>\u000a<<endif>>
 p197
 sg23
-VCrops Init
+VDisplay Crops
 p198
 sg25
 g26
 ((I2014
 I11
-I20
 I17
-I29
-I1
-I3
-I324
+I15
+I55
+I43
+I0
+I321
 I0
 tp199
 (dp200
@@ -631,8 +631,8 @@ g26
 I11
 I17
 I12
-I35
-I36
+I54
+I32
 I0
 I321
 I0
@@ -645,69 +645,19 @@ g14
 I00
 sg15
 (lp209
-F765.0
-aF170.0
+F402.0
+aF11.0
 asg17
 (itiddlywiki
 Tiddler
 p210
 (dp211
 g21
-V<<if $cropsDisplay eq 0>>\u000a<<print $allCrops[0].name>>\u000aPrice Per Unit: <<nobr>>\u000a<<set $allCrops[0].pricePerUnit = Math.round(0.5*(Math.pow(($allCrops[0].inStore - $cotton.need), 2))) >>\u000a<<if $cotton.pricePerUnit gt 0>>\u000a<<print $cotton.pricePerUnit>>\u000a<<else>>\u000aWe're not buying <<print $cotton.name>> at this time.\u000a<<endif>>\u000a<<endnobr>>\u000aOn Hand:<<print $allCrops[$cropsDisplay].onHand>>\u000aIn Store:<<print $allCrops[$cropsDisplay].inStore>>\u000aNeed: <<print $allCrops[$cropsDisplay].need>>\u000a<<else>>\u000a<<print $allCrops[$cropsDisplay].name>>\u000aPrice Per Unit: <<nobr>>\u000a<<set $allCrops[$cropsDisplay].pricePerUnit = Math.round(0.5*(Math.pow(($allCrops[$cropsDisplay].inStore - $allCrops[$cropsDisplay].need), 2))) >>\u000a<<if $allCrops[$cropsDisplay].pricePerUnit gt 0>>\u000a<<print $allCrops[$cropsDisplay].pricePerUnit>>\u000a<<else>>\u000aWe're not buying <<print $allCrops[$cropsDisplay].name>> at this time.\u000a<<endif>>\u000a<<endnobr>>\u000aOn Hand:<<print $allCrops[$cropsDisplay].onHand>>\u000aIn Store:<<print $allCrops[$cropsDisplay].inStore>>\u000aNeed: <<print $allCrops[$cropsDisplay].need>>\u000a<<set $cropsDisplay = $cropsDisplay - 1>>\u000a<<display Display Crops>>\u000a<<endif>>
+Vdata:image/png;base64,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
 p212
 sg23
-VDisplay Crops
-p213
-sg25
-g26
-((I2014
-I11
-I17
-I15
-I55
-I43
-I0
-I321
-I0
-tp214
-(dp215
-tp216
-Rp217
-sg31
-(lp218
-sg33
-g26
-((I2014
-I11
-I17
-I12
-I54
-I32
-I0
-I321
-I0
-tp219
-(dp220
-tp221
-Rp222
-sbsa(dp223
-g14
-I00
-sg15
-(lp224
-F402.0
-aF11.0
-asg17
-(itiddlywiki
-Tiddler
-p225
-(dp226
-g21
-Vdata:image/png;base64,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
-p227
-sg23
 Vmoon
-p228
+p213
 sg25
 g26
 ((I2014
@@ -719,34 +669,34 @@ I5
 I0
 I321
 I0
-tp229
-(dp230
-tp231
-Rp232
+tp214
+(dp215
+tp216
+Rp217
 sg31
-(lp233
+(lp218
 S'Twine.image'
-p234
+p219
 asg33
-g232
-sbsa(dp235
+g217
+sbsa(dp220
 g14
 I00
 sg15
-(lp236
-F987.5
-aF433.75
+(lp221
+F1890.8333333333344
+aF960.416666666667
 asg17
 (itiddlywiki
 Tiddler
-p237
-(dp238
+p222
+(dp223
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em"><<display Price Update>>\u000a<<if $playerCrops.crop eq 'Cotton'>>\u000aYou sold <<print $playerCrops.acreage>> <<print $cotton.name>>. \u000a<<set $cotton.inStore = $cotton.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $cotton.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Wheat'>>You sold <<print $playerCrops.acreage>> <<print $wheat.name>><<set $wheat.inStore = $wheat.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $wheat.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Cannabis'>>You sold <<print $playerCrops.acreage>> <<print $cannabis.name>><<set $cannabis.inStore = $cannabis.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $cannabis.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>><<if $playerCrops.crop eq 'Soybeans'>>You sold <<print $playerCrops.acreage>> <<print $beans.name>><<set $beans.inStore = $beans.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $beans.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>>\u000a<<if $playerCrops.crop eq 'Coffee'>>You sold <<print $playerCrops.acreage>> <<print $coffee.name>><<set $coffee.inStore = $coffee.inStore + $playerCrops.acreage>>\u000aYou made <<set $profit = $coffee.pricePerUnit  * $playerCrops.acreage>><<print $profit>><<set $playerCrops.acreage = 0>><<endif>>\u000a\u000aTotal Cash on Hand: <<set $player1.cash = $player1.cash + $profit>><<print $player1.cash>>\u000a\u000a<<nobr>>\u000a/%Old Price = <<print $curvePrice>>\u000aNew Price = <<set $curvePrice = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<print $curvePrice>>\u000a\u000aLinear Model\u000a--------------\u000aYou made <<print $linearPrice * $cotton.onHand>>\u000aOld Price = <<print $linearPrice>>\u000aNew Price = <<set $linearPrice = 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>><<print $linearPrice>>\u000a%/<<endnobr>>\u000a[[Planting Again]]\u000a[[Market Shift]]\u000a<<set $season = $season + 1>>\u000aConsume\u000a------------\u000aCotton: <<set $cotton.inStore = $cotton.inStore - Math.floor(Math.random() * 30) + 10>><<if $cotton.inStore lt 0>><<set $cotton.inStore = 0>><<endif>><<print $cotton.inStore>>\u000aWheat: <<set $wheat.inStore = $wheat.inStore - Math.floor(Math.random() * 30) + 10>><<if $wheat.inStore lt 0>><<set $wheat.inStore = 0>><<endif>><<print $wheat.inStore>>\u000acannabis: <<set $cannabis.inStore = $cannabis.inStore - Math.floor(Math.random() * 30) + 10>><<if $cannabis.inStore lt 0>><<set $cannabis.inStore = 0>><<endif>><<print $cannabis.inStore>>\u000aSoybeans: <<set $beans.inStore = $beans.inStore - Math.floor(Math.random() * 30) + 10>><<if $beans.inStore lt 0>><<set $beans.inStore = 0>><<endif>><<print $beans.inStore>>\u000aCoffee: <<set $coffee.inStore = $coffee.inStore - Math.floor(Math.random() * 30) + 10>><<if $coffee.inStore lt 0>><<set $coffee.inStore = 0>><<endif>><<print $coffee.inStore>>\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a\u000a<<set $playerCrops.acreage = $playerCrops.maxAcres>><<set $playerCrops.acreage = $playerCrops.maxAcres>>\u000a<<set $ownerCrops.acreage = $ownerCrops.maxAcres>><<set $ownerCrops.acreage = $ownerCrops.maxAcres>>
-p239
+p224
 sg23
 VSell
-p240
+p225
 sg25
 g26
 ((I2014
@@ -758,14 +708,14 @@ I1
 I2
 I330
 I0
-tp241
-(dp242
-tp243
-Rp244
+tp226
+(dp227
+tp228
+Rp229
 sg31
-(lp245
+(lp230
 Vmoon
-p246
+p231
 asg33
 g26
 ((I2014
@@ -777,28 +727,28 @@ I2
 I1
 I322
 I0
-tp247
-(dp248
-tp249
-Rp250
-sbsa(dp251
+tp232
+(dp233
+tp234
+Rp235
+sbsa(dp236
 g14
 I00
 sg15
-(lp252
-F989.5
-aF85.5
+(lp237
+F1764.4999999999998
+aF958.8333333333328
 asg17
 (itiddlywiki
 Tiddler
-p253
-(dp254
+p238
+(dp239
 g21
 V
-p255
+p240
 sg23
 VBuy
-p256
+p241
 sg25
 g26
 ((I2014
@@ -810,14 +760,14 @@ I22
 I1
 I322
 I0
-tp257
-(dp258
-tp259
-Rp260
+tp242
+(dp243
+tp244
+Rp245
 sg31
-(lp261
+(lp246
 Vmoon
-p262
+p247
 asg33
 g26
 ((I2014
@@ -829,28 +779,28 @@ I2
 I1
 I322
 I0
-tp263
-(dp264
-tp265
-Rp266
-sbsa(dp267
+tp248
+(dp249
+tp250
+Rp251
+sbsa(dp252
 g14
 I00
 sg15
-(lp268
-F1117.0
-aF291.25
+(lp253
+F2035.3333333333333
+aF959.5833333333336
 asg17
 (itiddlywiki
 Tiddler
-p269
-(dp270
+p254
+(dp255
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold;">\u000aOh no! Sudden famine on the other end of the moon! We need wheat badly to support your guals!\u000a\u000a<<set $cotton.need = $cotton.need + 500>>\u000a[[Economy Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a
-p271
+p256
 sg23
 VMarket Shift
-p272
+p257
 sg25
 g26
 ((I2014
@@ -862,14 +812,14 @@ I13
 I1
 I322
 I0
-tp273
-(dp274
-tp275
-Rp276
+tp258
+(dp259
+tp260
+Rp261
 sg31
-(lp277
+(lp262
 Vmoon
-p278
+p263
 asg33
 g26
 ((I2014
@@ -881,28 +831,28 @@ I27
 I1
 I322
 I0
-tp279
-(dp280
-tp281
-Rp282
-sbsa(dp283
+tp264
+(dp265
+tp266
+Rp267
+sbsa(dp268
 g14
 I00
 sg15
-(lp284
-F918.75
-aF308.75
+(lp269
+F1887.0833333333337
+aF1100.4166666666663
 asg17
 (itiddlywiki
 Tiddler
-p285
-(dp286
+p270
+(dp271
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em"><<display Price Update>><<set $cropsDisplay = $allCrops.length -1 >>\u000a/%<<display Display Crops>>\u000a\u000a% = <<print $cotton.inStore / $cotton.need>>\u000aCurve Model\u000a--------------\u000ay = <<print Math.pow(($cotton.inStore / $cotton.need - 1),2)>>%/\u000a<<if $playerCrops.crop eq 'Cotton'>>Cotton Price = <<print $cotton.pricePerUnit >><br><<set $profit = $cotton.pricePerUnit  * $cotton.onHand>><<endif>><<if $playerCrops.crop eq 'Wheat'>>Wheat Price = <<print $wheat.pricePerUnit >><<set $profit = $wheat.pricePerUnit  * $wheat.onHand>><<endif>>\u000a<<if $playerCrops.crop eq 'Cannabis'>>Cannabis Price = <<print $cannabis.pricePerUnit >><<set $profit = $cannabis.pricePerUnit  * $cannabis.onHand>><<endif>>\u000a<<if $playerCrops.crop eq 'Coffee'>>Coffee Price = <<print $cannabis.pricePerUnit >><<set $profit = $cannabis.pricePerUnit  * $cannabis.onHand>><<endif>>\u000a<<if $playerCrops.crop eq 'Soybeans'>>Soybeans Price = <<print $cannabis.pricePerUnit >><<set $profit = $cannabis.pricePerUnit  * $cannabis.onHand>><<endif>>\u000a/%\u000aLinear Model\u000a--------------\u000ay = <<print (0-$cotton.inStore/$cotton.need)+1>>\u000aMaxPrice = <<set $linearPrice = 100 + Math.floor(100*(0-$cotton.inStore/$cotton.need)+1)>><<print $linearPrice>>\u000a%/\u000aYou Have\u000a--------------\u000aOn Hand = <<if $playerCrops.crop eq 'Cotton'>><<print $cotton.onHand>><<endif>><<if $playerCrops.crop eq 'Wheat'>><<print $wheat.onHand>><<endif>><<if $playerCrops.crop eq 'Cannabis'>><<print $cannabis.onHand>><<endif>><<if $playerCrops.crop eq 'Coffee'>><<print $coffee.onHand>><<endif>><<if $playerCrops.crop eq 'Soybeans'>><<print $beans.onHand>><<endif>>\u000a$ = <<print $player1.cash>>\u000a[[Sell]]\u000a[[Buy]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
-p287
+p272
 sg23
 VEconomy Debug
-p288
+p273
 sg25
 g26
 ((I2014
@@ -914,14 +864,14 @@ I34
 I2
 I330
 I0
-tp289
-(dp290
-tp291
-Rp292
+tp274
+(dp275
+tp276
+Rp277
 sg31
-(lp293
+(lp278
 Vmoon
-p294
+p279
 asg33
 g26
 ((I2014
@@ -933,28 +883,28 @@ I39
 I1
 I322
 I0
-tp295
-(dp296
-tp297
-Rp298
-sbsa(dp299
+tp280
+(dp281
+tp282
+Rp283
+sbsa(dp284
 g14
 I00
 sg15
-(lp300
+(lp285
 F486.75
 aF862.5
 asg17
 (itiddlywiki
 Tiddler
-p301
-(dp302
+p286
+(dp287
 g21
 V<<display Starfighter Init>>\u000a<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<div id="bg-test" style="background-image:[img[stars-bg]]; background-position:bottom;height:310px;width:300px;background-repeat: repeat-x;"><<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>\u000a</div>\u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/\u000a\u000a\u000a\u000a\u000a
-p303
+p288
 sg23
 VStarfighter Debug
-p304
+p289
 sg25
 g26
 ((I2014
@@ -966,14 +916,14 @@ I23
 I1
 I329
 I0
-tp305
-(dp306
-tp307
-Rp308
+tp290
+(dp291
+tp292
+Rp293
 sg31
-(lp309
+(lp294
 Vearth
-p310
+p295
 asg33
 g26
 ((I2014
@@ -982,6 +932,56 @@ I19
 I13
 I20
 I17
+I2
+I323
+I0
+tp296
+(dp297
+tp298
+Rp299
+sbsa(dp300
+g14
+I00
+sg15
+(lp301
+F472.0
+aF331.0
+asg17
+(itiddlywiki
+Tiddler
+p302
+(dp303
+g21
+V<<set //initialize\u000a$fighter = {\u000a	display: '[img[fighter]]',\u000a	solid: 1,\u000a	x: 2,\u000a	y: 2\u000a}\u000a\u000a$space = {\u000a	display: '[img[blank]]',\u000a	solid: 0\u000a}\u000a\u000a$ground1 = {\u000a	display: '[img[surface1]]',\u000a	solid: 1\u000a}\u000a\u000a\u000a$ground2 = {\u000a	display: '[img[surface2]]',\u000a	solid: 1\u000a}\u000a\u000a\u000a$ground3 = {\u000a	display: '[img[surface3]]',\u000a	solid: 1\u000a}\u000a\u000a$colonyLive = {\u000a	display: '[img[colony]]',\u000a	solid: 1\u000a}\u000a\u000a$slot1 = $space\u000a$slot2 = $space\u000a$slot3 = $space\u000a$slot4 = $space\u000a$slot5 = $space\u000a$slot6 = $space\u000a$slot7 = $space\u000a$slot8 = $space\u000a$slot9 = $space\u000a$slot10 = $space\u000a$slot11 = $space\u000a$slot12 = $space\u000a$slot13 = $space\u000a$slot14 = $space\u000a$slot15 = $space\u000a$slot16 = $ground1\u000a$slot17 = $colonyLive\u000a$slot18 = $ground1\u000a$slot19 = $space\u000a$slot20 = $colonyLive\u000a\u000a\u000a$map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]\u000a>>\u000a\u000a/%\u000a\u000a$map = [[$space, $space, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		[$space, $fighter, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		]\u000a\u000a%/
+p304
+sg23
+VStarfighter Init
+p305
+sg25
+g26
+((I2014
+I11
+I25
+I14
+I15
+I9
+I1
+I329
+I0
+tp306
+(dp307
+tp308
+Rp309
+sg31
+(lp310
+sg33
+g26
+((I2014
+I11
+I19
+I13
+I22
+I30
 I2
 I323
 I0
@@ -994,69 +994,19 @@ g14
 I00
 sg15
 (lp316
-F472.0
-aF331.0
+F1163.1666666666677
+aF736.25
 asg17
 (itiddlywiki
 Tiddler
 p317
 (dp318
 g21
-V<<set //initialize\u000a$fighter = {\u000a	display: '[img[fighter]]',\u000a	solid: 1,\u000a	x: 2,\u000a	y: 2\u000a}\u000a\u000a$space = {\u000a	display: '[img[blank]]',\u000a	solid: 0\u000a}\u000a\u000a$ground1 = {\u000a	display: '[img[surface1]]',\u000a	solid: 1\u000a}\u000a\u000a\u000a$ground2 = {\u000a	display: '[img[surface2]]',\u000a	solid: 1\u000a}\u000a\u000a\u000a$ground3 = {\u000a	display: '[img[surface3]]',\u000a	solid: 1\u000a}\u000a\u000a$colonyLive = {\u000a	display: '[img[colony]]',\u000a	solid: 1\u000a}\u000a\u000a$slot1 = $space\u000a$slot2 = $space\u000a$slot3 = $space\u000a$slot4 = $space\u000a$slot5 = $space\u000a$slot6 = $space\u000a$slot7 = $space\u000a$slot8 = $space\u000a$slot9 = $space\u000a$slot10 = $space\u000a$slot11 = $space\u000a$slot12 = $space\u000a$slot13 = $space\u000a$slot14 = $space\u000a$slot15 = $space\u000a$slot16 = $ground1\u000a$slot17 = $colonyLive\u000a$slot18 = $ground1\u000a$slot19 = $space\u000a$slot20 = $colonyLive\u000a\u000a\u000a$map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]\u000a>>\u000a\u000a/%\u000a\u000a$map = [[$space, $space, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		[$space, $fighter, $space, $space, $space],\u000a		[$space, $space, $space, $space, $space],\u000a		]\u000a\u000a%/
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANxJREFUeNrs28ERgjAUhOEkYwO2YB16824lVmMl3j1aBy3QAeiVOCODgBH89hog88++5SVhiG3bhjGqm1vnAdt0jCWv71MKfybAa9dm7gmq5tzNYDi9Hd+lS+QwYMDlMpz3zW/fz2HAMjxM+dp26gyOXTsracCAAQO2Pfxc97kniGPPtIbuh/uAn/vhg5IGDPh3Xlr5GVYdrhwGDHhBGS6dWSUNWIb1YSUNWB/mMGDA+vA6Hd4racD6MIcBy3DBPpyPcxgw4EGa/fvwS1+e+B8GDgMGDBgw4AXrIcAAbJNAE+vLDgEAAAAASUVORK5CYII=
 p319
 sg23
-VStarfighter Init
-p320
-sg25
-g26
-((I2014
-I11
-I25
-I14
-I15
-I9
-I1
-I329
-I0
-tp321
-(dp322
-tp323
-Rp324
-sg31
-(lp325
-sg33
-g26
-((I2014
-I11
-I19
-I13
-I22
-I30
-I2
-I323
-I0
-tp326
-(dp327
-tp328
-Rp329
-sbsa(dp330
-g14
-I00
-sg15
-(lp331
-F476.5
-aF541.25
-asg17
-(itiddlywiki
-Tiddler
-p332
-(dp333
-g21
-Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANxJREFUeNrs28ERgjAUhOEkYwO2YB16824lVmMl3j1aBy3QAeiVOCODgBH89hog88++5SVhiG3bhjGqm1vnAdt0jCWv71MKfybAa9dm7gmq5tzNYDi9Hd+lS+QwYMDlMpz3zW/fz2HAMjxM+dp26gyOXTsracCAAQO2Pfxc97kniGPPtIbuh/uAn/vhg5IGDPh3Xlr5GVYdrhwGDHhBGS6dWSUNWIb1YSUNWB/mMGDA+vA6Hd4racD6MIcBy3DBPpyPcxgw4EGa/fvwS1+e+B8GDgMGDBgw4AXrIcAAbJNAE+vLDgEAAAAASUVORK5CYII=
-p334
-sg23
 Vfighter
-p335
+p320
 sg25
 g26
 ((I2014
@@ -1068,34 +1018,34 @@ I54
 I2
 I323
 I0
-tp336
-(dp337
-tp338
-Rp339
+tp321
+(dp322
+tp323
+Rp324
 sg31
-(lp340
+(lp325
 S'Twine.image'
-p341
+p326
 asg33
-g339
-sbsa(dp342
+g324
+sbsa(dp327
 g14
 I00
 sg15
-(lp343
-F644.5
-aF531.5
+(lp328
+F877.833333333333
+aF598.1666666666665
 asg17
 (itiddlywiki
 Tiddler
-p344
-(dp345
+p329
+(dp330
 g21
 Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAF1JREFUeNrs0sEJwCAQBEAT/KYWr4SUnhLsJQ349SshIjL7u88xsHuUiLRezrRksLCwsLCwsLCwsLCwsLCwsGYk//f6fWp/XncoEWvryQ9tXIlYWFhYWFhYn9MEGADyvgR0ZwnUNQAAAABJRU5ErkJggg==
-p346
+p331
 sg23
 Vstarfield
-p347
+p332
 sg25
 g26
 ((I2014
@@ -1107,33 +1057,33 @@ I1
 I2
 I323
 I0
-tp348
-(dp349
-tp350
-Rp351
+tp333
+(dp334
+tp335
+Rp336
 sg31
-(lp352
-g341
+(lp337
+g326
 asg33
-g351
-sbsa(dp353
+g336
+sbsa(dp338
 g14
 I00
 sg15
-(lp354
+(lp339
 F644.5
 aF862.5
 asg17
 (itiddlywiki
 Tiddler
-p355
-(dp356
+p340
+(dp341
 g21
 V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.x lt 4>>\u000a<<set $fighter.x = $fighter.x + 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/
-p357
+p342
 sg23
 VStarfighter Right
-p358
+p343
 sg25
 g26
 ((I2014
@@ -1145,14 +1095,14 @@ I49
 I3
 I324
 I0
-tp359
-(dp360
-tp361
-Rp362
+tp344
+(dp345
+tp346
+Rp347
 sg31
-(lp363
+(lp348
 Vearth
-p364
+p349
 asg33
 g26
 ((I2014
@@ -1164,28 +1114,28 @@ I26
 I2
 I323
 I0
-tp365
-(dp366
-tp367
-Rp368
-sbsa(dp369
+tp350
+(dp351
+tp352
+Rp353
+sbsa(dp354
 g14
 I00
 sg15
-(lp370
+(lp355
 F484.5
 aF715.25
 asg17
 (itiddlywiki
 Tiddler
-p371
-(dp372
+p356
+(dp357
 g21
 V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.y gt 0>>\u000a<<set $fighter.y = $fighter.y - 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/
-p373
+p358
 sg23
 VStarfighter Up
-p374
+p359
 sg25
 g26
 ((I2014
@@ -1197,14 +1147,14 @@ I36
 I3
 I324
 I0
-tp375
-(dp376
-tp377
-Rp378
+tp360
+(dp361
+tp362
+Rp363
 sg31
-(lp379
+(lp364
 Vearth
-p380
+p365
 asg33
 g26
 ((I2014
@@ -1216,28 +1166,28 @@ I26
 I2
 I323
 I0
-tp381
-(dp382
-tp383
-Rp384
-sbsa(dp385
+tp366
+(dp367
+tp368
+Rp369
+sbsa(dp370
 g14
 I00
 sg15
-(lp386
+(lp371
 F492.0
 aF1021.25
 asg17
 (itiddlywiki
 Tiddler
-p387
-(dp388
+p372
+(dp373
 g21
 V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.y lt 3>>\u000a<<set $fighter.y = $fighter.y  + 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>><<nobr>>\u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/\u000a<<endnobr>>
-p389
+p374
 sg23
 VStarfighter Down
-p390
+p375
 sg25
 g26
 ((I2014
@@ -1249,14 +1199,14 @@ I3
 I3
 I324
 I0
-tp391
-(dp392
-tp393
-Rp394
+tp376
+(dp377
+tp378
+Rp379
 sg31
-(lp395
+(lp380
 Vearth
-p396
+p381
 asg33
 g26
 ((I2014
@@ -1268,28 +1218,28 @@ I26
 I2
 I323
 I0
-tp397
-(dp398
-tp399
-Rp400
-sbsa(dp401
+tp382
+(dp383
+tp384
+Rp385
+sbsa(dp386
 g14
 I00
 sg15
-(lp402
+(lp387
 F318.25
 aF859.75
 asg17
 (itiddlywiki
 Tiddler
-p403
-(dp404
+p388
+(dp389
 g21
 V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.x gt 0>>\u000a<<set $fighter.x = $fighter.x - 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/
-p405
+p390
 sg23
 VStarfighter Left
-p406
+p391
 sg25
 g26
 ((I2014
@@ -1301,14 +1251,14 @@ I21
 I3
 I324
 I0
-tp407
-(dp408
-tp409
-Rp410
+tp392
+(dp393
+tp394
+Rp395
 sg31
-(lp411
+(lp396
 Vearth
-p412
+p397
 asg33
 g26
 ((I2014
@@ -1317,6 +1267,56 @@ I19
 I14
 I47
 I26
+I2
+I323
+I0
+tp398
+(dp399
+tp400
+Rp401
+sbsa(dp402
+g14
+I00
+sg15
+(lp403
+F268.75
+aF418.75
+asg17
+(itiddlywiki
+Tiddler
+p404
+(dp405
+g21
+V<<print $slot1.display>>\u000a<<print $map>>
+p406
+sg23
+VVariables Missing
+p407
+sg25
+g26
+((I2014
+I11
+I19
+I15
+I33
+I6
+I2
+I323
+I0
+tp408
+(dp409
+tp410
+Rp411
+sg31
+(lp412
+sg33
+g26
+((I2014
+I11
+I19
+I15
+I14
+I2
 I2
 I323
 I0
@@ -1329,69 +1329,19 @@ g14
 I00
 sg15
 (lp418
-F268.75
-aF418.75
+F1884.1666666666665
+aF565.4166666666666
 asg17
 (itiddlywiki
 Tiddler
 p419
 (dp420
 g21
-V<<print $slot1.display>>\u000a<<print $map>>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000aPlayer Crop: <<print $playerCrops.crop>>\u000aQuality: <<print $playerCrops.quality>>\u000aOwner Crop: <<print $ownerCrops.crop>>\u000a\u000a[[Harvest]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
 p421
 sg23
-VVariables Missing
-p422
-sg25
-g26
-((I2014
-I11
-I19
-I15
-I33
-I6
-I2
-I323
-I0
-tp423
-(dp424
-tp425
-Rp426
-sg31
-(lp427
-sg33
-g26
-((I2014
-I11
-I19
-I15
-I14
-I2
-I2
-I323
-I0
-tp428
-(dp429
-tp430
-Rp431
-sbsa(dp432
-g14
-I00
-sg15
-(lp433
-F1562.5
-aF538.75
-asg17
-(itiddlywiki
-Tiddler
-p434
-(dp435
-g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000aPlayer Crop: <<print $playerCrops.crop>>\u000aQuality: <<print $playerCrops.quality>>\u000aOwner Crop: <<print $ownerCrops.crop>>\u000a\u000a[[Harvest]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
-p436
-sg23
 VFarm Debug
-p437
+p422
 sg25
 g26
 ((I2014
@@ -1403,14 +1353,14 @@ I47
 I0
 I328
 I0
-tp438
-(dp439
-tp440
-Rp441
+tp423
+(dp424
+tp425
+Rp426
 sg31
-(lp442
+(lp427
 Vmoon
-p443
+p428
 asg33
 g26
 ((I2014
@@ -1422,28 +1372,28 @@ I27
 I3
 I324
 I0
-tp444
-(dp445
-tp446
-Rp447
-sbsa(dp448
+tp429
+(dp430
+tp431
+Rp432
+sbsa(dp433
 g14
 I00
 sg15
-(lp449
-F1255.0
-aF136.25
+(lp434
+F1666.666666666667
+aF107.91666666666666
 asg17
 (itiddlywiki
 Tiddler
-p450
-(dp451
+p435
+(dp436
 g21
 V<<set //initialize\u000a$season = 1;\u000a\u000a$playerCrops = {\u000a	acreage: 10, \u000a	crop: 'Cotton',\u000a	quality: 10,\u000a	maxAcres: 10\u000a} \u000a\u000a$ownerCrops = {\u000a	acreage: 90,\u000a	crop: 'Tobacco',\u000a	quality: 10,\u000a	maxAcres: 90\u000a}\u000a\u000a$player1 = {\u000a	cash: 300,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 50) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$cannabis = {\u000a	name:"Cannabis",\u000a	pricePerUnit: 10,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$wheat = {	\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$coffee = {	\u000a	name: "Coffee",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a$beans = {	\u000a	name: "Soybeans",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: Math.floor(Math.random() * 30) + 100\u000a};\u000a\u000a\u000a$allCrops = [$cotton, $cannabis, $wheat, $coffee, $beans];\u000a\u000a>>
-p452
+p437
 sg23
 VFarm Init
-p453
+p438
 sg25
 g26
 ((I2014
@@ -1455,14 +1405,14 @@ I25
 I2
 I330
 I0
-tp454
-(dp455
-tp456
-Rp457
+tp439
+(dp440
+tp441
+Rp442
 sg31
-(lp458
+(lp443
 Vmoon
-p459
+p444
 asg33
 g26
 ((I2014
@@ -1474,28 +1424,28 @@ I12
 I3
 I324
 I0
-tp460
-(dp461
-tp462
-Rp463
-sbsa(dp464
+tp445
+(dp446
+tp447
+Rp448
+sbsa(dp449
 g14
 I00
 sg15
-(lp465
-F1352.75
-aF537.5
+(lp450
+F1886.083333333334
+aF702.5000000000002
 asg17
 (itiddlywiki
 Tiddler
-p466
-(dp467
+p451
+(dp452
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000aCrop: <<print $playerCrops.crop>>\u000aStarting Acreage: <<print $playerCrops.acreage>>\u000aQuality: <<print $playerCrops.quality>>\u000aDieoff: <<set $dieoff = Math.floor(Math.random() * (80 - $playerCrops.quality)) + 1>><<set $dieoff = $dieoff/100>><<print $dieoff>>\u000a<<if $playerCrops.crop eq 'Cotton'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Cotton: <<print $playerCrops.acreage>><<endif>><<if $playerCrops.crop eq 'Wheat'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Wheat: <<print $playerCrops.acreage>>\u000a<<endif>><<if $playerCrops.crop eq 'Cannabis'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Cannabis: <<print $playerCrops.acreage>>\u000a<<endif>><<if $playerCrops.crop eq 'Soybeans'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Soybeans: <<print $playerCrops.acreage>>\u000a<<endif>><<if $playerCrops.crop eq 'Coffee'>><<set $playerCrops.acreage = Math.floor($playerCrops.acreage - ($playerCrops.acreage * $dieoff))>>Coffee: <<print $playerCrops.acreage>>\u000a<<endif>>\u000a\u000a[[Owner Sell]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
-p468
+p453
 sg23
 VHarvest
-p469
+p454
 sg25
 g26
 ((I2014
@@ -1507,14 +1457,14 @@ I27
 I2
 I330
 I0
-tp470
-(dp471
-tp472
-Rp473
+tp455
+(dp456
+tp457
+Rp458
 sg31
-(lp474
+(lp459
 Vmoon
-p475
+p460
 asg33
 g26
 ((I2014
@@ -1526,28 +1476,28 @@ I46
 I3
 I324
 I0
-tp476
-(dp477
-tp478
-Rp479
-sbsa(dp480
+tp461
+(dp462
+tp463
+Rp464
+sbsa(dp465
 g14
 I00
 sg15
-(lp481
-F1471.25
-aF151.25
+(lp466
+F1839.5833333333337
+aF259.58333333333337
 asg17
 (itiddlywiki
 Tiddler
-p482
-(dp483
+p467
+(dp468
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<nobr>><<display Farm Init>>\u000a<<display Price Update>>\u000a<<display Seed Pricing>>\u000aSeason: <<print $season>><<endnobr>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aCannabis: $<<print $cannabis.pricePerUnit>>\u000aWheat: $<<print $wheat.pricePerUnit>>\u000aSoybeans: $<<print $beans.pricePerUnit>>\u000aCoffee: $<<print $coffee.pricePerUnit>><<set $cropRatio = [$cotton, $cannabis, $wheat, $coffee, $beans]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000a\u000aThe Agricultural Commission has instructed you to grow <<$ownerCrops.acreage>> of <<print $cropRatio[0].name>> this season due to shortages.\u000a\u000aWhat will you plant for the <<$playerCrops.acreage>> acres you control?\u000aYou have $<<print $player1.cash>>.\u000a\u000a[[Cotton|Plant Cotton]]: $<<print $cotton.pricePerSeed >>\u000a[[Cannabis|Plant Marijuana]]: $<<print $cannabis.pricePerSeed>>\u000a[[Wheat|Plant Wheat]]: $<<print $wheat.pricePerSeed>>\u000a[[Soybeans|Plant Soybeans]]: $<<print $beans.pricePerSeed>>\u000a[[Coffee|Plant Coffee]]: $<<print $coffee.pricePerSeed>>\u000a\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
-p484
+p469
 sg23
 VPlanting Start
-p485
+p470
 sg25
 g26
 ((I2014
@@ -1559,14 +1509,14 @@ I6
 I2
 I330
 I0
-tp486
-(dp487
-tp488
-Rp489
+tp471
+(dp472
+tp473
+Rp474
 sg31
-(lp490
+(lp475
 Vmoon
-p491
+p476
 asg33
 g26
 ((I2014
@@ -1578,28 +1528,28 @@ I27
 I4
 I325
 I0
-tp492
-(dp493
-tp494
-Rp495
-sbsa(dp496
+tp477
+(dp478
+tp479
+Rp480
+sbsa(dp481
 g14
 I00
 sg15
-(lp497
-F1618.75
-aF51.25
+(lp482
+F1572.0833333333344
+aF429.5833333333334
 asg17
 (itiddlywiki
 Tiddler
-p498
-(dp499
+p483
+(dp484
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $cotton.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Cotton'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $cotton.name>>. It costs $<<set $cost = Math.floor($player1.cash/$cotton.pricePerSeed) * $cotton.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $cotton.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $cotton.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$cotton.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$cotton.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = Math.floor($player1.cash/$cotton.pricePerSeed) * $cotton.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Cotton'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
-p500
+p485
 sg23
 VPlant Cotton
-p501
+p486
 sg25
 g26
 ((I2014
@@ -1611,14 +1561,14 @@ I4
 I2
 I330
 I0
-tp502
-(dp503
-tp504
-Rp505
+tp487
+(dp488
+tp489
+Rp490
 sg31
-(lp506
+(lp491
 Vmoon
-p507
+p492
 asg33
 g26
 ((I2014
@@ -1630,28 +1580,28 @@ I0
 I4
 I325
 I0
-tp508
-(dp509
-tp510
-Rp511
-sbsa(dp512
+tp493
+(dp494
+tp495
+Rp496
+sbsa(dp497
 g14
 I00
 sg15
-(lp513
-F1623.25
-aF241.25
+(lp498
+F1834.9166666666663
+aF436.2500000000001
 asg17
 (itiddlywiki
 Tiddler
-p514
-(dp515
+p499
+(dp500
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $cannabis.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Cannabis'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $cannabis.name>>. It costs $<<set $cost = Math.floor($player1.cash/$cannabis.pricePerSeed) * $cannabis.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $cannabis.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $cannabis.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$cannabis.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$cannabis.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = Math.floor($player1.cash/$cannabis.pricePerSeed) * $cannabis.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Cannabis'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
-p516
+p501
 sg23
 VPlant Marijuana
-p517
+p502
 sg25
 g26
 ((I2014
@@ -1663,14 +1613,14 @@ I48
 I2
 I330
 I0
-tp518
-(dp519
-tp520
-Rp521
+tp503
+(dp504
+tp505
+Rp506
 sg31
-(lp522
+(lp507
 Vmoon
-p523
+p508
 asg33
 g26
 ((I2014
@@ -1682,28 +1632,28 @@ I0
 I4
 I325
 I0
-tp524
-(dp525
-tp526
-Rp527
-sbsa(dp528
+tp509
+(dp510
+tp511
+Rp512
+sbsa(dp513
 g14
 I00
 sg15
-(lp529
-F1470.75
-aF343.75
+(lp514
+F1965.7500000000005
+aF438.7500000000001
 asg17
 (itiddlywiki
 Tiddler
-p530
-(dp531
+p515
+(dp516
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $wheat.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Wheat'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $wheat.name>>. It costs $<<set $cost = Math.floor($player1.cash/$wheat.pricePerSeed) * $wheat.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $wheat.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $wheat.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$wheat.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$wheat.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = Math.floor($player1.cash/$wheat.pricePerSeed) * $wheat.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Wheat'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
-p532
+p517
 sg23
 VPlant Wheat
-p533
+p518
 sg25
 g26
 ((I2014
@@ -1715,14 +1665,14 @@ I43
 I2
 I330
 I0
-tp534
-(dp535
-tp536
-Rp537
+tp519
+(dp520
+tp521
+Rp522
 sg31
-(lp538
+(lp523
 Vmoon
-p539
+p524
 asg33
 g26
 ((I2014
@@ -1734,28 +1684,28 @@ I0
 I4
 I325
 I0
-tp540
-(dp541
-tp542
-Rp543
-sbsa(dp544
+tp525
+(dp526
+tp527
+Rp528
+sbsa(dp529
 g14
 I00
 sg15
-(lp545
-F1295.0
-aF378.75
+(lp530
+F1749.999999999999
+aF1100.4166666666665
 asg17
 (itiddlywiki
 Tiddler
-p546
-(dp547
+p531
+(dp532
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<nobr>>\u000a<<display Price Update>>\u000a<<display Seed Pricing>>\u000aSeason: <<print $season>><<endnobr>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aCannabis: $<<print $cannabis.pricePerUnit>>\u000aWheat: $<<print $wheat.pricePerUnit>>\u000aSoybeans: $<<print $beans.pricePerUnit>>\u000aCoffee: $<<print $coffee.pricePerUnit>><<set $cropRatio = [$cotton, $cannabis, $wheat, $coffee, $beans]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000a\u000aThe Agricultural Commission has instructed you to grow <<$ownerCrops.acreage>> of <<print $cropRatio[0].name>> this season due to shortages.\u000a\u000aWhat will you plant for the <<$playerCrops.acreage>> acres you control?\u000aYou have $<<print $player1.cash>>.\u000a\u000a[[Cotton|Plant Cotton]]: $<<print $cotton.pricePerSeed >>\u000a[[Cannabis|Plant Marijuana]]: $<<print $cannabis.pricePerSeed>>\u000a[[Wheat|Plant Wheat]]: $<<print $wheat.pricePerSeed>>\u000a[[Soybeans|Plant Soybeans]]: $<<print $beans.pricePerSeed>>\u000a[[Coffee|Plant Coffee]]: $<<print $coffee.pricePerSeed>>\u000a\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
-p548
+p533
 sg23
 VPlanting Again
-p549
+p534
 sg25
 g26
 ((I2014
@@ -1767,14 +1717,14 @@ I24
 I2
 I330
 I0
-tp550
-(dp551
-tp552
-Rp553
+tp535
+(dp536
+tp537
+Rp538
 sg31
-(lp554
+(lp539
 Vmoon
-p555
+p540
 asg33
 g26
 ((I2014
@@ -1786,28 +1736,28 @@ I59
 I4
 I325
 I0
-tp556
-(dp557
-tp558
-Rp559
-sbsa(dp560
+tp541
+(dp542
+tp543
+Rp544
+sbsa(dp545
 g14
 I00
 sg15
-(lp561
-F1117.5
-aF500.0
+(lp546
+F1889.1666666666663
+aF831.6666666666666
 asg17
 (itiddlywiki
 Tiddler
-p562
-(dp563
+p547
+(dp548
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<display Price Update>>\u000aCrop: <<print $ownerCrops.crop>>\u000aStarting Acreage: <<print $ownerCrops.acreage>>\u000aQuality: <<print $ownerCrops.quality>>\u000aDieoff: <<set $dieoff = Math.floor(Math.random() * (80 - $ownerCrops.quality)) + 1>><<set $dieoff = $dieoff/100>><<print $dieoff>>\u000a<<if $ownerCrops.crop eq 'Cotton'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Cotton: <<print $ownerCrops.acreage>><<endif>><<if $ownerCrops.crop eq 'Wheat'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Wheat: <<print $ownerCrops.acreage>>\u000a<<endif>><<if $ownerCrops.crop eq 'Cannabis'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Cannabis: <<print $ownerCrops.acreage>>\u000a<<endif>><<if $ownerCrops.crop eq 'Coffee'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Coffee: <<print $ownerCrops.acreage>>\u000a<<endif>><<if $ownerCrops.crop eq 'Soybeans'>><<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage - ($ownerCrops.acreage * $dieoff))>>Soybeans: <<print $ownerCrops.acreage>>\u000a<<endif>>\u000a\u000a<<if $ownerCrops.crop eq 'Cotton'>>Cotton Price = <<print $cotton.pricePerUnit >><br><<set $profit = $cotton.pricePerUnit  * $ownerCrops.acreage>><<set $cotton.inStore = $cotton.inStore + $ownerCrops.acreage>><<endif>>\u000a<<if $ownerCrops.crop eq 'Wheat'>>Wheat Price = <<print $wheat.pricePerUnit >><<set $profit = $wheat.pricePerUnit  * $ownerCrops.acreage>><<set $wheat.inStore = $wheat.inStore + $ownerCrops.acreage>><<endif>>\u000a<<if $ownerCrops.crop eq 'Cannabis'>>Cannabis Price = <<print $cannabis.pricePerUnit >><<set $profit = $cannabis.pricePerUnit  * $ownerCrops.acreage>><<set $cannabis.inStore = $cannabis.inStore + $ownerCrops.acreage>><<endif>>\u000a<<if $ownerCrops.crop eq 'Coffee'>>Coffee Price = <<print $coffee.pricePerUnit >><<set $profit = $coffee.pricePerUnit  * $ownerCrops.acreage>><<set $coffee.inStore = $coffee.inStore + $ownerCrops.acreage>><<endif>>\u000a<<if $ownerCrops.crop eq 'Soybeans'>>Soybeans Price = <<print $beans.pricePerUnit >><<set $profit = $beans.pricePerUnit  * $ownerCrops.acreage>><<set $beans.inStore = $beans.inStore + $ownerCrops.acreage>><<endif>>\u000aThe Agricultural Commission makes <<print $profit>> this season from your work. /%Some code to display price differential here.%/\u000a[[Sell]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a
-p564
+p549
 sg23
 VOwner Sell
-p565
+p550
 sg25
 g26
 ((I2014
@@ -1819,14 +1769,14 @@ I43
 I2
 I330
 I0
-tp566
-(dp567
-tp568
-Rp569
+tp551
+(dp552
+tp553
+Rp554
 sg31
-(lp570
+(lp555
 Vmoon
-p571
+p556
 asg33
 g26
 ((I2014
@@ -1838,28 +1788,28 @@ I22
 I4
 I325
 I0
-tp572
-(dp573
-tp574
-Rp575
-sbsa(dp576
+tp557
+(dp558
+tp559
+Rp560
+sbsa(dp561
 g14
-I01
+I00
 sg15
-(lp577
-F1416.25
-aF10.0
+(lp562
+F1807.9166666666672
+aF103.33333333333329
 asg17
 (itiddlywiki
 Tiddler
-p578
-(dp579
+p563
+(dp564
 g21
 V<<nobr>>\u000a/%Set Ratio%/\u000a<<set $cotton.ratio = $cotton.inStore/$cotton.need>><<set $cannabis.ratio = $cannabis.inStore/$cannabis.need>><<set $wheat.ratio = $wheat.inStore/$wheat.need>><<set $coffee.ratio = $coffee.inStore/$coffee.need>><<set $beans.ratio = $beans.inStore/$beans.need>>\u000a/%Set Price%/\u000a<<set $cotton.pricePerUnit = Math.floor(100 * Math.pow(($cotton.inStore / $cotton.need - 1),2))>><<set $wheat.pricePerUnit = Math.floor(100 * Math.pow(($wheat.inStore / $wheat.need - 1),2))>><<set $cannabis.pricePerUnit = Math.floor(100 * Math.pow(($cannabis.inStore / $cannabis.need - 1),2))>><<set $coffee.pricePerUnit = Math.floor(100 * Math.pow(($coffee.inStore / $coffee.need - 1),2))>><<set $beans.pricePerUnit = Math.floor(100 * Math.pow(($beans.inStore / $beans.need - 1),2))>>\u000a<<endnobr>>
-p580
+p565
 sg23
 VPrice Update
-p581
+p566
 sg25
 g26
 ((I2014
@@ -1871,14 +1821,14 @@ I40
 I2
 I330
 I0
-tp582
-(dp583
-tp584
-Rp585
+tp567
+(dp568
+tp569
+Rp570
 sg31
-(lp586
+(lp571
 Vmoon
-p587
+p572
 asg33
 g26
 ((I2014
@@ -1890,28 +1840,28 @@ I32
 I5
 I326
 I0
-tp588
-(dp589
-tp590
-Rp591
-sbsa(dp592
+tp573
+(dp574
+tp575
+Rp576
+sbsa(dp577
 g14
 I00
 sg15
-(lp593
-F1873.75
-aF216.25
+(lp578
+F1945.4166666666665
+aF102.91666666666666
 asg17
 (itiddlywiki
 Tiddler
-p594
-(dp595
+p579
+(dp580
 g21
 V<<nobr>>\u000a<<set $cotton.pricePerSeed = Math.floor($cotton.pricePerUnit/3)>>\u000a<<set $cannabis.pricePerSeed = Math.floor($cannabis.pricePerUnit/3)>>\u000a<<set $wheat.pricePerSeed = Math.floor($wheat.pricePerUnit/3)>>\u000a<<set $beans.pricePerSeed = Math.floor($beans.pricePerUnit/3)>>\u000a<<set $coffee.pricePerSeed = Math.floor($coffee.pricePerUnit/3)>>\u000a<<endnobr>>
-p596
+p581
 sg23
 VSeed Pricing
-p597
+p582
 sg25
 g26
 ((I2014
@@ -1923,14 +1873,14 @@ I18
 I2
 I330
 I0
-tp598
-(dp599
-tp600
-Rp601
+tp583
+(dp584
+tp585
+Rp586
 sg31
-(lp602
+(lp587
 Vmoon
-p603
+p588
 asg33
 g26
 ((I2014
@@ -1942,28 +1892,28 @@ I41
 I6
 I327
 I0
-tp604
-(dp605
-tp606
-Rp607
-sbsa(dp608
+tp589
+(dp590
+tp591
+Rp592
+sbsa(dp593
 g14
 I00
 sg15
-(lp609
-F348.5
-aF557.5
+(lp594
+F1011.8333333333331
+aF739.1666666666664
 asg17
 (itiddlywiki
 Tiddler
-p610
-(dp611
+p595
+(dp596
 g21
 Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAEsCAIAAABi1XKVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABPpJREFUeNrs3TFuE0EUx2EH+T5EckvjK3AXn8J3QaKmcJPWV4ETINGgFZFS2Ozszn/mfV+VFsf89Gb0dnP8/Pp6GNm3+5fl56+ntwMwr08+AkCwABp7Gf1ICJiwAAQLQLCA6R19BPmsboAJCxAsAMECirOHBUXd7tfl5/PpYsICECxAsACSucNiE3bHMGEBggUgWAANucNiKsm7Re711vPws+8rOBICCBbgSAgzSH4mrvI9QKv7EMHyfQVHQgDBAsqyhwWYsAAECxAsgHQRaw2eWcnk94IJC0CwAMECCGEPCxiGZwnHNuLfwgRHQkCwABwJoRf7ZYJFH+6tcCQEECyAFexhweRmurMzYQGCBSBYQFnusAATFoBgAYIFkO6hR3M8ewWYsAAECxAsgI7sYbEr96Gs4X1Y/t+CIyGAYAGOhLAH51/WcOkOOBICCBZQljusovyNe0xYAIIFIFjAQKw1ACYsAMECBAsgXfQelnew4Dvg9/7v792EBTgSAggWUJY9LBhY8h3fFs+revjZdxccCQEECyjLkRAa6PV+seSz/xafg2A9J/meyL0VjoQAggXgSAj78178fVgcBRwJAQQLECwAwQIQLECwAELZwwrlXTFgwgIEC0CwABabPJrj/gUwYQGCBSBYAA15vQxgwgIQLECwANJ5lhA6m2lvcet/iwkLcCQEECygLHtY8AHPw5qwAAQLECyAKO6wiHO7X5efz6eLDwQTFiBYAIIFMPwdln0ZMGEBCBaAYAHTs4fVmB0iMGEBCBYgWADNucMCTFgAggUIFkA6f5cQJlHhuVoTFiBYAIIFlGUPCzBhAQgWIFgA6exhAd08uztmwgIcCQEECyjLHhZgwgIQLECwAAQLoJGHFkcrvBgMMGEBCBYgWACxLI4CJiwAwQIECyDdtC/wszsGJiwAwQIQLGAa9rAAExaAYAGCBZDOH1KFxm736/Lz+XTxgZiwAMECECyA9exhweRmeq7WhAUIFoBgAWW5w+IdO0SYsAAECxAsgEDusIJ4Dz2YsADBAhAsgA9tcoc1012MeyUwYQEIFiBYAN3ZwwJMWACCBQgWQDp/lxBoZuu9RRMW4EgIIFhAWfaw4C/PjZqwAAQLECyAWO6wABMWgGABggUgWACCBQgWQCivl4G9eQZIsBLd7tfl5/Pp4gMBR0JAsAAcCWEHyfdE7q36Byv5vqbXd9e9FTgSAoIFUORICFHcE03p3fuw7LPV5PfOKN8BR0JgGIIFCBZAa97pDpiwAAQLECyAdBZHGYb3i2HCAgQLQLCAsuxhASYsAMECyrLWAI/yHh7Bwv9bcCQEBAvAkRDSOf92Zw8L6ObZ+1BHQmAYggUIFkBr7rAAExaAYAGCBZBu+MVRz7WBCQtAsAAEC5iePazBuLPDhAUgWADteB8W8/M37gWLPtxb4UgIIFgA7VhrAIbhDosI9sv8XhwJgakIFiBYAK25dAdMWACCBQgWQLpVe1h2ZwATFoBgAWWPhFCW+5DxglX595T8ffW+OhwJAQQLYIcjIZTl3qoLzxLSjHtoHAkBBAsQLICNDHOHZbcIMGEBggUgWEBZ9rAoze6YCQtAsADBAhiCOyzAhAUgWIBgAQgWgGABggUgWACCBQgWgGABCBYwt5efv3/4FAATFoBgAYIFkOz46/DdpwCYsAAECxAsAMECECxAsAAEC+D//RFgAN4GAR4fmrDwAAAAAElFTkSuQmCC
-p612
+p597
 sg23
 Vstars-bg
-p613
+p598
 sg25
 g26
 ((I2014
@@ -1975,34 +1925,34 @@ I57
 I0
 I328
 I0
-tp614
-(dp615
-tp616
-Rp617
+tp599
+(dp600
+tp601
+Rp602
 sg31
-(lp618
+(lp603
 S'Twine.image'
-p619
+p604
 asg33
-g617
-sbsa(dp620
+g602
+sbsa(dp605
 g14
 I00
 sg15
-(lp621
-F264.5
-aF705.25
+(lp606
+F17.83333333333338
+aF816.9166666666665
 asg17
 (itiddlywiki
 Tiddler
-p622
-(dp623
+p607
+(dp608
 g21
 S'jquery:off\nhash:off\nbookmark:on\nmodernizr:off\nundo:off\nobfuscate:off\nexitprompt:off\nblankcss:off\n'
-p624
+p609
 sg23
 VStorySettings
-p625
+p610
 sg25
 g26
 ((I2014
@@ -2014,12 +1964,12 @@ I54
 I0
 I328
 I0
-tp626
-(dp627
-tp628
-Rp629
+tp611
+(dp612
+tp613
+Rp614
 sg31
-(lp630
+(lp615
 sg33
 g26
 ((I2014
@@ -2031,28 +1981,28 @@ I49
 I0
 I328
 I0
-tp631
-(dp632
-tp633
-Rp634
-sbsa(dp635
+tp616
+(dp617
+tp618
+Rp619
+sbsa(dp620
 g14
 I00
 sg15
-(lp636
-F81.25
-aF798.75
+(lp621
+F14.583333333333332
+aF947.0833333333338
 asg17
 (itiddlywiki
 Tiddler
-p637
-(dp638
+p622
+(dp623
 g21
 V<div id="bg-test" style="background-image: [img[stars-bg]];height:100px;width:400px;">\u000aTest Text Here.\u000a</div>\u000a[img[lunarsurface]]
-p639
+p624
 sg23
 VBackground Test
-p640
+p625
 sg25
 g26
 ((I2014
@@ -2064,14 +2014,14 @@ I7
 I0
 I328
 I0
-tp641
-(dp642
-tp643
-Rp644
+tp626
+(dp627
+tp628
+Rp629
 sg31
-(lp645
+(lp630
 Vearth
-p646
+p631
 asg33
 g26
 ((I2014
@@ -2083,28 +2033,28 @@ I24
 I0
 I328
 I0
-tp647
-(dp648
-tp649
-Rp650
-sbsa(dp651
+tp632
+(dp633
+tp634
+Rp635
+sbsa(dp636
 g14
 I00
 sg15
-(lp652
+(lp637
 F544.5
 aF5.25
 asg17
 (itiddlywiki
 Tiddler
-p653
-(dp654
+p638
+(dp639
 g21
 Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAAVCAIAAADn1y9EAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANhJREFUeNrs2LEJwlAQANB8cQEnMZDWxgkE57B1CncRrC1sbDOCK+gEATuxEZSfM8b/XpUqP7l/HHeX5nVdAYzBVAjgv+3bxeN53ZxH/S8T1wkoWAAKFlCqZOke59TuQt+/bLaCLB+KygcdFqBgAShYQLHStTsOcvCreTtizs+Z7fv6nlt16OU9s2pVbLJ+eo/RO6PS8uE5/kPFVocFGAkBFCygWOnSbUIPyJmxc+b8iNm+r70Dv58/vB//b8ZZhwUYCQEULKBY4TssAB0WoGABKFgAme4CDACaBSl4ADLmYQAAAABJRU5ErkJggg==
-p655
+p640
 sg23
 Vlunarsurface
-p656
+p641
 sg25
 g26
 ((I2014
@@ -2116,33 +2066,33 @@ I12
 I0
 I328
 I0
-tp657
-(dp658
-tp659
-Rp660
+tp642
+(dp643
+tp644
+Rp645
 sg31
-(lp661
-g619
+(lp646
+g604
 asg33
-g660
-sbsa(dp662
+g645
+sbsa(dp647
 g14
 I00
 sg15
-(lp663
-F671.0
-aF685.0
+(lp648
+F1009.3333333333331
+aF601.6666666666669
 asg17
 (itiddlywiki
 Tiddler
-p664
-(dp665
+p649
+(dp650
 g21
 Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEVJREFUeNrsz0ERAAAIAyDXP/TM4NeDBqTtfBARERERERERERERERERERERERERERERERERERERERERERERERERkYsVYAASxZWd18D18QAAAABJRU5ErkJggg==
-p666
+p651
 sg23
 Vblank
-p667
+p652
 sg25
 g26
 ((I2014
@@ -2154,33 +2104,33 @@ I28
 I0
 I328
 I0
-tp668
-(dp669
-tp670
-Rp671
+tp653
+(dp654
+tp655
+Rp656
 sg31
-(lp672
-g619
+(lp657
+g604
 asg33
-g671
-sbsa(dp673
+g656
+sbsa(dp658
 g14
 I00
 sg15
-(lp674
-F180.5
-aF948.75
+(lp659
+F872.1666666666662
+aF735.416666666667
 asg17
 (itiddlywiki
 Tiddler
-p675
-(dp676
+p660
+(dp661
 g21
 Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGdJREFUeNrs0kENgEAMBMAWByjhEhSgACN8EcYbLVgABZdggOeR3GNWQDvpNqdSor8M0WWwsLCwsLCwsLCwsLCwsLCwsLCwmifvev66YJl3JfqteOJoMnSMVYlYedXNtbCwsD7zCjAAs+ILa7YmKlMAAAAASUVORK5CYII=
-p677
+p662
 sg23
 Vsurface1
-p678
+p663
 sg25
 g26
 ((I2014
@@ -2192,34 +2142,34 @@ I5
 I1
 I329
 I0
-tp679
-(dp680
-tp681
-Rp682
+tp664
+(dp665
+tp666
+Rp667
 sg31
-(lp683
+(lp668
 S'Twine.image'
-p684
+p669
 asg33
-g682
-sbsa(dp685
+g667
+sbsa(dp670
 g14
 I00
 sg15
-(lp686
-F40.5
-aF948.75
+(lp671
+F1013.8333333333333
+aF877.0833333333334
 asg17
 (itiddlywiki
 Tiddler
-p687
-(dp688
+p672
+(dp673
 g21
 Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFJJREFUeNrs0MEJwCAQAMEz2E+u9bzTU6wgYAN+hRNmKxi23ZlRrytKhoWFhYWFhYWFhYWFhYWFhYWFhYWFdQyrff/rFtaO+ojHLSwsrGVTgAEAOWcFOoqQ/bUAAAAASUVORK5CYII=
-p689
+p674
 sg23
 Vsurface2
-p690
+p675
 sg25
 g26
 ((I2014
@@ -2231,33 +2181,33 @@ I14
 I1
 I329
 I0
-tp691
-(dp692
-tp693
-Rp694
+tp676
+(dp677
+tp678
+Rp679
 sg31
-(lp695
-g684
+(lp680
+g669
 asg33
-g694
-sbsa(dp696
+g679
+sbsa(dp681
 g14
 I00
 sg15
-(lp697
-F348.5
-aF1088.75
+(lp682
+F1160.166666666667
+aF862.0833333333334
 asg17
 (itiddlywiki
 Tiddler
-p698
-(dp699
+p683
+(dp684
 g21
 Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFBJREFUeNrs0MENgDAMALGkYh+yet/sBBMgsQSt8vBNYF2eVdGvES3DwsLCwsLCwsLCwsLCwsLCwsLC+r2838strBUdT0y3sLCwsLC29gkwAFGBBTo7tI4uAAAAAElFTkSuQmCC
-p700
+p685
 sg23
 Vsurface3
-p701
+p686
 sg25
 g26
 ((I2014
@@ -2269,33 +2219,33 @@ I23
 I1
 I329
 I0
-tp702
-(dp703
-tp704
-Rp705
+tp687
+(dp688
+tp689
+Rp690
 sg31
-(lp706
-g684
+(lp691
+g669
 asg33
-g705
-sbsa(dp707
+g690
+sbsa(dp692
 g14
 I00
 sg15
-(lp708
-F824.5
-aF592.0
+(lp693
+F1151.1666666666665
+aF603.6666666666665
 asg17
 (itiddlywiki
 Tiddler
-p709
-(dp710
+p694
+(dp695
 g21
 Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPFJREFUeNpi1DcwYKAL8LpwAc7eRshSJoZBCUadRQpgoUpawQWQ09A2UhLxaCSOiLSFKw0Rk1bI1jsaiSOu3NpGYgWKrJ6Ycm40Eod/2iKpbURhOsNq/mgk0qiAuGB9iypWGhxVo2F7CxlUTf0GZ7dlc40WEIMtbVErSSEbWHWBLmmLKulpNG1R0VlUT0wEkxoEEU5byGmFWmUSSeaMpi0yyi06pyeCBSQL7dIHmvrRcotmgPHd3934VXQzu2IVLyWkkRK9hJ1FqpWkOn00bVFebr1n2Eg708k2nPHu35zRSBx11qizRp016qzh6iyAAAMAzkJQic4ql+UAAAAASUVORK5CYII=
-p711
+p696
 sg23
 Vcolony
-p712
+p697
 sg25
 g26
 ((I2014
@@ -2307,33 +2257,33 @@ I44
 I1
 I329
 I0
-tp713
-(dp714
-tp715
-Rp716
+tp698
+(dp699
+tp700
+Rp701
 sg31
-(lp717
-g684
+(lp702
+g669
 asg33
-g716
-sbsa(dp718
+g701
+sbsa(dp703
 g14
 I00
 sg15
-(lp719
-F1725.75
-aF366.0
+(lp704
+F2097.416666666666
+aF439.33333333333337
 asg17
 (itiddlywiki
 Tiddler
-p720
-(dp721
+p705
+(dp706
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $coffee.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Coffee'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $coffee.name>>. It costs $<<set $cost = Math.floor($player1.cash/$coffee.pricePerSeed) * $coffee.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $coffee.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $coffee.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$coffee.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$coffee.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = Math.floor($player1.cash/$coffee.pricePerSeed) * $coffee.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Coffee'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
-p722
+p707
 sg23
 VPlant Coffee
-p723
+p708
 sg25
 g26
 ((I2014
@@ -2345,14 +2295,14 @@ I19
 I2
 I330
 I0
-tp724
-(dp725
-tp726
-Rp727
+tp709
+(dp710
+tp711
+Rp712
 sg31
-(lp728
+(lp713
 Vmoon
-p729
+p714
 asg33
 g26
 ((I2014
@@ -2364,28 +2314,28 @@ I17
 I2
 I330
 I0
-tp730
-(dp731
-tp732
-Rp733
-sbsa(dp734
+tp715
+(dp716
+tp717
+Rp718
+sbsa(dp719
 g14
 I00
 sg15
-(lp735
-F1165.75
-aF2.0
+(lp720
+F1705.75
+aF432.00000000000006
 asg17
 (itiddlywiki
 Tiddler
-p736
-(dp737
+p721
+(dp722
 g21
 V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $beans.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Soybeans'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $beans.name>>. It costs $<<set $cost = Math.floor($player1.cash/$beans.pricePerSeed) * $beans.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $beans.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $beans.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$beans.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$beans.pricePerSeed)>> \u000a<<print ($player1.cash/$beans.pricePerSeed)>>\u000aIt costs $<<set $cost = Math.floor($player1.cash/$beans.pricePerSeed) * $beans.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Soybeans'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>
-p738
+p723
 sg23
 VPlant Soybeans
-p739
+p724
 sg25
 g26
 ((I2014
@@ -2397,14 +2347,14 @@ I54
 I2
 I330
 I0
-tp740
-(dp741
-tp742
-Rp743
+tp725
+(dp726
+tp727
+Rp728
 sg31
-(lp744
+(lp729
 Vmoon
-p745
+p730
 asg33
 g26
 ((I2014
@@ -2416,14 +2366,14 @@ I17
 I2
 I330
 I0
-tp746
-(dp747
-tp748
-Rp749
+tp731
+(dp732
+tp733
+Rp734
 sbsasS'scale'
-p750
-F0.8
+p735
+F0.6000000000000001
 sS'snapping'
-p751
+p736
 I00
 ss.
