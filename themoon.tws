@@ -1482,7 +1482,7 @@ tp463
 Rp464
 sbsa(dp465
 g14
-I01
+I00
 sg15
 (lp466
 F1839.5833333333337
@@ -2576,10 +2576,216 @@ tp794
 (dp795
 tp796
 Rp797
+sbsa(dp798
+g14
+I00
+sg15
+(lp799
+F2396.6666666666665
+aF719.9999999999999
+asg17
+(itiddlywiki
+Tiddler
+p800
+(dp801
+g21
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<display Farm Init>>\u000a<<display Price Update>>\u000a<<set $player1.cash = 10000>>\u000a<<set $player1.cottonNeed =1>>\u000a<<set $player1.cannabisNeed =1>>\u000a<<set $player1.coffeeNeed =1>>\u000a<<set $player1.beansNeed =2>>\u000a<<set $player1.wheatNeed =3>>\u000a\u000a<<if $player1.cash gte 500>>Buy Land from Agriculture Commission: $500 per Acre \u000a[[Buy Land]]<<endif>>\u000a<<if $player1.cash gte 400>>Buy Crop Improvements: $400 \u000a[[Improve Crops]]<<endif>>\u000a<<if $player1.cash gte 5000>>Buy Ticket to Earth: $5,000\u000a[[Ticket to Earth]]<<endif>>\u000a\u000aTo Work At Maximum Efficiency Next Season, You Will Also Consume Some Crops:\u000aBuy Cotton: <<print $cotton.pricePerUnit>>\u000aNeed: <<print $player1.cottonNeed>>\u000aBuy Coffeee: <<print $coffee.pricePerUnit>>\u000aNeed: <<print $player1.coffeeNeed>>\u000aBuy Cannabis: <<print $cannabis.pricePerUnit>>\u000aNeed: <<print $player1.cannabisNeed>>\u000aBuy Soybeans: <<print $beans.pricePerUnit>>\u000aNeed: <<print $player1.beansNeed>>\u000aBuy Wheat: <<print $wheat.pricePerUnit>>\u000aNeed: <<print $player1.wheatNeed>>\u000a<<set $seasonTotal = ($player1.wheatNeed * $wheat.pricePerUnit) + ($player1.beansNeed * $beans.pricePerUnit) + ($player1.cannabisNeed * $cannabis.pricePerUnit) + ($player1.coffeeNeed *$coffee.pricePerUnit) + ($player1.cottonNeed * $cotton.pricePerUnit)>>\u000a<<print $seasonTotal>>\u000a\u000a\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>\u000a
+p802
+sg23
+VStore
+p803
+sg25
+g26
+((I2014
+I11
+I30
+I12
+I30
+I35
+I6
+I334
+I0
+tp804
+(dp805
+tp806
+Rp807
+sg31
+(lp808
+Vmoon
+p809
+asg33
+g26
+((I2014
+I11
+I30
+I11
+I20
+I46
+I6
+I334
+I0
+tp810
+(dp811
+tp812
+Rp813
+sbsa(dp814
+g14
+I00
+sg15
+(lp815
+F2571.9999999999995
+aF565.0
+asg17
+(itiddlywiki
+Tiddler
+p816
+(dp817
+g21
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000aYou purchase parts to upgrade the irrigation system in your crops and prevent crop dieoff.\u000aOld Quality: <<print $playerCrops.quality>>\u000a<<set $playerCrops.quality = $playerCrops.quality + Math.floor(Math.random() * 10) + 4>>\u000aNew Quality: <<print $playerCrops.quality>>\u000a[[Return to Store Menu|Store]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
+p818
+sg23
+VImprove Crops
+p819
+sg25
+g26
+((I2014
+I11
+I30
+I12
+I50
+I16
+I6
+I334
+I0
+tp820
+(dp821
+tp822
+Rp823
+sg31
+(lp824
+Vmoon
+p825
+asg33
+g26
+((I2014
+I11
+I30
+I12
+I36
+I25
+I6
+I334
+I0
+tp826
+(dp827
+tp828
+Rp829
+sbsa(dp830
+g14
+I01
+sg15
+(lp831
+F2870.333333333332
+aF734.9999999999998
+asg17
+(itiddlywiki
+Tiddler
+p832
+(dp833
+g21
+VBegin Endgame
+p834
+sg23
+VTicket to Earth
+p835
+sg25
+g26
+((I2014
+I11
+I30
+I12
+I36
+I36
+I6
+I334
+I0
+tp836
+(dp837
+tp838
+Rp839
+sg31
+(lp840
+sg33
+g26
+((I2014
+I11
+I30
+I12
+I36
+I25
+I6
+I334
+I0
+tp841
+(dp842
+tp843
+Rp844
+sbsa(dp845
+g14
+I00
+sg15
+(lp846
+F2593.666666666666
+aF876.6666666666665
+asg17
+(itiddlywiki
+Tiddler
+p847
+(dp848
+g21
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000aYou purchase some more of your farm from the Agricultural Commission. \u000aOld Acreage: <<print $playerCrops.maxAcres>> acres.\u000a<<set $playerCrops.maxAcres = $playerCrops.maxAcres + 1>><<set $ownerCrops.maxAcres = $ownerCrops.maxAcres - 1>>\u000aNew Acreage: <<print $playerCrops.maxAcres>> acres.\u000a[[Return to Store Menu|Store]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>\u000a
+p849
+sg23
+VBuy Land
+p850
+sg25
+g26
+((I2014
+I11
+I30
+I12
+I49
+I13
+I6
+I334
+I0
+tp851
+(dp852
+tp853
+Rp854
+sg31
+(lp855
+Vmoon
+p856
+asg33
+g26
+((I2014
+I11
+I30
+I12
+I36
+I25
+I6
+I334
+I0
+tp857
+(dp858
+tp859
+Rp860
 sbsasS'scale'
-p798
+p861
 F0.6000000000000001
 sS'snapping'
-p799
+p862
 I00
 ss.
