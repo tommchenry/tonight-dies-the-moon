@@ -1482,7 +1482,7 @@ tp463
 Rp464
 sbsa(dp465
 g14
-I00
+I01
 sg15
 (lp466
 F1839.5833333333337
@@ -1545,7 +1545,7 @@ Tiddler
 p483
 (dp484
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $cotton.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Cotton'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $cotton.name>>. It costs $<<set $cost = Math.floor($player1.cash/$cotton.pricePerSeed) * $cotton.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $cotton.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $cotton.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$cotton.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$cotton.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = Math.floor($player1.cash/$cotton.pricePerSeed) * $cotton.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Cotton'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $cotton.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Cotton'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $cotton.name>>. It costs $<<set $cost = $playerCrops.maxAcres * $cotton.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $cotton.pricePerSeed) lt 0>>\u000aYou can't afford <<print $playerCrops.maxAcres>> acres of <<print $cotton.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$cotton.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$cotton.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = $playerCrops.acreage * $cotton.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Cotton'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
 p485
 sg23
 VPlant Cotton
@@ -1554,12 +1554,12 @@ sg25
 g26
 ((I2014
 I11
-I28
-I18
-I41
+I30
+I11
 I1
-I4
-I332
+I50
+I6
+I334
 I0
 tp487
 (dp488
@@ -1597,7 +1597,7 @@ Tiddler
 p499
 (dp500
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $cannabis.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Cannabis'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $cannabis.name>>. It costs $<<set $cost = Math.floor($player1.cash/$cannabis.pricePerSeed) * $cannabis.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $cannabis.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $cannabis.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$cannabis.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$cannabis.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = Math.floor($player1.cash/$cannabis.pricePerSeed) * $cannabis.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Cannabis'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $cannabis.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Cannabis'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $cannabis.name>>. It costs $<<set $cost = $playerCrops.maxAcres * $cannabis.pricePerSeed>><<print $cost>>.  \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $cannabis.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $cannabis.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$cannabis.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$cannabis.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = $playerCrops.acreage * $cannabis.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Cannabis'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
 p501
 sg23
 VPlant Marijuana
@@ -1606,12 +1606,12 @@ sg25
 g26
 ((I2014
 I11
-I28
-I18
-I41
-I31
-I4
-I332
+I30
+I11
+I8
+I26
+I6
+I334
 I0
 tp503
 (dp504
@@ -1649,7 +1649,7 @@ Tiddler
 p515
 (dp516
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $wheat.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Wheat'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $wheat.name>>. It costs $<<set $cost = Math.floor($player1.cash/$wheat.pricePerSeed) * $wheat.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $wheat.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $wheat.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$wheat.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$wheat.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = Math.floor($player1.cash/$wheat.pricePerSeed) * $wheat.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Wheat'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $wheat.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Wheat'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $wheat.name>>. It costs $<<set $cost = $playerCrops.maxAcres * $wheat.pricePerSeed>><<print $cost>>.\u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $wheat.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $wheat.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$wheat.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$wheat.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = $playerCrops.acreage * $wheat.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Wheat'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
 p517
 sg23
 VPlant Wheat
@@ -1658,12 +1658,12 @@ sg25
 g26
 ((I2014
 I11
-I28
-I18
-I41
-I43
-I4
-I332
+I30
+I11
+I9
+I39
+I6
+I334
 I0
 tp519
 (dp520
@@ -1690,7 +1690,7 @@ tp527
 Rp528
 sbsa(dp529
 g14
-I01
+I00
 sg15
 (lp530
 F1751.666666666666
@@ -2279,7 +2279,7 @@ Tiddler
 p705
 (dp706
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $coffee.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Coffee'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $coffee.name>>. It costs $<<set $cost = Math.floor($player1.cash/$coffee.pricePerSeed) * $coffee.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $coffee.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $coffee.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$coffee.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$coffee.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = Math.floor($player1.cash/$coffee.pricePerSeed) * $coffee.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Coffee'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $coffee.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Coffee'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $coffee.name>>. It costs $<<set $cost = $playerCrops.maxAcres * $coffee.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $coffee.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $coffee.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$coffee.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$coffee.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = $playerCrops.acreage * $coffee.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Coffee'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
 p707
 sg23
 VPlant Coffee
@@ -2288,12 +2288,12 @@ sg25
 g26
 ((I2014
 I11
-I28
-I18
-I41
-I53
-I4
-I332
+I30
+I11
+I10
+I29
+I6
+I334
 I0
 tp709
 (dp710
@@ -2331,7 +2331,7 @@ Tiddler
 p721
 (dp722
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $beans.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Soybeans'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $beans.name>>. It costs $<<set $cost = Math.floor($player1.cash/$beans.pricePerSeed) * $beans.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $beans.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $beans.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$beans.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$beans.pricePerSeed)>> \u000a<<print ($player1.cash/$beans.pricePerSeed)>>\u000aIt costs $<<set $cost = Math.floor($player1.cash/$beans.pricePerSeed) * $beans.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Soybeans'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if  $player1.cash - ($playerCrops.maxAcres * $beans.pricePerSeed) gte 0>>\u000a<<set $playerCrops.crop = 'Soybeans'>>\u000aYou can grow <<print $playerCrops.maxAcres>> acres of <<print $beans.name>>. It costs $<<set $cost = $playerCrops.maxAcres * $beans.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<if $player1.cash - ($playerCrops.maxAcres * $beans.pricePerSeed) lt 0>>\u000aYou can't afford 10 acres of <<print $beans.name>>.\u000aYou can afford <<print Math.floor($player1.cash/$beans.pricePerSeed)>> acres.\u000a<<set $playerCrops.acreage = Math.floor($player1.cash/$beans.pricePerSeed)>> \u000a\u000aIt costs $<<set $cost = $playerCrops.acreage * $beans.pricePerSeed>><<print $cost>>. \u000a<<endif>>\u000a<<set $player1.cash = $player1.cash - $cost>>\u000a<<set $playerCrops.crop = 'Soybeans'>>\u000aYou are growing <<print $playerCrops.acreage>> acres of <<print $playerCrops.crop>>.\u000aRemaining Cash: $<<print $player1.cash>>\u000a[[Farm Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
 p723
 sg23
 VPlant Soybeans
@@ -2340,12 +2340,12 @@ sg25
 g26
 ((I2014
 I11
-I28
-I18
-I41
-I19
-I4
-I332
+I30
+I11
+I11
+I57
+I6
+I334
 I0
 tp725
 (dp726
