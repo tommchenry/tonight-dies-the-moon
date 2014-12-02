@@ -23,7 +23,7 @@ p11
 (dp13
 S'selected'
 p14
-I00
+I01
 sS'pos'
 p15
 (lp16
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V[[New Game]]\u000a[[Credits]]
+V[[New Game]]\u000a[[Credits]]\u000a\u000a[[Soundtrack Test]]
 p22
 sS'title'
 p23
@@ -49,13 +49,13 @@ ctime
 struct_time
 p26
 ((I2014
-I11
-I16
-I14
-I25
-I9
+I12
+I1
+I20
 I6
-I320
+I39
+I0
+I335
 I0
 tp27
 (dp28
@@ -2682,7 +2682,7 @@ tp828
 Rp829
 sbsa(dp830
 g14
-I01
+I00
 sg15
 (lp831
 F2870.333333333332
@@ -2782,10 +2782,112 @@ tp857
 (dp858
 tp859
 Rp860
+sbsa(dp861
+g14
+I00
+sg15
+(lp862
+F2586.666666666666
+aF161.66666666666663
+asg17
+(itiddlywiki
+Tiddler
+p863
+(dp864
+g21
+V<<playbgm 740TB17Dsn0 20>>\u000a\u000aTest
+p865
+sg23
+VSoundtrack Test
+p866
+sg25
+g26
+((I2014
+I12
+I1
+I20
+I6
+I7
+I0
+I335
+I0
+tp867
+(dp868
+tp869
+Rp870
+sg31
+(lp871
+sg33
+g26
+((I2014
+I12
+I1
+I19
+I53
+I30
+I0
+I335
+I0
+tp872
+(dp873
+tp874
+Rp875
+sbsa(dp876
+g14
+I00
+sg15
+(lp877
+F13.666666666666675
+aF1221.3333333333337
+asg17
+(itiddlywiki
+Tiddler
+p878
+(dp879
+g21
+V(function () {\u000a	"use strict";\u000a	version.extensions['youtubeAudioMacros'] = {\u000a		major: 2,\u000a		minor: 1,\u000a		revision: 0\u000a	};\u000a	var ytplayers = {},\u000a		videocount = 0,\u000a		ready = false,\u000a		readyBuffer = {},\u000a		s = document.createElement("script"),\u000a		protocol = location.protocol == "file:" ? "http:" : location.protocol;\u000a	s.src = protocol + "//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject_src.js";\u000a	s.onreadystatechange = s.onload = function () {\u000a		var re = new RegExp('(?:playbgm|loopbgm) ([^"&?/ ]{11})', "gi"),\u000a		    div = document.getElementById("storeArea").firstChild,\u000a		    done = [],\u000a		    d;\u000a		function newplayer(hash) {\u000a			var id = "YouTube-" + hash;\u000a			  insertElement(document.body, "div", id);\u000a			swfobject.embedSWF(protocol + "//www.youtube.com/apiplayer?enablejsapi=1&playerapiid=" + id, id, "0", "0", "8",\u000a				null, {}, {\u000a					allowScriptAccess: "always",\u000a					wmode: "transparent",\u000a					modestbranding: "1",\u000a					version: "3"\u000a				}, {\u000a					id: "ytplayer-" + hash,\u000a				});\u000a		};\u000a		while(div) {\u000a			do {\u000a				d = re.exec(div.innerHTML);\u000a				if(d && done.indexOf(d[1]) == -1) {\u000a					newplayer(d[1]);\u000a					done.push(d[1]);\u000a				}\u000a			} while (d);\u000a			div = div.nextSibling;\u000a		};\u000a	};\u000a	document.head.appendChild(s);\u000a	window.onYTAudioError = function (e) {\u000a		alert("There is a problem with the YouTube background music (" + e + ")" +\u000a			(e == 2 ? ": The video ID (" + hash + ") is probably invalid." :\u000a				e == 100 ? ": The requested video (" + hash + ") was not found." :\u000a				e == 101 || e == 150 ? ": Embedding has been disabled for the video (" + hash + ")." : ""));\u000a	};\u000a	window.onYouTubePlayerReady = function (e) {\u000a		var hash = e.slice(8),\u000a			yt = (ytplayers[hash] = document.getElementById("ytplayer-" + hash));\u000a		ready = true;\u000a		yt.style.visibility="hidden";\u000a		yt.addEventListener("onError", "onYTAudioError");\u000a		yt.mute();\u000a		yt.loadVideoById(hash, 0);\u000a		yt.LOAD = true;\u000a		videocount += 1;\u000a		window["onYTAudioStateChange_" + videocount] = function (newState) {\u000a			if(newState == 1 && yt.LOAD) {\u000a				yt.pauseVideo();\u000a				yt.unMute();\u000a				yt.LOAD = false;\u000a				while(readyBuffer[hash].length > 0) {\u000a					readyBuffer[hash].shift()(yt);\u000a				}\u000a			}\u000a			if(newState == 0 && yt.LOOP) {\u000a				yt.playVideo();\u000a			}\u000a		};\u000a		yt.addEventListener("onStateChange", "onYTAudioStateChange_" + videocount);\u000a	};\u000a	["playbgm","loopbgm","stopbgm","pausebgm","unloopbgm"].forEach(function(e) {\u000a		macros[e] = {\u000a		handler: function (e, t, n, r) {\u000a			var yt, fn;\u000a			if(n[0]) {\u000a				yt = ytplayers[n[0]];\u000a				switch(t) {\u000a				  case "playbgm":\u000a				  case "loopbgm":\u000a					fn = function(yt) {\u000a						yt.LOOP = (t == "loopbgm");\u000a						if (n[1]) yt.seekTo(n[1]);\u000a						yt.playVideo();\u000a					};\u000a					break;\u000a				  case "stopbgm":\u000a					fn = function(yt) { yt.stopVideo(); };\u000a					break;\u000a				  case "pausebgm":\u000a					fn = function(yt) { yt.stopVideo(); };\u000a					break;\u000a				  case "unloopbgm":\u000a					fn = function(yt) { yt.LOOP = false; };\u000a					break;\u000a				}\u000a				if (fn) {\u000a					if (!yt || yt.LOAD) {\u000a						readyBuffer[n[0]] = readyBuffer[n[0]] || [];\u000a						readyBuffer[n[0]].push(fn);\u000a					} else fn(yt);\u000a				}\u000a			}\u000a		}\u000a	}\u000a	});\u000a}());
+p880
+sg23
+VYouTube Audio
+p881
+sg25
+g26
+((I2014
+I12
+I1
+I19
+I56
+I54
+I0
+I335
+I0
+tp882
+(dp883
+tp884
+Rp885
+sg31
+(lp886
+Vscript
+p887
+asg33
+g26
+((I2014
+I12
+I1
+I19
+I56
+I38
+I0
+I335
+I0
+tp888
+(dp889
+tp890
+Rp891
 sbsasS'scale'
-p861
+p892
 F0.6000000000000001
 sS'snapping'
-p862
+p893
 I00
 ss.
