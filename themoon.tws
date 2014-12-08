@@ -944,8 +944,8 @@ g14
 I00
 sg15
 (lp301
-F472.0
-aF331.0
+F453.66666666666663
+aF540.9999999999999
 asg17
 (itiddlywiki
 Tiddler
@@ -1378,7 +1378,7 @@ tp431
 Rp432
 sbsa(dp433
 g14
-I01
+I00
 sg15
 (lp434
 F1666.666666666667
@@ -2988,18 +2988,18 @@ tp921
 Rp922
 sbsa(dp923
 g14
-I00
+I01
 sg15
 (lp924
-F288.3333333333333
-aF1083.3333333333333
+F263.33333333333337
+aF1340.0000000000002
 asg17
 (itiddlywiki
 Tiddler
 p925
 (dp926
 g21
-V<<if $passes eq 0>>\u000a<<display Parents Init>>\u000a<<endif>>\u000aAnx: <<print $anxiety>>\u000aMaxAnx: <<print $max_anxiety>>\u000a<<if $anxiety gte $max_anxiety>>\u000a<<nobr>>\u000aIt's getting to be too much.<br> \u000a"Well, thanks for having me over," you say.<br> \u000a"You have to go so soon?" your mom asks. There is a kind of desperation in her question and if you think about it too much you will erupt.<br>\u000a"It was nice seeing you. We shouldn't let it go so long between your visits," your dad says and he hugs you. "I love you," he whispers into your ear. \u000a<br><br>\u000aAnd then you are walking down the stairs of their complex, knowing they are watching you leave from the window, and waving but too teeth-grindingly anxious to look back and mark yourself with more guilt tonight.\u000a<br><br>\u000aYou did not get a check. Now you're angry with yourself /and/ ashamed. \u000a<br><br>\u000aThere's nothing to do but go out and treat yourself anyway.\u000a<<endnobr>>\u000a<<else>>\u000a<<display Parents Say>>\u000a<<set $passes = $passes + 1>>\u000a<<endif>>
+V<<if $passes eq 0>>\u000a<<display Parents Init>>\u000a<<endif>>\u000aAnx: <<print $anxiety>>\u000aMaxAnx: <<print $max_anxiety>>\u000aPasses: <<print $passes>>\u000a<<display Display Graph>>\u000a<<if $anxiety gte $max_anxiety>>\u000a<<nobr>>\u000aIt's getting to be too much.<br> \u000a"Well, thanks for having me over," you say.<br> \u000a"You have to go so soon?" your mom asks. There is a kind of desperation in her question and if you think about it too much you will erupt.<br>\u000a"It was nice seeing you. We shouldn't let it go so long between your visits," your dad says and he hugs you. "I love you," he whispers into your ear. \u000a<br><br>\u000aAnd then you are walking down the stairs of their complex, knowing they are watching you leave from the window, and waving but too teeth-grindingly anxious to look back and mark yourself with more guilt tonight.\u000a<br><br>\u000aYou did not get a check. Now you're angry with yourself /and/ ashamed. \u000a<br><br>\u000aThere's nothing to do but go out and treat yourself anyway.\u000a[[This part is over|Parent Fail]]\u000a<<endnobr>>\u000a<<else>>\u000a<<if  $passes gte $max_passes>>\u000aYou get a check. \u000a[[This part is over|Parent Success]]\u000a<<else>>\u000a<<display Parents Say>>\u000a<<set $passes = $passes + 1>>\u000a<<endif>>\u000a<<endif>>
 p927
 sg23
 VParents
@@ -3009,9 +3009,9 @@ g26
 ((I2014
 I12
 I8
-I12
-I32
 I16
+I41
+I54
 I0
 I342
 I0
@@ -3043,15 +3043,15 @@ g14
 I00
 sg15
 (lp940
-F602.0
-aF1189.3333333333333
+F215.33333333333331
+aF1190.9999999999995
 asg17
 (itiddlywiki
 Tiddler
 p941
 (dp942
 g21
-V<<set $anxiety = 0>>\u000a<<set $max_anxiety = 10>>\u000a<<set $passes = 0>>
+V<<set //initialize\u000a$anxiety = 0\u000a$max_anxiety = 10\u000a$passes = 0\u000a$max_passes = 10\u000a$anxiety_bar = [0,0,0,0,0,0,0,0,0,0]\u000a>>\u000a
 p943
 sg23
 VParents Init
@@ -3061,9 +3061,9 @@ g26
 ((I2014
 I12
 I8
-I14
-I59
-I2
+I15
+I42
+I12
 I0
 I342
 I0
@@ -3095,8 +3095,8 @@ g14
 I00
 sg15
 (lp956
-F253.3333333333333
-aF1203.3333333333333
+F433.3333333333329
+aF1335.0000000000005
 asg17
 (itiddlywiki
 Tiddler
@@ -3142,10 +3142,186 @@ tp967
 (dp968
 tp969
 Rp970
+sbsa(dp971
+g14
+I00
+sg15
+(lp972
+F305.99999999999983
+aF1513.3333333333335
+asg17
+(itiddlywiki
+Tiddler
+p973
+(dp974
+g21
+g240
+sg23
+VParent Success
+p975
+sg25
+g26
+((I2014
+I12
+I8
+I15
+I30
+I12
+I0
+I342
+I0
+tp976
+(dp977
+tp978
+Rp979
+sg31
+(lp980
+sg33
+g979
+sbsa(dp981
+g14
+I00
+sg15
+(lp982
+F152.66666666666663
+aF1499.9999999999998
+asg17
+(itiddlywiki
+Tiddler
+p983
+(dp984
+g21
+g240
+sg23
+VParent Fail
+p985
+sg25
+g26
+((I2014
+I12
+I8
+I15
+I30
+I12
+I0
+I342
+I0
+tp986
+(dp987
+tp988
+Rp989
+sg31
+(lp990
+sg33
+g989
+sbsa(dp991
+g14
+I00
+sg15
+(lp992
+F433.33333333333326
+aF1166.6666666666665
+asg17
+(itiddlywiki
+Tiddler
+p993
+(dp994
+g21
+V<<nobr>><<set $anxiety_bar = [0,0,0,0,0,0,0,0,0,0]>>\u000a<<set $starter = 0>>\u000a<<set $temp = $anxiety>>\u000a<<display Bar Grow>>\u000a<<print $anxiety_bar[0]>><<print $anxiety_bar[1]>><<print $anxiety_bar[2]>><<print $anxiety_bar[3]>><<print $anxiety_bar[4]>><<print $anxiety_bar[5]>><<print $anxiety_bar[6]>><<print $anxiety_bar[7]>><<print $anxiety_bar[8]>><<print $anxiety_bar[9]>><<endnobr>>
+p995
+sg23
+VDisplay Graph
+p996
+sg25
+g26
+((I2014
+I12
+I8
+I16
+I41
+I37
+I0
+I342
+I0
+tp997
+(dp998
+tp999
+Rp1000
+sg31
+(lp1001
+Vearth
+p1002
+asg33
+g26
+((I2014
+I12
+I8
+I15
+I50
+I45
+I0
+I342
+I0
+tp1003
+(dp1004
+tp1005
+Rp1006
+sbsa(dp1007
+g14
+I00
+sg15
+(lp1008
+F633.3333333333333
+aF1239.9999999999998
+asg17
+(itiddlywiki
+Tiddler
+p1009
+(dp1010
+g21
+V<<nobr>>\u000a<<if $starter eq $temp>>\u000a<<else>>\u000a<<set $anxiety_bar[$starter] = 1>>\u000a<<set $starter = $starter + 1>>\u000a<<display Bar Grow>>\u000a<<endif>>\u000a<<endnobr>>
+p1011
+sg23
+VBar Grow
+p1012
+sg25
+g26
+((I2014
+I12
+I8
+I16
+I38
+I22
+I0
+I342
+I0
+tp1013
+(dp1014
+tp1015
+Rp1016
+sg31
+(lp1017
+Vearth
+p1018
+asg33
+g26
+((I2014
+I12
+I8
+I16
+I33
+I27
+I0
+I342
+I0
+tp1019
+(dp1020
+tp1021
+Rp1022
 sbsasS'scale'
-p971
+p1023
 F0.6000000000000001
 sS'snapping'
-p972
+p1024
 I00
 ss.
