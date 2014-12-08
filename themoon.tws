@@ -23,7 +23,7 @@ p11
 (dp13
 S'selected'
 p14
-I01
+I00
 sS'pos'
 p15
 (lp16
@@ -900,7 +900,7 @@ Tiddler
 p286
 (dp287
 g21
-V<<display Starfighter Init>>\u000a<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<div id="bg-test" style="background-image:[img[stars-bg]]; background-position:bottom;height:310px;width:300px;background-repeat: repeat-x;"><<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>\u000a</div>\u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/\u000a\u000a\u000a\u000a\u000a
+V<<display Starfighter Init>>\u000a<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>><<display Control Panel>>
 p288
 sg23
 VStarfighter Debug
@@ -908,13 +908,13 @@ p289
 sg25
 g26
 ((I2014
-I11
-I25
-I14
-I20
-I23
-I1
-I329
+I12
+I5
+I18
+I31
+I51
+I4
+I339
 I0
 tp290
 (dp291
@@ -1079,7 +1079,7 @@ Tiddler
 p340
 (dp341
 g21
-V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.x lt 4>>\u000a<<set $fighter.x = $fighter.x + 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.x lt 4>>\u000a<<set $fighter.x = $fighter.x + 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>><<display Control Panel>>
 p342
 sg23
 VStarfighter Right
@@ -1087,13 +1087,13 @@ p343
 sg25
 g26
 ((I2014
-I11
-I20
-I11
-I50
-I49
-I3
-I324
+I12
+I5
+I18
+I34
+I43
+I4
+I339
 I0
 tp344
 (dp345
@@ -1131,7 +1131,7 @@ Tiddler
 p356
 (dp357
 g21
-V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.y gt 0>>\u000a<<set $fighter.y = $fighter.y - 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.y gt 0>>\u000a<<set $fighter.y = $fighter.y - 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>><<display Control Panel>>
 p358
 sg23
 VStarfighter Up
@@ -1139,13 +1139,13 @@ p359
 sg25
 g26
 ((I2014
-I11
-I20
-I11
-I50
-I36
-I3
-I324
+I12
+I5
+I18
+I34
+I32
+I4
+I339
 I0
 tp360
 (dp361
@@ -1183,7 +1183,7 @@ Tiddler
 p372
 (dp373
 g21
-V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.y lt 3>>\u000a<<set $fighter.y = $fighter.y  + 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>><<nobr>>\u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/\u000a<<endnobr>>
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.y lt 3>>\u000a<<set $fighter.y = $fighter.y  + 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>><<display Control Panel>>
 p374
 sg23
 VStarfighter Down
@@ -1191,13 +1191,13 @@ p375
 sg25
 g26
 ((I2014
-I11
-I20
-I11
-I53
-I3
-I3
-I324
+I12
+I5
+I18
+I34
+I13
+I4
+I339
 I0
 tp376
 (dp377
@@ -1235,7 +1235,7 @@ Tiddler
 p388
 (dp389
 g21
-V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.x gt 0>>\u000a<<set $fighter.x = $fighter.x - 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>>   \u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a/%End Control Panel%/
+V<h2>Starfighter Debug!!!</h2>\u000a<<nobr>><<set $map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]>>\u000a<<set $map[$fighter.y][$fighter.x] = $space>>\u000a<<if $fighter.x gt 0>>\u000a<<set $fighter.x = $fighter.x - 1>>\u000a<<endif>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<endnobr>><<display Control Panel>>
 p390
 sg23
 VStarfighter Left
@@ -1243,13 +1243,13 @@ p391
 sg25
 g26
 ((I2014
-I11
-I20
-I11
-I51
-I21
-I3
-I324
+I12
+I5
+I18
+I34
+I54
+I4
+I339
 I0
 tp392
 (dp393
@@ -1378,7 +1378,7 @@ tp431
 Rp432
 sbsa(dp433
 g14
-I00
+I01
 sg15
 (lp434
 F1666.666666666667
@@ -1485,8 +1485,8 @@ g14
 I00
 sg15
 (lp466
-F1839.5833333333337
-aF259.58333333333337
+F1906.2500000000002
+aF266.25
 asg17
 (itiddlywiki
 Tiddler
@@ -2884,10 +2884,268 @@ tp888
 (dp889
 tp890
 Rp891
+sbsa(dp892
+g14
+I00
+sg15
+(lp893
+F664.9999999999999
+aF1064.9999999999998
+asg17
+(itiddlywiki
+Tiddler
+p894
+(dp895
+g21
+V<<nobr>>\u000a<div id="bg-test" style="background-image:[img[stars-bg]]; background-position:bottom;height:310px;width:310px;background-repeat: repeat-x;"><<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>> <<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>></div>\u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a<tr><td colspan=3>Fighter Coords: <<print $fighter.x>>,<<print $fighter.y>><td></tr>\u000a</table> \u000a/%End Control Panel%/\u000a<<endnobr>>
+p896
+sg23
+VControl Panel
+p897
+sg25
+g26
+((I2014
+I12
+I5
+I18
+I51
+I43
+I4
+I339
+I0
+tp898
+(dp899
+tp900
+Rp901
+sg31
+(lp902
+Vmoon
+p903
+asg33
+g26
+((I2014
+I12
+I5
+I18
+I28
+I49
+I4
+I339
+I0
+tp904
+(dp905
+tp906
+Rp907
+sbsa(dp908
+g14
+I00
+sg15
+(lp909
+F596.6666666666666
+aF524.9999999999999
+asg17
+(itiddlywiki
+Tiddler
+p910
+(dp911
+g21
+V"I was too busy trying to run away from dad that I was too focused on my own survival."\u000a"The vet says she can remove that leg tumor if it's starting to bother him."
+p912
+sg23
+VEarth Notes
+p913
+sg25
+g26
+((I2014
+I12
+I7
+I10
+I47
+I27
+I6
+I341
+I0
+tp914
+(dp915
+tp916
+Rp917
+sg31
+(lp918
+sg33
+g26
+((I2014
+I12
+I7
+I10
+I43
+I19
+I6
+I341
+I0
+tp919
+(dp920
+tp921
+Rp922
+sbsa(dp923
+g14
+I00
+sg15
+(lp924
+F288.3333333333333
+aF1083.3333333333333
+asg17
+(itiddlywiki
+Tiddler
+p925
+(dp926
+g21
+V<<if $passes eq 0>>\u000a<<display Parents Init>>\u000a<<endif>>\u000aAnx: <<print $anxiety>>\u000aMaxAnx: <<print $max_anxiety>>\u000a<<if $anxiety gte $max_anxiety>>\u000a<<nobr>>\u000aIt's getting to be too much.<br> \u000a"Well, thanks for having me over," you say.<br> \u000a"You have to go so soon?" your mom asks. There is a kind of desperation in her question and if you think about it too much you will erupt.<br>\u000a"It was nice seeing you. We shouldn't let it go so long between your visits," your dad says and he hugs you. "I love you," he whispers into your ear. \u000a<br><br>\u000aAnd then you are walking down the stairs of their complex, knowing they are watching you leave from the window, and waving but too teeth-grindingly anxious to look back and mark yourself with more guilt tonight.\u000a<br><br>\u000aYou did not get a check. Now you're angry with yourself /and/ ashamed. \u000a<br><br>\u000aThere's nothing to do but go out and treat yourself anyway.\u000a<<endnobr>>\u000a<<else>>\u000a<<display Parents Say>>\u000a<<set $passes = $passes + 1>>\u000a<<endif>>
+p927
+sg23
+VParents
+p928
+sg25
+g26
+((I2014
+I12
+I8
+I12
+I32
+I16
+I0
+I342
+I0
+tp929
+(dp930
+tp931
+Rp932
+sg31
+(lp933
+Vearth
+p934
+asg33
+g26
+((I2014
+I12
+I8
+I12
+I1
+I44
+I0
+I342
+I0
+tp935
+(dp936
+tp937
+Rp938
+sbsa(dp939
+g14
+I00
+sg15
+(lp940
+F602.0
+aF1189.3333333333333
+asg17
+(itiddlywiki
+Tiddler
+p941
+(dp942
+g21
+V<<set $anxiety = 0>>\u000a<<set $max_anxiety = 10>>\u000a<<set $passes = 0>>
+p943
+sg23
+VParents Init
+p944
+sg25
+g26
+((I2014
+I12
+I8
+I14
+I59
+I2
+I0
+I342
+I0
+tp945
+(dp946
+tp947
+Rp948
+sg31
+(lp949
+Vearth
+p950
+asg33
+g26
+((I2014
+I12
+I8
+I12
+I2
+I19
+I0
+I342
+I0
+tp951
+(dp952
+tp953
+Rp954
+sbsa(dp955
+g14
+I00
+sg15
+(lp956
+F253.3333333333333
+aF1203.3333333333333
+asg17
+(itiddlywiki
+Tiddler
+p957
+(dp958
+g21
+V<<nobr>>\u000a<<set $parentSay = Math.floor(Math.random() * 20) + 1>>\u000a<<if $parentSay eq 1>>Thing 1<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 2>>Thing 2<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 3>>Thing 3<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 4>>Thing 4<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 5>>Thing 5<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 6>>Thing 6<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 7>>Thing 7<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 8>>Thing 8<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 9>>Thing 9<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 10>>Thing 10<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 11>>Thing 11<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 12>>Thing 12<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 13>>Thing 13<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 14>>Thing 14<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 15>>Thing 15<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 16>>Thing 16<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 17>>Thing 17<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 18>>Thing 18<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 19>>Thing 19<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 20>>Thing 20<<set $anxiety = $anxiety +1>><<endif>>\u000a<<endnobr>>\u000a[[Listen|Parents]]\u000aNew Anx: <<print $anxiety>>
+p959
+sg23
+VParents Say
+p960
+sg25
+g26
+((I2014
+I12
+I8
+I15
+I0
+I4
+I0
+I342
+I0
+tp961
+(dp962
+tp963
+Rp964
+sg31
+(lp965
+Vearth
+p966
+asg33
+g26
+((I2014
+I12
+I8
+I12
+I15
+I17
+I0
+I342
+I0
+tp967
+(dp968
+tp969
+Rp970
 sbsasS'scale'
-p892
+p971
 F0.6000000000000001
 sS'snapping'
-p893
+p972
 I00
 ss.
