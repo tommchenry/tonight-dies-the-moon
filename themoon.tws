@@ -2949,28 +2949,27 @@ Tiddler
 p910
 (dp911
 g21
-V"I was too busy trying to run away from dad that I was too focused on my own survival."\u000a"The vet says she can remove that leg tumor if it's starting to bother him."
-p912
+g240
 sg23
 VEarth Notes
-p913
+p912
 sg25
 g26
 ((I2014
 I12
-I7
-I10
-I47
-I27
-I6
-I341
+I8
+I17
+I22
+I45
 I0
-tp914
-(dp915
-tp916
-Rp917
+I342
+I0
+tp913
+(dp914
+tp915
+Rp916
 sg31
-(lp918
+(lp917
 sg33
 g26
 ((I2014
@@ -2982,47 +2981,47 @@ I19
 I6
 I341
 I0
-tp919
-(dp920
-tp921
-Rp922
-sbsa(dp923
+tp918
+(dp919
+tp920
+Rp921
+sbsa(dp922
 g14
 I01
 sg15
-(lp924
+(lp923
 F263.33333333333337
 aF1340.0000000000002
 asg17
 (itiddlywiki
 Tiddler
-p925
-(dp926
+p924
+(dp925
 g21
-V<<if $passes eq 0>>\u000a<<display Parents Init>>\u000a<<endif>>\u000aAnx: <<print $anxiety>>\u000aMaxAnx: <<print $max_anxiety>>\u000aPasses: <<print $passes>>\u000a<<display Display Graph>>\u000a<<if $anxiety gte $max_anxiety>>\u000a<<nobr>>\u000aIt's getting to be too much.<br> \u000a"Well, thanks for having me over," you say.<br> \u000a"You have to go so soon?" your mom asks. There is a kind of desperation in her question and if you think about it too much you will erupt.<br>\u000a"It was nice seeing you. We shouldn't let it go so long between your visits," your dad says and he hugs you. "I love you," he whispers into your ear. \u000a<br><br>\u000aAnd then you are walking down the stairs of their complex, knowing they are watching you leave from the window, and waving but too teeth-grindingly anxious to look back and mark yourself with more guilt tonight.\u000a<br><br>\u000aYou did not get a check. Now you're angry with yourself /and/ ashamed. \u000a<br><br>\u000aThere's nothing to do but go out and treat yourself anyway.\u000a[[This part is over|Parent Fail]]\u000a<<endnobr>>\u000a<<else>>\u000a<<if  $passes gte $max_passes>>\u000aYou get a check. \u000a[[This part is over|Parent Success]]\u000a<<else>>\u000a<<display Parents Say>>\u000a<<set $passes = $passes + 1>>\u000a<<endif>>\u000a<<endif>>
-p927
+V<<if $passes eq 0>>\u000a<<display Parents Init>>\u000a<<endif>>\u000a<<if $anxiety lt 0>>\u000a<<set $anxiety =0>>\u000a<<endif>>\u000aAnx: <<print $anxiety>>\u000aMaxAnx: <<print $max_anxiety>>\u000aPasses: <<print $passes>>\u000a<<display Display Graph>>\u000a<<if $anxiety gte $max_anxiety>>\u000a<<nobr>>\u000aIt's getting to be too much.<br> \u000a"Well, thanks for having me over," you say.<br> \u000a"You have to go so soon?" your mom asks. There is a kind of desperation in her question and if you think about it too much you will erupt.<br>\u000a"It was nice seeing you. We shouldn't let it go so long between your visits," your dad says and he hugs you. "I love you," he whispers into your ear. \u000a<br><br>\u000aAnd then you are walking down the stairs of their complex, knowing they are watching you leave from the window, and waving but too teeth-grindingly anxious to look back and mark yourself with more guilt tonight.\u000a<br><br>\u000aYou did not get a check. Now you're angry with yourself /and/ ashamed. \u000a<br><br>\u000aThere's nothing to do but go out and treat yourself anyway.\u000a[[This part is over|Parent Fail]]\u000a<<endnobr>>\u000a<<else>>\u000a<<if  $passes gte $max_passes>>\u000aYou get a check. \u000a[[This part is over|Parent Success]]\u000a<<else>>\u000a<<display Parents Say>>\u000a<<set $passes = $passes + 1>>\u000a<<endif>>\u000a<<endif>>
+p926
 sg23
 VParents
-p928
+p927
 sg25
 g26
 ((I2014
 I12
 I8
-I16
-I41
-I54
+I18
+I2
+I12
 I0
 I342
 I0
-tp929
-(dp930
-tp931
-Rp932
+tp928
+(dp929
+tp930
+Rp931
 sg31
-(lp933
+(lp932
 Vearth
-p934
+p933
 asg33
 g26
 ((I2014
@@ -3034,47 +3033,47 @@ I44
 I0
 I342
 I0
-tp935
-(dp936
-tp937
-Rp938
-sbsa(dp939
+tp934
+(dp935
+tp936
+Rp937
+sbsa(dp938
 g14
 I00
 sg15
-(lp940
+(lp939
 F215.33333333333331
 aF1190.9999999999995
 asg17
 (itiddlywiki
 Tiddler
-p941
-(dp942
+p940
+(dp941
 g21
-V<<set //initialize\u000a$anxiety = 0\u000a$max_anxiety = 10\u000a$passes = 0\u000a$max_passes = 10\u000a$anxiety_bar = [0,0,0,0,0,0,0,0,0,0]\u000a>>\u000a
-p943
+V<<set //initialize\u000a$anxiety = 0\u000a$max_anxiety = 10\u000a$passes = 0\u000a$max_passes = 10\u000a$anxiety_bar = [0,0,0,0,0,0,0,0,0,0]\u000a$parentSayGrid = [\u000a['"I was too busy trying to run away from dad that I was too focused on my own survival," Your mom says.',1],\u000a['Palooka wanders over to your leg and drops his muzzle on your knee. You skritch his big nose. <br><br>"The vet says she can remove that leg tumor if it\u005c's starting to bother him," your mother says.',2],\u000a['"We got this Jew fella at work, and he always needs time off," your father volunteers. "Crazy holidays, just six or seven days right in the middle of spring. And this special food he has to eat. Not when we were kids, that would never have happened when the war was on."', 3] ,\u000a['"All those brave rescue dogs that died on 9/11, sometimes I wake up thinking about them and have to cry myself back to sleep, if it\u005c's not already morning."',2],\u000a['Do you still watch that show?', -2]\u000a]\u000a>>\u000a
+p942
 sg23
 VParents Init
-p944
+p943
 sg25
 g26
 ((I2014
 I12
+I9
+I0
+I54
 I8
-I15
-I42
-I12
+I1
+I343
 I0
-I342
-I0
-tp945
-(dp946
-tp947
-Rp948
+tp944
+(dp945
+tp946
+Rp947
 sg31
-(lp949
+(lp948
 Vearth
-p950
+p949
 asg33
 g26
 ((I2014
@@ -3086,47 +3085,47 @@ I19
 I0
 I342
 I0
-tp951
-(dp952
-tp953
-Rp954
-sbsa(dp955
+tp950
+(dp951
+tp952
+Rp953
+sbsa(dp954
 g14
 I00
 sg15
-(lp956
+(lp955
 F433.3333333333329
 aF1335.0000000000005
 asg17
 (itiddlywiki
 Tiddler
-p957
-(dp958
+p956
+(dp957
 g21
-V<<nobr>>\u000a<<set $parentSay = Math.floor(Math.random() * 20) + 1>>\u000a<<if $parentSay eq 1>>Thing 1<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 2>>Thing 2<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 3>>Thing 3<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 4>>Thing 4<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 5>>Thing 5<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 6>>Thing 6<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 7>>Thing 7<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 8>>Thing 8<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 9>>Thing 9<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 10>>Thing 10<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 11>>Thing 11<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 12>>Thing 12<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 13>>Thing 13<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 14>>Thing 14<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 15>>Thing 15<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 16>>Thing 16<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 17>>Thing 17<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 18>>Thing 18<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 19>>Thing 19<<set $anxiety = $anxiety +1>><<endif>>\u000a<<if $parentSay eq 20>>Thing 20<<set $anxiety = $anxiety +1>><<endif>>\u000a<<endnobr>>\u000a[[Listen|Parents]]\u000aNew Anx: <<print $anxiety>>
-p959
+V<<nobr>>\u000a<<set $parentSay = (Math.floor(Math.random() * $parentSayGrid.length) + 1) - 1>>\u000a<<print $parentSayGrid[$parentSay][0]>>\u000a<<set $anxiety = $parentSayGrid[$parentSay][1] + $anxiety>>\u000a<<endnobr>>\u000a[[Listen|Parents]]\u000aNew Anx: <<print $anxiety>>\u000a\u000a<<set $parentSayGrid.splice($parentSay,1)>>
+p958
 sg23
 VParents Say
-p960
+p959
 sg25
 g26
 ((I2014
 I12
-I8
-I15
+I9
 I0
-I4
+I51
+I3
+I1
+I343
 I0
-I342
-I0
-tp961
-(dp962
-tp963
-Rp964
+tp960
+(dp961
+tp962
+Rp963
 sg31
-(lp965
+(lp964
 Vearth
-p966
+p965
 asg33
 g26
 ((I2014
@@ -3138,27 +3137,27 @@ I17
 I0
 I342
 I0
-tp967
-(dp968
-tp969
-Rp970
-sbsa(dp971
+tp966
+(dp967
+tp968
+Rp969
+sbsa(dp970
 g14
 I00
 sg15
-(lp972
+(lp971
 F305.99999999999983
 aF1513.3333333333335
 asg17
 (itiddlywiki
 Tiddler
-p973
-(dp974
+p972
+(dp973
 g21
 g240
 sg23
 VParent Success
-p975
+p974
 sg25
 g26
 ((I2014
@@ -3170,31 +3169,31 @@ I12
 I0
 I342
 I0
-tp976
-(dp977
-tp978
-Rp979
+tp975
+(dp976
+tp977
+Rp978
 sg31
-(lp980
+(lp979
 sg33
-g979
-sbsa(dp981
+g978
+sbsa(dp980
 g14
 I00
 sg15
-(lp982
+(lp981
 F152.66666666666663
 aF1499.9999999999998
 asg17
 (itiddlywiki
 Tiddler
-p983
-(dp984
+p982
+(dp983
 g21
 g240
 sg23
 VParent Fail
-p985
+p984
 sg25
 g26
 ((I2014
@@ -3206,32 +3205,32 @@ I12
 I0
 I342
 I0
-tp986
-(dp987
-tp988
-Rp989
+tp985
+(dp986
+tp987
+Rp988
 sg31
-(lp990
+(lp989
 sg33
-g989
-sbsa(dp991
+g988
+sbsa(dp990
 g14
 I00
 sg15
-(lp992
+(lp991
 F433.33333333333326
 aF1166.6666666666665
 asg17
 (itiddlywiki
 Tiddler
-p993
-(dp994
+p992
+(dp993
 g21
 V<<nobr>><<set $anxiety_bar = [0,0,0,0,0,0,0,0,0,0]>>\u000a<<set $starter = 0>>\u000a<<set $temp = $anxiety>>\u000a<<display Bar Grow>>\u000a<<print $anxiety_bar[0]>><<print $anxiety_bar[1]>><<print $anxiety_bar[2]>><<print $anxiety_bar[3]>><<print $anxiety_bar[4]>><<print $anxiety_bar[5]>><<print $anxiety_bar[6]>><<print $anxiety_bar[7]>><<print $anxiety_bar[8]>><<print $anxiety_bar[9]>><<endnobr>>
-p995
+p994
 sg23
 VDisplay Graph
-p996
+p995
 sg25
 g26
 ((I2014
@@ -3243,14 +3242,14 @@ I37
 I0
 I342
 I0
-tp997
-(dp998
-tp999
-Rp1000
+tp996
+(dp997
+tp998
+Rp999
 sg31
-(lp1001
+(lp1000
 Vearth
-p1002
+p1001
 asg33
 g26
 ((I2014
@@ -3262,28 +3261,28 @@ I45
 I0
 I342
 I0
-tp1003
-(dp1004
-tp1005
-Rp1006
-sbsa(dp1007
+tp1002
+(dp1003
+tp1004
+Rp1005
+sbsa(dp1006
 g14
 I00
 sg15
-(lp1008
+(lp1007
 F633.3333333333333
 aF1239.9999999999998
 asg17
 (itiddlywiki
 Tiddler
-p1009
-(dp1010
+p1008
+(dp1009
 g21
 V<<nobr>>\u000a<<if $starter eq $temp>>\u000a<<else>>\u000a<<set $anxiety_bar[$starter] = 1>>\u000a<<set $starter = $starter + 1>>\u000a<<display Bar Grow>>\u000a<<endif>>\u000a<<endnobr>>
-p1011
+p1010
 sg23
 VBar Grow
-p1012
+p1011
 sg25
 g26
 ((I2014
@@ -3295,14 +3294,14 @@ I22
 I0
 I342
 I0
-tp1013
-(dp1014
-tp1015
-Rp1016
+tp1012
+(dp1013
+tp1014
+Rp1015
 sg31
-(lp1017
+(lp1016
 Vearth
-p1018
+p1017
 asg33
 g26
 ((I2014
@@ -3314,14 +3313,14 @@ I27
 I0
 I342
 I0
-tp1019
-(dp1020
-tp1021
-Rp1022
+tp1018
+(dp1019
+tp1020
+Rp1021
 sbsasS'scale'
-p1023
+p1022
 F0.6000000000000001
 sS'snapping'
-p1024
+p1023
 I00
 ss.
