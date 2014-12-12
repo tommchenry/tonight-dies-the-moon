@@ -182,7 +182,7 @@ tp66
 Rp67
 sbsa(dp68
 g14
-I00
+I01
 sg15
 (lp69
 F261.0
@@ -193,7 +193,7 @@ Tiddler
 p70
 (dp71
 g21
-VWhere are you from?\u000a[[Earth|Earth Start]][[Moon|Moon Start]]\u000a\u000a
+V<div style="text-align: center;">Where are you from?</div>\u000a<div style="float: left; width: 50%; background-color: green;text-align:right;">\u000a[[Earth|Earth Start]]\u000a</div><div style="float: left; width: 50%; background-color: blue;">\u000a[[Moon|Moon Start]]\u000a</div>
 p72
 sg23
 VNew Game
@@ -201,13 +201,13 @@ p73
 sg25
 g26
 ((I2014
-I11
-I17
 I12
-I7
-I27
-I0
-I321
+I11
+I19
+I20
+I12
+I3
+I345
 I0
 tp74
 (dp75
@@ -389,15 +389,15 @@ g14
 I00
 sg15
 (lp131
-F13.333333333333334
-aF1079.333333333333
+F13.333333333333627
+aF1087.6666666666667
 asg17
 (itiddlywiki
 Tiddler
 p132
 (dp133
 g21
-V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a	max-width: 600px;\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000adisplay:none;\u000a}\u000a#passages{\u000amargin-left: 0em;\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #2f3030; \u000a	color: #22f000; \u000a	font-family: Terminal, Courier;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a#bg-test \u000a{ background-image: [img[stars-bg]]; }\u000a\u000a.vgfont{\u000a	color: #FFFFFF;\u000a	font-family: 'Press Start 2P', cursive;\u000a}
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000a	display:none;\u000a}\u000a\u000a#passages{\u000a	margin: 0;\u000a	padding: 0;\u000a	width: 100%\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #2f3030; \u000a	color: #22f000; \u000a	font-family: Terminal, Courier;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a#bg-test \u000a{ background-image: [img[stars-bg]]; }\u000a\u000a.vgfont{\u000a	color: #FFFFFF;\u000a	font-family: 'Press Start 2P', cursive;\u000a}
 p134
 sg23
 VMain Styles
@@ -406,12 +406,12 @@ sg25
 g26
 ((I2014
 I12
-I10
-I17
-I32
-I14
-I2
-I344
+I11
+I19
+I18
+I44
+I3
+I345
 I0
 tp136
 (dp137
@@ -3550,7 +3550,7 @@ asg33
 g1090
 sbsa(dp1092
 g14
-I01
+I00
 sg15
 (lp1093
 F408.66666666666663
@@ -3586,10 +3586,60 @@ sg31
 g1080
 asg33
 g1101
+sbsa(dp1103
+g14
+I00
+sg15
+(lp1104
+F579.9999999999999
+aF163.33333333333331
+asg17
+(itiddlywiki
+Tiddler
+p1105
+(dp1106
+g21
+V<div style="width: 1200px; background-color: orange;">\u000aI am a test.\u000a</div>
+p1107
+sg23
+VTest Styler
+p1108
+sg25
+g26
+((I2014
+I12
+I11
+I18
+I22
+I39
+I3
+I345
+I0
+tp1109
+(dp1110
+tp1111
+Rp1112
+sg31
+(lp1113
+sg33
+g26
+((I2014
+I12
+I11
+I18
+I20
+I22
+I3
+I345
+I0
+tp1114
+(dp1115
+tp1116
+Rp1117
 sbsasS'scale'
-p1103
+p1118
 F0.6000000000000001
 sS'snapping'
-p1104
+p1119
 I00
 ss.
