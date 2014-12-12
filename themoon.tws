@@ -397,7 +397,7 @@ Tiddler
 p132
 (dp133
 g21
-V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a	max-width: 600px;\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000adisplay:none;\u000a}\u000a#passages{\u000amargin-left: 0em;\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #2f3030; \u000a	color: #22f000; \u000a	font-family: Terminal, Courier;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a#bg-test \u000a{ background-image: [img[stars-bg]]; }\u000a
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a	max-width: 600px;\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000adisplay:none;\u000a}\u000a#passages{\u000amargin-left: 0em;\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #2f3030; \u000a	color: #22f000; \u000a	font-family: Terminal, Courier;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a#bg-test \u000a{ background-image: [img[stars-bg]]; }\u000a\u000a.vgfont{\u000a	color: #FFFFFF;\u000a	font-family: 'Press Start 2P', cursive;\u000a}
 p134
 sg23
 VMain Styles
@@ -405,13 +405,13 @@ p135
 sg25
 g26
 ((I2014
-I11
-I24
-I22
-I11
-I27
-I0
-I328
+I12
+I10
+I17
+I32
+I14
+I2
+I344
 I0
 tp136
 (dp137
@@ -2987,7 +2987,7 @@ tp920
 Rp921
 sbsa(dp922
 g14
-I01
+I00
 sg15
 (lp923
 F263.33333333333337
@@ -2998,7 +2998,7 @@ Tiddler
 p924
 (dp925
 g21
-V<<if $passes eq 0>>\u000a<<display Parents Init>>\u000a<<endif>>\u000a<<if $anxiety lt 0>>\u000a<<set $anxiety =0>>\u000a<<endif>>\u000aAnx: <<print $anxiety>>\u000aMaxAnx: <<print $max_anxiety>>\u000aPasses: <<print $passes>>\u000a<<display Display Graph>>\u000a<<if $anxiety gte $max_anxiety>>\u000a<<nobr>>\u000aIt's getting to be too much.<br> \u000a"Well, thanks for having me over," you say.<br> \u000a"You have to go so soon?" your mom asks. There is a kind of desperation in her question and if you think about it too much you will erupt.<br>\u000a"It was nice seeing you. We shouldn't let it go so long between your visits," your dad says and he hugs you. "I love you," he whispers into your ear. \u000a<br><br>\u000aAnd then you are walking down the stairs of their complex, knowing they are watching you leave from the window, and waving but too teeth-grindingly anxious to look back and mark yourself with more guilt tonight.\u000a<br><br>\u000aYou did not get a check. Now you're angry with yourself /and/ ashamed. \u000a<br><br>\u000aThere's nothing to do but go out and treat yourself anyway.\u000a[[This part is over|Parent Fail]]\u000a<<endnobr>>\u000a<<else>>\u000a<<if  $passes gte $max_passes>>\u000aYou get a check. \u000a[[This part is over|Parent Success]]\u000a<<else>>\u000a<<display Parents Say>>\u000a<<set $passes = $passes + 1>>\u000a<<endif>>\u000a<<endif>>
+V[img[Parents Pic]]\u000a<<nobr>>\u000a<<if $passes eq 0>>\u000a<<display Parents Init>>\u000a<<endif>>\u000a<<if $anxiety lt 0>>\u000a<<set $anxiety =0>>\u000a<<endif>>\u000a<p class="vgfont" style="padding-top: 0px; margin-top: 0px;">Anxiety:</p><<display Display Graph>>\u000a<<endnobr>>\u000a<<if $anxiety gte $max_anxiety>>\u000a<<nobr>>\u000aIt's getting to be too much.<br> \u000a"Well, thanks for having me over," you say.<br> \u000a"You have to go so soon?" your mom asks. There is a kind of desperation in her question and if you think about it too much you will erupt.<br>\u000a"It was nice seeing you. We shouldn't let it go so long between your visits," your dad says and he hugs you. "I love you," he whispers into your ear. \u000a<br><br>\u000aAnd then you are walking down the stairs of their complex, knowing they are watching you leave from the window, and waving but too teeth-grindingly anxious to look back and mark yourself with more guilt tonight.\u000a<br><br>\u000aYou did not get a check. Now you're angry with yourself /and/ ashamed. \u000a<br><br>\u000aThere's nothing to do but go out and treat yourself anyway.\u000a[[This part is over|Parent Fail]]\u000a<<endnobr>>\u000a<<else>>\u000a<<if  $passes gte $max_passes>>\u000aYou get a check. \u000a[[This part is over|Parent Success]]\u000a<<else>>\u000a<<display Parents Say>>\u000a<<set $passes = $passes + 1>>\u000a<<endif>>\u000a<<endif>>
 p926
 sg23
 VParents
@@ -3007,12 +3007,12 @@ sg25
 g26
 ((I2014
 I12
-I8
-I18
+I10
+I17
+I34
+I10
 I2
-I12
-I0
-I342
+I344
 I0
 tp928
 (dp929
@@ -3102,7 +3102,7 @@ Tiddler
 p956
 (dp957
 g21
-V<<nobr>>\u000a<<set $parentSay = (Math.floor(Math.random() * $parentSayGrid.length) + 1) - 1>>\u000a<<print $parentSayGrid[$parentSay][0]>>\u000a<<set $anxiety = $parentSayGrid[$parentSay][1] + $anxiety>>\u000a<<endnobr>>\u000a[[Listen|Parents]]\u000aNew Anx: <<print $anxiety>>\u000a\u000a<<set $parentSayGrid.splice($parentSay,1)>>
+V<<nobr>>\u000a<<set $parentSay = (Math.floor(Math.random() * $parentSayGrid.length) + 1) - 1>>\u000a<<print $parentSayGrid[$parentSay][0]>>\u000a<<set $anxiety = $parentSayGrid[$parentSay][1] + $anxiety>>\u000a<<endnobr>>\u000a[[Listen|Parents]]\u000a<<set $parentSayGrid.splice($parentSay,1)>>
 p958
 sg23
 VParents Say
@@ -3113,8 +3113,8 @@ g26
 I12
 I9
 I0
-I51
-I3
+I56
+I50
 I1
 I343
 I0
@@ -3226,7 +3226,7 @@ Tiddler
 p992
 (dp993
 g21
-V<<nobr>><<set $anxiety_bar = [0,0,0,0,0,0,0,0,0,0]>>\u000a<<set $starter = 0>>\u000a<<set $temp = $anxiety>>\u000a<<display Bar Grow>>\u000a<<print $anxiety_bar[0]>><<print $anxiety_bar[1]>><<print $anxiety_bar[2]>><<print $anxiety_bar[3]>><<print $anxiety_bar[4]>><<print $anxiety_bar[5]>><<print $anxiety_bar[6]>><<print $anxiety_bar[7]>><<print $anxiety_bar[8]>><<print $anxiety_bar[9]>><<endnobr>>
+V<<nobr>><<set $anxiety_bar = ['[img[AnxietyMeterSafe]]','[img[AnxietyMeterSafe]]','[img[AnxietyMeterSafe]]','[img[AnxietyMeterSafe]]','[img[AnxietyMeterSafe]]','[img[AnxietyMeterSafe]]','[img[AnxietyMeterSafe]]','[img[AnxietyMeterSafe]]','[img[AnxietyMeterSafe]]','[img[AnxietyMeterSafe]]']>>\u000a<<set $starter = 0>>\u000a<<set $temp = $anxiety>>\u000a<<display Bar Grow>>\u000a<<print $anxiety_bar[0]>><<print $anxiety_bar[1]>><<print $anxiety_bar[2]>><<print $anxiety_bar[3]>><<print $anxiety_bar[4]>><<print $anxiety_bar[5]>><<print $anxiety_bar[6]>><<print $anxiety_bar[7]>><<print $anxiety_bar[8]>><<print $anxiety_bar[9]>><<endnobr>>
 p994
 sg23
 VDisplay Graph
@@ -3235,12 +3235,12 @@ sg25
 g26
 ((I2014
 I12
-I8
-I16
-I41
-I37
-I0
-I342
+I11
+I18
+I15
+I34
+I3
+I345
 I0
 tp996
 (dp997
@@ -3278,7 +3278,7 @@ Tiddler
 p1008
 (dp1009
 g21
-V<<nobr>>\u000a<<if $starter eq $temp>>\u000a<<else>>\u000a<<set $anxiety_bar[$starter] = 1>>\u000a<<set $starter = $starter + 1>>\u000a<<display Bar Grow>>\u000a<<endif>>\u000a<<endnobr>>
+V<<nobr>>\u000a<<if $starter eq $temp>>\u000a<<else>>\u000a<<set $anxiety_bar[$starter] = '[img[AnxietyMeter]]'>>\u000a<<set $starter = $starter + 1>>\u000a<<display Bar Grow>>\u000a<<endif>>\u000a<<endnobr>>
 p1010
 sg23
 VBar Grow
@@ -3287,12 +3287,12 @@ sg25
 g26
 ((I2014
 I12
-I8
-I16
-I38
-I22
-I0
-I342
+I10
+I17
+I27
+I49
+I2
+I344
 I0
 tp1012
 (dp1013
@@ -3317,10 +3317,279 @@ tp1018
 (dp1019
 tp1020
 Rp1021
+sbsa(dp1022
+g14
+I00
+sg15
+(lp1023
+F903.3333333333333
+aF1178.3333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1024
+(dp1025
+g21
+V<<if $passes eq 0>>\u000a<<display Office Init>>\u000a<<endif>>\u000a<<display Office Happen>>\u000a<<set $passes = $passes + 1>>
+p1026
+sg23
+VOffice
+p1027
+sg25
+g26
+((I2014
+I12
+I9
+I18
+I10
+I16
+I1
+I343
+I0
+tp1028
+(dp1029
+tp1030
+Rp1031
+sg31
+(lp1032
+Vearth
+p1033
+asg33
+g26
+((I2014
+I12
+I9
+I11
+I27
+I9
+I1
+I343
+I0
+tp1034
+(dp1035
+tp1036
+Rp1037
+sbsa(dp1038
+g14
+I00
+sg15
+(lp1039
+F1053.3333333333333
+aF1066.6666666666665
+asg17
+(itiddlywiki
+Tiddler
+p1040
+(dp1041
+g21
+V<<set //initialize\u000a$officeEventGrid = [\u000a['Something happens.'],\u000a['Something else happens.'],\u000a['A third thing.']\u000a]\u000a\u000a$passes = 0\u000a>>
+p1042
+sg23
+VOffice Init
+p1043
+sg25
+g26
+((I2014
+I12
+I9
+I18
+I9
+I18
+I1
+I343
+I0
+tp1044
+(dp1045
+tp1046
+Rp1047
+sg31
+(lp1048
+Vearth
+p1049
+asg33
+g26
+((I2014
+I12
+I9
+I12
+I41
+I53
+I1
+I343
+I0
+tp1050
+(dp1051
+tp1052
+Rp1053
+sbsa(dp1054
+g14
+I00
+sg15
+(lp1055
+F1099.9999999999998
+aF1233.3333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1056
+(dp1057
+g21
+V<<nobr>>\u000a<<set $officeHappen = (Math.floor(Math.random() * $officeEventGrid.length) + 1) - 1>>\u000a<<print $officeEventGrid[$officeHappen][0]>>\u000a<<endnobr>>\u000a[[Work|Office]]\u000a<<print $officeEventGrid>>\u000a<<set $officeEventGrid.splice($officeHappen,1)>>\u000a<<print $officeEventGrid>>\u000a<<print $officeEventGrid.length>>
+p1058
+sg23
+VOffice Happen
+p1059
+sg25
+g26
+((I2014
+I12
+I9
+I15
+I2
+I57
+I1
+I343
+I0
+tp1060
+(dp1061
+tp1062
+Rp1063
+sg31
+(lp1064
+sg33
+g26
+((I2014
+I12
+I9
+I12
+I54
+I36
+I1
+I343
+I0
+tp1065
+(dp1066
+tp1067
+Rp1068
+sbsa(dp1069
+g14
+I00
+sg15
+(lp1070
+F128.66666666666666
+aF1350.6666666666665
+asg17
+(itiddlywiki
+Tiddler
+p1071
+(dp1072
+g21
+Vdata:image/png;base64,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
+p1073
+sg23
+VParents Pic
+p1074
+sg25
+g26
+((I2014
+I12
+I10
+I17
+I22
+I50
+I2
+I344
+I0
+tp1075
+(dp1076
+tp1077
+Rp1078
+sg31
+(lp1079
+S'Twine.image'
+p1080
+asg33
+g1078
+sbsa(dp1081
+g14
+I00
+sg15
+(lp1082
+F156.66666666666666
+aF195.0
+asg17
+(itiddlywiki
+Tiddler
+p1083
+(dp1084
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD9JREFUeNrszgENADAIA7Bx/zbQCTZO0ipoTedDL9HS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tK61FoBBgBDswIIXlnoPgAAAABJRU5ErkJggg==
+p1085
+sg23
+VAnxietyMeter
+p1086
+sg25
+g26
+((I2014
+I12
+I10
+I17
+I26
+I52
+I2
+I344
+I0
+tp1087
+(dp1088
+tp1089
+Rp1090
+sg31
+(lp1091
+g1080
+asg33
+g1090
+sbsa(dp1092
+g14
+I01
+sg15
+(lp1093
+F408.66666666666663
+aF323.3333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1094
+(dp1095
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEBJREFUeNrszgENADAIA7BxKfgXhwRsnKRV0OrJh16ipaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWlpaWldam1AgwAcR8Bdqb6QW8AAAAASUVORK5CYII=
+p1096
+sg23
+VAnxietyMeterSafe
+p1097
+sg25
+g26
+((I2014
+I12
+I11
+I18
+I12
+I20
+I3
+I345
+I0
+tp1098
+(dp1099
+tp1100
+Rp1101
+sg31
+(lp1102
+g1080
+asg33
+g1101
 sbsasS'scale'
-p1022
+p1103
 F0.6000000000000001
 sS'snapping'
-p1023
+p1104
 I00
 ss.
