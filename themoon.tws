@@ -182,7 +182,7 @@ tp66
 Rp67
 sbsa(dp68
 g14
-I01
+I00
 sg15
 (lp69
 F261.0
@@ -397,7 +397,7 @@ Tiddler
 p132
 (dp133
 g21
-V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000a	display:none;\u000a}\u000a\u000a#passages{\u000a	margin: 0;\u000a	padding: 0;\u000a	width: 100%\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #2f3030; \u000a	color: #22f000; \u000a	font-family: Terminal, Courier;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a#bg-test \u000a{ background-image: [img[stars-bg]]; }\u000a\u000a.vgfont{\u000a	color: #FFFFFF;\u000a	font-family: 'Press Start 2P', cursive;\u000a}
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000a	display:none;\u000a}\u000a\u000a#passages{\u000a	margin: 0;\u000a	padding: 0;\u000a	width: 100%\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #2f3030; \u000a	color: #22f000; \u000a	font-family: Terminal, Courier;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a#bg-test \u000a{ background-image: [img[stars-bg]]; }\u000a\u000a.vgfont{\u000a	color: #FFFFFF;\u000a	font-family: 'Press Start 2P', cursive;\u000a}\u000a\u000a#playerNovel input{\u000a	width: 500px;\u000a}
 p134
 sg23
 VMain Styles
@@ -406,12 +406,12 @@ sg25
 g26
 ((I2014
 I12
-I11
+I12
+I21
+I51
 I19
-I18
-I44
-I3
-I345
+I4
+I346
 I0
 tp136
 (dp137
@@ -3050,7 +3050,7 @@ Tiddler
 p940
 (dp941
 g21
-V<<set //initialize\u000a$anxiety = 0\u000a$max_anxiety = 10\u000a$passes = 0\u000a$max_passes = 10\u000a$anxiety_bar = [0,0,0,0,0,0,0,0,0,0]\u000a$parentSayGrid = [\u000a['"I was too busy trying to run away from dad that I was too focused on my own survival," Your mom says.',1],\u000a['Palooka wanders over to your leg and drops his muzzle on your knee. You skritch his big nose. <br><br>"The vet says she can remove that leg tumor if it\u005c's starting to bother him," your mother says.',2],\u000a['"We got this Jew fella at work, and he always needs time off," your father volunteers. "Crazy holidays, just six or seven days right in the middle of spring. And this special food he has to eat. Not when we were kids, that would never have happened when the war was on."', 3] ,\u000a['"All those brave rescue dogs that died on 9/11, sometimes I wake up thinking about them and have to cry myself back to sleep, if it\u005c's not already morning."',2],\u000a['Do you still watch that show?', -2]\u000a]\u000a>>\u000a
+V<<set //initialize\u000a$anxiety = 0\u000a$max_anxiety = 10\u000a$passes = 0\u000a$max_passes = 10\u000a$anxiety_bar = [0,0,0,0,0,0,0,0,0,0]\u000a$parentSayGrid = [\u000a['"I was too busy trying to run away from dad that I was too focused on my own survival," Your mom says.',1],\u000a['Palooka wanders over to your leg and drops his muzzle on your knee. You skritch his big nose. <br><br>"The vet says she can remove that leg tumor if it\u005c's starting to bother him," your mother says.',2],\u000a['"We got this Jew fella at work, and he always needs time off," your father volunteers. "Crazy holidays, just six or seven days right in the middle of spring. And this special food he has to eat. Not when we were kids, that would never have happened when the war was on."', 3] ,\u000a['"All those brave rescue dogs that died on 9/11, sometimes I wake up thinking about them and have to cry myself back to sleep, if it\u005c's not already morning."',2],\u000a['Do you still watch that show?', -2]\u000a['"After I\u005c'm dead, you\u005c'll have to call your father every day to keep him from killing himself."', -2] \u000a]\u000a>>\u000a
 p942
 sg23
 VParents Init
@@ -3059,12 +3059,12 @@ sg25
 g26
 ((I2014
 I12
-I9
-I0
-I54
-I8
-I1
-I343
+I11
+I19
+I27
+I7
+I3
+I345
 I0
 tp944
 (dp945
@@ -3636,10 +3636,162 @@ tp1114
 (dp1115
 tp1116
 Rp1117
+sbsa(dp1118
+g14
+I00
+sg15
+(lp1119
+F2276.6666666666665
+aF899.9999999999999
+asg17
+(itiddlywiki
+Tiddler
+p1120
+(dp1121
+g21
+V/%<div id="playerNovel">\u005c\u000a<<textinput $playerNovel "[[Page Done|Samizdat Done]]">>\u000a</div>\u000a<textarea rows="4" cols="50">This is an area to samizdat.</textarea>%/\u000a<<textblock $playerNovel>>\u000a[[Samizdat Done]]
+p1122
+sg23
+VSamizdat
+p1123
+sg25
+g26
+((I2014
+I12
+I12
+I23
+I43
+I45
+I4
+I346
+I0
+tp1124
+(dp1125
+tp1126
+Rp1127
+sg31
+(lp1128
+sg33
+g26
+((I2014
+I12
+I12
+I20
+I57
+I54
+I4
+I346
+I0
+tp1129
+(dp1130
+tp1131
+Rp1132
+sbsa(dp1133
+g14
+I00
+sg15
+(lp1134
+F2415.3333333333335
+aF1013.333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1135
+(dp1136
+g21
+V<<print $playerNovel>>
+p1137
+sg23
+VSamizdat Done
+p1138
+sg25
+g26
+((I2014
+I12
+I12
+I21
+I8
+I3
+I4
+I346
+I0
+tp1139
+(dp1140
+tp1141
+Rp1142
+sg31
+(lp1143
+sg33
+g26
+((I2014
+I12
+I12
+I21
+I7
+I35
+I4
+I346
+I0
+tp1144
+(dp1145
+tp1146
+Rp1147
+sbsa(dp1148
+g14
+I01
+sg15
+(lp1149
+F14.666666666666671
+aF1519.9999999999998
+asg17
+(itiddlywiki
+Tiddler
+p1150
+(dp1151
+g21
+Vtry {\u000a  version.extensions['textblock'] = { \u000a    major:1, minor:0, revision:0 \u000a  };\u000a	macros['textblock'] = {\u000a		handler: function(place, macroName, params, parser) {\u000a				v = params[0].replace("$","");\u000a				var input= document.createElement('textarea');\u000a				input.setAttribute('maxlength', 5000);\u000a				input.setAttribute('cols',60);\u000a				input.setAttribute('rows', 15);\u000a				d = v+"TextInput";\u000a				input.id = d;\u000a				input.addEventListener('keyup', function()\u000a				{\u000a					state.history[0].variables[v] = document.getElementById(d).value;\u000a				});\u000a				place.appendChild(input);\u000a		},	\u000a		init: function() { var v; var d;},\u000a	};\u000a} catch(e) {\u000a  throwError(place,"textblock Setup Error: "+e.message); \u000a}\u000a\u000a(function(){var r="";var s=Wikifier.formatters;for(var j=0;j<s.length;j++){if(s[j].name=="image"){r=s[j].lookahead;\u000abreak;}}var div=$("storeArea").firstChild.nextSibling;while(div){if(r){k(new RegExp(r,"mg"),4);\u000a}var b=String.fromCharCode(92);var u=b+"s*['"+'"]?([^"'+"']+(jpe?g|a?png|gif|bmp))['"+'"]?'+b+"s*";\u000ak(new RegExp("url"+b+"("+u+b+")","mig"),1);k(new RegExp("src"+b+"s*="+u,"mig"),1);\u000adiv=div.nextSibling;}function k(c,e){do{d=c.exec(div.innerHTML);if(d){var i=new Image();\u000ai.src=d[e];}}while(d);}}());
+p1152
+sg23
+VSamizdat TextBlock
+p1153
+sg25
+g26
+((I2014
+I12
+I12
+I23
+I58
+I50
+I4
+I346
+I0
+tp1154
+(dp1155
+tp1156
+Rp1157
+sg31
+(lp1158
+Vscript
+p1159
+asg33
+g26
+((I2014
+I12
+I12
+I23
+I39
+I19
+I4
+I346
+I0
+tp1160
+(dp1161
+tp1162
+Rp1163
 sbsasS'scale'
-p1118
+p1164
 F0.6000000000000001
 sS'snapping'
-p1119
+p1165
 I00
 ss.
