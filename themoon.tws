@@ -3641,15 +3641,15 @@ g14
 I00
 sg15
 (lp1119
-F2276.6666666666665
-aF899.9999999999999
+F2368.3333333333326
+aF880.0
 asg17
 (itiddlywiki
 Tiddler
 p1120
 (dp1121
 g21
-V/%<div id="playerNovel">\u005c\u000a<<textinput $playerNovel "[[Page Done|Samizdat Done]]">>\u000a</div>\u000a<textarea rows="4" cols="50">This is an area to samizdat.</textarea>%/\u000a<<textblock $playerNovel>>\u000a[[Samizdat Done]]
+V<<if $sentence eq 0>><<display Samizdat Init>><<endif>>\u005c\u000a<<print $novel[$sentence]>>\u000a<<textblock $playerNovel>>\u000a[[Samizdat Done]]
 p1122
 sg23
 VSamizdat
@@ -3658,12 +3658,12 @@ sg25
 g26
 ((I2014
 I12
+I13
+I0
 I12
-I23
-I43
-I45
-I4
-I346
+I57
+I5
+I347
 I0
 tp1124
 (dp1125
@@ -3671,7 +3671,9 @@ tp1126
 Rp1127
 sg31
 (lp1128
-sg33
+Vmoon
+p1129
+asg33
 g26
 ((I2014
 I12
@@ -3682,45 +3684,45 @@ I54
 I4
 I346
 I0
-tp1129
-(dp1130
-tp1131
-Rp1132
-sbsa(dp1133
+tp1130
+(dp1131
+tp1132
+Rp1133
+sbsa(dp1134
 g14
-I00
+I01
 sg15
-(lp1134
-F2415.3333333333335
-aF1013.333333333333
+(lp1135
+F2260.3333333333335
+aF1054.9999999999995
 asg17
 (itiddlywiki
 Tiddler
-p1135
-(dp1136
+p1136
+(dp1137
 g21
-V<<print $playerNovel>>
-p1137
+V<<print $playerNovel>>\u000a<<set $sentence = $sentence + 1>>\u000a[[Samizdat]]
+p1138
 sg23
 VSamizdat Done
-p1138
+p1139
 sg25
 g26
 ((I2014
 I12
-I12
-I21
-I8
-I3
-I4
-I346
+I13
 I0
-tp1139
-(dp1140
-tp1141
-Rp1142
+I11
+I15
+I5
+I347
+I0
+tp1140
+(dp1141
+tp1142
+Rp1143
 sg31
-(lp1143
+(lp1144
 sg33
 g26
 ((I2014
@@ -3732,28 +3734,28 @@ I35
 I4
 I346
 I0
-tp1144
-(dp1145
-tp1146
-Rp1147
-sbsa(dp1148
+tp1145
+(dp1146
+tp1147
+Rp1148
+sbsa(dp1149
 g14
-I01
+I00
 sg15
-(lp1149
+(lp1150
 F14.666666666666671
 aF1519.9999999999998
 asg17
 (itiddlywiki
 Tiddler
-p1150
-(dp1151
+p1151
+(dp1152
 g21
 Vtry {\u000a  version.extensions['textblock'] = { \u000a    major:1, minor:0, revision:0 \u000a  };\u000a	macros['textblock'] = {\u000a		handler: function(place, macroName, params, parser) {\u000a				v = params[0].replace("$","");\u000a				var input= document.createElement('textarea');\u000a				input.setAttribute('maxlength', 5000);\u000a				input.setAttribute('cols',60);\u000a				input.setAttribute('rows', 15);\u000a				d = v+"TextInput";\u000a				input.id = d;\u000a				input.addEventListener('keyup', function()\u000a				{\u000a					state.history[0].variables[v] = document.getElementById(d).value;\u000a				});\u000a				place.appendChild(input);\u000a		},	\u000a		init: function() { var v; var d;},\u000a	};\u000a} catch(e) {\u000a  throwError(place,"textblock Setup Error: "+e.message); \u000a}\u000a\u000a(function(){var r="";var s=Wikifier.formatters;for(var j=0;j<s.length;j++){if(s[j].name=="image"){r=s[j].lookahead;\u000abreak;}}var div=$("storeArea").firstChild.nextSibling;while(div){if(r){k(new RegExp(r,"mg"),4);\u000a}var b=String.fromCharCode(92);var u=b+"s*['"+'"]?([^"'+"']+(jpe?g|a?png|gif|bmp))['"+'"]?'+b+"s*";\u000ak(new RegExp("url"+b+"("+u+b+")","mig"),1);k(new RegExp("src"+b+"s*="+u,"mig"),1);\u000adiv=div.nextSibling;}function k(c,e){do{d=c.exec(div.innerHTML);if(d){var i=new Image();\u000ai.src=d[e];}}while(d);}}());
-p1152
+p1153
 sg23
 VSamizdat TextBlock
-p1153
+p1154
 sg25
 g26
 ((I2014
@@ -3765,14 +3767,14 @@ I50
 I4
 I346
 I0
-tp1154
-(dp1155
-tp1156
-Rp1157
+tp1155
+(dp1156
+tp1157
+Rp1158
 sg31
-(lp1158
+(lp1159
 Vscript
-p1159
+p1160
 asg33
 g26
 ((I2014
@@ -3784,14 +3786,64 @@ I19
 I4
 I346
 I0
-tp1160
-(dp1161
-tp1162
-Rp1163
+tp1161
+(dp1162
+tp1163
+Rp1164
+sbsa(dp1165
+g14
+I00
+sg15
+(lp1166
+F2140.333333333333
+aF796.6666666666665
+asg17
+(itiddlywiki
+Tiddler
+p1167
+(dp1168
+g21
+V<<set //initialize\u000a$novel = [\u000a'This is a sentence of the novel.',\u000a'This is the next sentence of the novel.'\u000a]\u000a\u000a$sentence = 0\u000a>>
+p1169
+sg23
+VSamizdat Init
+p1170
+sg25
+g26
+((I2014
+I12
+I13
+I0
+I6
+I30
+I5
+I347
+I0
+tp1171
+(dp1172
+tp1173
+Rp1174
+sg31
+(lp1175
+sg33
+g26
+((I2014
+I12
+I13
+I0
+I3
+I51
+I5
+I347
+I0
+tp1176
+(dp1177
+tp1178
+Rp1179
 sbsasS'scale'
-p1164
+p1180
 F0.6000000000000001
 sS'snapping'
-p1165
+p1181
 I00
 ss.
