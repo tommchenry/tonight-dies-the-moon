@@ -397,7 +397,7 @@ Tiddler
 p132
 (dp133
 g21
-V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000a	display:none;\u000a}\u000a\u000a#passages{\u000a	margin: 0;\u000a	padding: 0;\u000a	width: 100%\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #2f3030; \u000a	color: #22f000; \u000a	font-family: Terminal, Courier;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a#bg-test \u000a{ background-image: [img[stars-bg]]; }\u000a\u000a.vgfont{\u000a	color: #FFFFFF;\u000a	font-family: 'Press Start 2P', cursive;\u000a}\u000a\u000a#playerNovel input{\u000a	width: 500px;\u000a}
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000ahtml, body, div, span, applet, object, iframe,\u000ah1, h2, h3, h4, h5, h6, p, blockquote, pre,\u000aa, abbr, acronym, address, big, cite, code,\u000adel, dfn, em, img, ins, kbd, q, s, samp,\u000asmall, strike, strong, sub, sup, tt, var,\u000ab, u, i, center,\u000adl, dt, dd, ol, ul, li,\u000afieldset, form, label, legend,\u000atable, caption, tbody, tfoot, thead, tr, th, td,\u000aarticle, aside, canvas, details, embed, \u000afigure, figcaption, footer, header, hgroup, \u000amenu, nav, output, ruby, section, summary,\u000atime, mark, audio, video {\u000a	margin: 0;\u000a	padding: 0;\u000a	border: 0;\u000a	font-size: 100%;\u000a	font: inherit;\u000a	vertical-align: baseline;\u000a}\u000a/* HTML5 display-role reset for older browsers */\u000aarticle, aside, details, figcaption, figure, \u000afooter, header, hgroup, menu, nav, section {\u000a	display: block;\u000a}\u000abody {\u000a	line-height: 1;\u000a}\u000aol, ul {\u000a	list-style: none;\u000a}\u000ablockquote, q {\u000a	quotes: none;\u000a}\u000ablockquote:before, blockquote:after,\u000aq:before, q:after {\u000a	content: '';\u000a	content: none;\u000a}\u000atable {\u000a	border-collapse: collapse;\u000a	border-spacing: 0;\u000a}\u000a\u000a/*Actual Stylesheet */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background: #424254;\u000a	margin: 0;\u000a	padding: 0;\u000a	color: #fff2df;\u000a	font-family: Arial;\u000a	\u000a}\u000a\u000a.passage {\u000a	/* This only affects passages */\u000a	border:none;\u000a	width: 100%;\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #a4a4b8;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #696981;\u000a	\u000a}\u000a.passage p{\u000a	font-size: 0.6 em;\u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a\u000a#sidebar{\u000a	display:none;\u000a}\u000a\u000a#passages{\u000a	margin: 0;\u000a	padding: 0;\u000a	width: 100%\u000a}\u000a\u000a[data-tags~=earth] {\u000a	background-color: #2f3030; \u000a	color: #22f000; \u000a	font-family: Terminal, Courier;\u000a}\u000a\u000a[data-tags~=moon] {\u000a	background-color: #c9c9c9; \u000a	color: #FFFFFF; \u000a	/*font-family: 'Press Start 2P', cursive;*/\u000a}\u000a#bg-test \u000a{ background-image: [img[stars-bg]]; }\u000a\u000a.vgfont{\u000a	color: #FFFFFF;\u000a	font-family: 'Press Start 2P', cursive;\u000a}\u000a\u000a#playerNovel input{\u000a	width: 500px;\u000a}\u000a\u000a#spreadsheet table, th, td {\u000a   border: 2px solid #bdbdbd;\u000a   background: #FFF;\u000a   font-family: Times New Roman;\u000a   color: #000;\u000a   text-align:right;\u000a}\u000a\u000a#spreadsheet th{\u000a	background: #cecece;\u000a	text-align: center;\u000a	font-family: Verdana;\u000a	font-weight: 100;\u000a}
 p134
 sg23
 VMain Styles
@@ -406,12 +406,12 @@ sg25
 g26
 ((I2014
 I12
-I12
-I21
-I51
-I19
-I4
-I346
+I13
+I1
+I30
+I23
+I5
+I347
 I0
 tp136
 (dp137
@@ -1381,15 +1381,15 @@ g14
 I00
 sg15
 (lp434
-F1666.666666666667
-aF107.91666666666666
+F1670.0
+aF106.25000000000003
 asg17
 (itiddlywiki
 Tiddler
 p435
 (dp436
 g21
-V<<set //initialize\u000a$season = 1;\u000a\u000a$colonyPop = Math.floor(Math.random() * 50) + 30; \u000a\u000a$playerCrops = {\u000a	acreage: 10, \u000a	crop: 'Cotton',\u000a	quality: 10,\u000a	maxAcres: 10\u000a} \u000a\u000a$ownerCrops = {\u000a	acreage: 90,\u000a	crop: 'Tobacco',\u000a	quality: 10,\u000a	maxAcres: 90,\u000a	totalCash: 0\u000a}\u000a\u000a$player1 = {\u000a	cash: 300,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 50) + 10,\u000a	need: 0\u000a};\u000a\u000a$cannabis = {\u000a	name:"Cannabis",\u000a	pricePerUnit: 10,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$wheat = {	\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$coffee = {	\u000a	name: "Coffee",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$beans = {	\u000a	name: "Soybeans",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a\u000a$allCrops = [$cotton, $cannabis, $wheat, $coffee, $beans];\u000a\u000a>>\u000a<<display Need Increase>>
+V<<set //initialize\u000a$season = 1;\u000a\u000a$colonyPop = Math.floor(Math.random() * 50) + 30; \u000a\u000a$playerCrops = {\u000a	acreage: 10, \u000a	crop: 'Cotton',\u000a	quality: 10,\u000a	maxAcres: 10\u000a} \u000a\u000a$ownerCrops = {\u000a	acreage: 90,\u000a	crop: 'Tobacco',\u000a	quality: 20,\u000a	maxAcres: 90,\u000a	totalCash: 0\u000a}\u000a\u000a$player1 = {\u000a	cash: 300,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 50) + 10,\u000a	need: 0\u000a};\u000a\u000a$cannabis = {\u000a	name:"Cannabis",\u000a	pricePerUnit: 10,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$wheat = {	\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$coffee = {	\u000a	name: "Coffee",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$beans = {	\u000a	name: "Soybeans",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a\u000a$allCrops = [$cotton, $cannabis, $wheat, $coffee, $beans];\u000a\u000a>>\u000a<<display Need Increase>>
 p437
 sg23
 VFarm Init
@@ -1397,13 +1397,13 @@ p438
 sg25
 g26
 ((I2014
-I11
-I29
+I12
 I13
-I47
-I37
+I19
+I22
+I48
 I5
-I333
+I347
 I0
 tp439
 (dp440
@@ -1493,7 +1493,7 @@ Tiddler
 p467
 (dp468
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<nobr>><<display Farm Init>>\u000a<<display Price Update>>\u000a<<display Seed Pricing>>\u000aSeason: <<print $season>><<endnobr>>\u000aColony Population Rating: <<print $colonyPop>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aCannabis: $<<print $cannabis.pricePerUnit>>\u000aWheat: $<<print $wheat.pricePerUnit>>\u000aSoybeans: $<<print $beans.pricePerUnit>>\u000aCoffee: $<<print $coffee.pricePerUnit>><<set $cropRatio = [$cotton, $cannabis, $wheat, $coffee, $beans]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000a\u000a\u000aThe Agricultural Commission has instructed you to grow <<$ownerCrops.acreage>> of <<print $cropRatio[0].name>> this season due to shortages.\u000a\u000aWhat will you plant for the <<$playerCrops.acreage>> acres you control?\u000aYou have $<<print $player1.cash>>.\u000a<<if $player1.cash gt $cropRatio[4].pricePerSeed>>\u000a<<nobr>>\u000a<<if $cotton.pricePerSeed gt 0>>[[Cotton|Plant Cotton]]: $<<print $cotton.pricePerSeed >><br><<endif>>\u000a<<if $cannabis.pricePerSeed gt 0>>[[Cannabis|Plant Marijuana]]: $<<print $cannabis.pricePerSeed>><br><<endif>>\u000a<<if $wheat.pricePerSeed gt 0>>[[Wheat|Plant Wheat]]: $<<print $wheat.pricePerSeed>><br><<endif>>\u000a<<if $beans.pricePerSeed gt 0>>[[Soybeans|Plant Soybeans]]: $<<print $beans.pricePerSeed>><br><<endif>>\u000a<<if $coffee.pricePerSeed gt 0>>[[Coffee|Plant Coffee]]: $<<print $coffee.pricePerSeed>><br><<endif>>\u000a<<endnobr>>\u000a<<else>>\u000aYou can't afford any seed this season. \u000a[[Earn Money]]\u000a<<endif>>\u000a\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<nobr>><<display Farm Init>>\u000a<<display Price Update>>\u000a<<display Seed Pricing>>\u000aSeason: <<print $season>><<endnobr>>\u000aColony Population Rating: <<print $colonyPop>>\u000a\u000a<<display Penalties>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aCannabis: $<<print $cannabis.pricePerUnit>>\u000aWheat: $<<print $wheat.pricePerUnit>>\u000aSoybeans: $<<print $beans.pricePerUnit>>\u000aCoffee: $<<print $coffee.pricePerUnit>><<set $cropRatio = [$cotton, $cannabis, $wheat, $coffee, $beans]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000a\u000a\u000aThe Agricultural Commission has instructed you to grow <<$ownerCrops.acreage>> of <<print $cropRatio[0].name>> this season due to shortages.\u000a\u000aWhat will you plant for the <<$playerCrops.acreage>> acres you control?\u000aYou have $<<print $player1.cash>>.\u000a<<if $player1.cash gt $cropRatio[4].pricePerSeed>>\u000a<<nobr>>\u000a<<if $cotton.pricePerSeed gt 0>>[[Cotton|Plant Cotton]]: $<<print $cotton.pricePerSeed >><br><<endif>>\u000a<<if $cannabis.pricePerSeed gt 0>>[[Cannabis|Plant Marijuana]]: $<<print $cannabis.pricePerSeed>><br><<endif>>\u000a<<if $wheat.pricePerSeed gt 0>>[[Wheat|Plant Wheat]]: $<<print $wheat.pricePerSeed>><br><<endif>>\u000a<<if $beans.pricePerSeed gt 0>>[[Soybeans|Plant Soybeans]]: $<<print $beans.pricePerSeed>><br><<endif>>\u000a<<if $coffee.pricePerSeed gt 0>>[[Coffee|Plant Coffee]]: $<<print $coffee.pricePerSeed>><br><<endif>>\u000a<<endnobr>>\u000a<<else>>\u000aYou can't afford any seed this season. \u000a[[Earn Money]]\u000a<<endif>>\u000a\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
 p469
 sg23
 VPlanting Start
@@ -1501,13 +1501,13 @@ p470
 sg25
 g26
 ((I2014
-I11
-I29
-I19
-I8
-I27
+I12
+I13
+I21
+I3
+I49
 I5
-I333
+I347
 I0
 tp471
 (dp472
@@ -1690,7 +1690,7 @@ tp527
 Rp528
 sbsa(dp529
 g14
-I00
+I01
 sg15
 (lp530
 F1751.666666666666
@@ -1701,7 +1701,7 @@ Tiddler
 p531
 (dp532
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<nobr>>\u000a<<display Price Update>>\u000a<<display Seed Pricing>>\u000aSeason: <<print $season>><<endnobr>>\u000aColony Population Rating: <<print $colonyPop>>\u000a\u000a<<display Population Growth>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aCannabis: $<<print $cannabis.pricePerUnit>>\u000aWheat: $<<print $wheat.pricePerUnit>>\u000aSoybeans: $<<print $beans.pricePerUnit>>\u000aCoffee: $<<print $coffee.pricePerUnit>><<set $cropRatio = [$cotton, $cannabis, $wheat, $coffee, $beans]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000a\u000a\u000aThe Agricultural Commission has instructed you to grow <<$ownerCrops.acreage>> of <<print $cropRatio[0].name>> this season due to shortages.\u000a\u000aWhat will you plant for the <<$playerCrops.acreage>> acres you control?\u000aYou have $<<print $player1.cash>>.\u000a<<if $player1.cash gt $cropRatio[4].pricePerSeed>>\u000a<<nobr>>\u000a<<if $cotton.pricePerSeed gt 0>>[[Cotton|Plant Cotton]]: $<<print $cotton.pricePerSeed >><br><<endif>>\u000a<<if $cannabis.pricePerSeed gt 0>>[[Cannabis|Plant Marijuana]]: $<<print $cannabis.pricePerSeed>><br><<endif>>\u000a<<if $wheat.pricePerSeed gt 0>>[[Wheat|Plant Wheat]]: $<<print $wheat.pricePerSeed>><br><<endif>>\u000a<<if $beans.pricePerSeed gt 0>>[[Soybeans|Plant Soybeans]]: $<<print $beans.pricePerSeed>><br><<endif>>\u000a<<if $coffee.pricePerSeed gt 0>>[[Coffee|Plant Coffee]]: $<<print $coffee.pricePerSeed>><br><<endif>>\u000a<<endnobr>>\u000a<<else>>\u000aYou can't afford any seed this season. \u000a[[Earn Money]]\u000a<<endif>>\u000a\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<nobr>>\u000a<<display Price Update>>\u000a<<display Seed Pricing>>\u000aSeason: <<print $season>><<endnobr>>\u000aColony Population Rating: <<print $colonyPop>>\u000a\u000a<<display Population Growth>>\u000a<<display Penalties>>\u000a\u000aCurrent Trading Prices\u000aCotton: $<<print $cotton.pricePerUnit>>\u000aCannabis: $<<print $cannabis.pricePerUnit>>\u000aWheat: $<<print $wheat.pricePerUnit>>\u000aSoybeans: $<<print $beans.pricePerUnit>>\u000aCoffee: $<<print $coffee.pricePerUnit>><<set $cropRatio = [$cotton, $cannabis, $wheat, $coffee, $beans]>><<set $cropRatio = $cropRatio.sort(function(a, b){return a.ratio-b.ratio})>>\u000a\u000a\u000aThe Agricultural Commission has instructed you to grow <<$ownerCrops.acreage>> of <<print $cropRatio[0].name>> this season due to shortages.\u000a\u000aWhat will you plant for the <<$playerCrops.acreage>> acres you control?\u000aYou have $<<print $player1.cash>>.\u000a<<if $player1.cash gt $cropRatio[4].pricePerSeed>>\u000a<<nobr>>\u000a<<if $cotton.pricePerSeed gt 0>>[[Cotton|Plant Cotton]]: $<<print $cotton.pricePerSeed >><br><<endif>>\u000a<<if $cannabis.pricePerSeed gt 0>>[[Cannabis|Plant Marijuana]]: $<<print $cannabis.pricePerSeed>><br><<endif>>\u000a<<if $wheat.pricePerSeed gt 0>>[[Wheat|Plant Wheat]]: $<<print $wheat.pricePerSeed>><br><<endif>>\u000a<<if $beans.pricePerSeed gt 0>>[[Soybeans|Plant Soybeans]]: $<<print $beans.pricePerSeed>><br><<endif>>\u000a<<if $coffee.pricePerSeed gt 0>>[[Coffee|Plant Coffee]]: $<<print $coffee.pricePerSeed>><br><<endif>>\u000a<<endnobr>>\u000a<<else>>\u000aYou can't afford any seed this season. \u000a[[Earn Money]]\u000a<<endif>>\u000a<<set $ownerCrops.quality = $ownerCrops.quality + 1>>\u000a<<set $ownerCrops.crop = $cropRatio[0].name>>\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
 p533
 sg23
 VPlanting Again
@@ -1709,13 +1709,13 @@ p534
 sg25
 g26
 ((I2014
-I11
-I29
-I19
-I9
-I45
+I12
+I13
+I21
+I28
+I58
 I5
-I333
+I347
 I0
 tp535
 (dp536
@@ -2581,8 +2581,8 @@ g14
 I00
 sg15
 (lp799
-F2396.6666666666665
-aF719.9999999999999
+F2358.3333333333335
+aF659.9999999999999
 asg17
 (itiddlywiki
 Tiddler
@@ -3690,7 +3690,7 @@ tp1132
 Rp1133
 sbsa(dp1134
 g14
-I01
+I00
 sg15
 (lp1135
 F2260.3333333333335
@@ -3840,10 +3840,166 @@ tp1176
 (dp1177
 tp1178
 Rp1179
+sbsa(dp1180
+g14
+I00
+sg15
+(lp1181
+F709.9999999999999
+aF1371.6666666666665
+asg17
+(itiddlywiki
+Tiddler
+p1182
+(dp1183
+g21
+V<table id="spreadsheet">\u000a<tr>\u000a</tr><tr>\u000a<th style="width:20px;">&nbsp;</th><th style="width:150px;">A</th><th style="font-weight:bold;border-bottom:2px solid #000000;border-right:2px solid #000000; width:150px;">B</th><th style="width:150px;">C</th><th style="width:150px;">D</th><th style="width:150px;">E</th>\u000a</tr><tr>\u000a<td style="background:#cecece;">1</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece;">2</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece; font-weight:bold; border-bottom:2px solid #000000;">3</td><td></td><td style="border: 4px solid #000000;"><<textinput $spreadsheet>></td><td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece;">4</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a</tr><tr>\u000a<td style="background:#cecece;">5</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a</tr><tr>\u000a<td style="background:#cecece;">6</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr>\u000a</tr></table>\u000a<<button [[Add]]>>
+p1184
+sg23
+VSpreadsheet
+p1185
+sg25
+g26
+((I2014
+I12
+I13
+I1
+I38
+I44
+I5
+I347
+I0
+tp1186
+(dp1187
+tp1188
+Rp1189
+sg31
+(lp1190
+Vearth
+p1191
+asg33
+g26
+((I2014
+I12
+I13
+I0
+I25
+I11
+I5
+I347
+I0
+tp1192
+(dp1193
+tp1194
+Rp1195
+sbsa(dp1196
+g14
+I00
+sg15
+(lp1197
+F879.333333333333
+aF1384.9999999999995
+asg17
+(itiddlywiki
+Tiddler
+p1198
+(dp1199
+g21
+V<table id="spreadsheet">\u000a<tr>\u000a</tr><tr>\u000a<th style="width:20px;">&nbsp;</th><th style="width:150px;">A</th><th style="font-weight:bold;border-bottom:2px solid #000000;border-right:2px solid #000000; width:150px;">B</th><th style="width:150px;">C</th><th style="width:150px;">D</th><th style="width:150px;">E</th>\u000a</tr><tr>\u000a<td style="background:#cecece;">1</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece;">2</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece;">3</td><td></td><td><<print $spreadsheet>></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece; font-weight:bold; border-bottom:2px solid #000000;">4</td><td></td><td style="border: 4px solid #000000;"><<textinput $spreadsheet>></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a</tr><tr>\u000a<td style="background:#cecece;">5</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a</tr><tr>\u000a<td style="background:#cecece;">6</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr>\u000a</tr></table>\u000a<<button [[Add]]>>
+p1200
+sg23
+VAdd
+p1201
+sg25
+g26
+((I2014
+I12
+I13
+I13
+I47
+I6
+I5
+I347
+I0
+tp1202
+(dp1203
+tp1204
+Rp1205
+sg31
+(lp1206
+Vearth
+p1207
+asg33
+g26
+((I2014
+I12
+I13
+I0
+I38
+I45
+I5
+I347
+I0
+tp1208
+(dp1209
+tp1210
+Rp1211
+sbsa(dp1212
+g14
+I00
+sg15
+(lp1213
+F1596.6666666666665
+aF704.9999999999999
+asg17
+(itiddlywiki
+Tiddler
+p1214
+(dp1215
+g21
+V<<nobr>>\u000a/%<<display Farm Init>>\u000a<<set $cotton.inStore = 0>>\u005c\u000a<<set $wheat.inStore = 0>>\u005c\u000a<<set $cannabis.inStore = 0>>\u005c\u000a<<set $beans.inStore = 0>>\u005c\u000a<<set $coffee.inStore = 0>>\u005c\u000aCotton Price: <<print $cotton.inStore>>\u000aWheat Price: <<print $wheat.inStore>>\u000aCannabis Price: <<print $cannabis.inStore>>\u000aSoybeans Price: <<print $beans.inStore>>\u000aCoffee Price: <<print $coffee.inStore>>%/\u000a<<if $cotton.inStore lte 0 >>\u000a/%<strong>Cotton Penalty</strong>\u000aPlayer Owner Quality Decrease\u000a	Old Player Crop Quality: <<print $playerCrops.quality>>%/\u000a	<<set $playerCrops.quality = $playerCrops.quality - 2>>\u000a	/%New Player Crop Quality:<<print $playerCrops.quality>>\u000aOwner Quality Decrease\u000a	Old Owner Crop Quality: <<print $ownerCrops.quality>>%/\u000a	<<set $ownerCrops.quality = $ownerCrops.quality - 2>>\u000a	/%New Owner Crop Quality:<<print $ownerCrops.quality>>%/\u000aThe cotton supply of your pod has been completely exhausted. This is setback will decrease the quality of crops you'll be able to produce this season.\u000a<<endif>>\u000a<<if $wheat.inStore lte 0 >>\u000a/%<strong>Wheat Penalty</strong>\u000aPopulation Decrease\u000a	Old Colony Pop: <<print $colonyPop>>%/\u000a	<<set $colonyPop = $colonyPop - 5>>\u000a	/%New Colony Pop: <<print $colonyPop>>\u000aIncreased Soybeans InStore Loss\u000a	Old Soybeans inStore: <<print $beans.inStore>>%/\u000a	<<set $beans.inStore = $beans.inStore - 10>>\u000a	/%New Soybeans inStore: <<print $beans.inStore>>\u000aIncreased Wheat Need in Future\u000a	Old Wheat Need: <<print $wheat.need>>%/\u000a	<<set $wheat.need = $wheat.need + 10>>\u000a	/%New Wheat Need:<<print $wheat.need>>%/\u000aThe wheat supply of your pod has been completely exhausted. The colony population decreases due to malnourishment and starvation. The demand for soybeans jumps. The Agricultural Commission readjusts the projected need for future wheat harvests to support this population increases. \u000a<<endif>>\u000a<<if $cannabis.inStore lte 0 >>\u000a/%<strong>Cannabis Penalty</strong>\u000aPlayer Owner Quality Decrease\u000a	Old Player Crop Quality: <<print $playerCrops.quality>>%/\u000a	<<set $playerCrops.quality = $playerCrops.quality - 2>>\u000a/%	New Player Crop Quality:<<print $playerCrops.quality>>\u000aOwner Quality Decrease\u000a	Old Owner Crop Quality: <<print $ownerCrops.quality>>%/\u000a	<<set $ownerCrops.quality = $ownerCrops.quality - 2>>\u000a/%	New Owner Crop Quality:<<print $ownerCrops.quality>>%/\u000aThe cannabis supply of your pod has been completely exhausted. This is setback will decrease the quality of crops you'll be able to produce this season.\u000a<<endif>>\u000a<<if $beans.inStore lte 0 >>\u000a/%<strong>Soybeans Penalty</strong>\u000aPopulation Decrease\u000a	Old Colony Pop: <<print $colonyPop>>%/\u000a	<<set $colonyPop = $colonyPop - 5>>\u000a/%	New Colony Pop: <<print $colonyPop>>\u000aIncreased Wheat InStore Loss\u000a	Old Wheat inStore: <<print $wheat.inStore>>%/\u000a	<<set $wheat.inStore = $wheat.inStore - 10>>\u000a/%	New Wheat inStore: <<print $wheat.inStore>>\u000aIncreased Soybeans Need in Future\u000a	Old Soybeans Need: <<print $beans.need>>%/\u000a	<<set $beans.need = $beans.need + 10>>\u000a/%	New Soybeans Need:<<print $beans.need>> %/\u000aThe soybean supply of your pod has been completely exhausted. The colony population decreases due to malnourishment and starvation. The demand for wheat jumps. The Agricultural Commission readjusts the projected need for future soybeans harvests to support this population increases. \u000a<<endif>>\u000a<<if $coffee.inStore lte 0 >>\u000a/%<strong>Coffee Penalty</strong>\u000aPlayer Owner Quality Decrease\u000a	Old Player Crop Quality: <<print $playerCrops.quality>>%/\u000a	<<set $playerCrops.quality = $playerCrops.quality - 2>>\u000a/%	New Player Crop Quality:<<print $playerCrops.quality>>\u000aOwner Quality Decrease\u000a	Old Owner Crop Quality: <<print $ownerCrops.quality>>%/\u000a	<<set $ownerCrops.quality = $ownerCrops.quality - 2>>\u000a/%	New Owner Crop Quality:<<print $ownerCrops.quality>>%/\u000aThe coffee supply of your pod has been completely exhausted. This is setback will decrease the quality of crops you'll be able to produce this season.\u000a<<endif>>\u000a<<endnobr>>
+p1216
+sg23
+VPenalties
+p1217
+sg25
+g26
+((I2014
+I12
+I13
+I22
+I25
+I12
+I5
+I347
+I0
+tp1218
+(dp1219
+tp1220
+Rp1221
+sg31
+(lp1222
+Vmoon
+p1223
+asg33
+g26
+((I2014
+I12
+I13
+I18
+I1
+I47
+I5
+I347
+I0
+tp1224
+(dp1225
+tp1226
+Rp1227
 sbsasS'scale'
-p1180
+p1228
 F0.6000000000000001
 sS'snapping'
-p1181
+p1229
 I00
 ss.
