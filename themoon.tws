@@ -1285,7 +1285,7 @@ Tiddler
 p403
 (dp404
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000aPlayer Crop: <<print $playerCrops.crop>>\u000aQuality: <<print $playerCrops.quality>>\u000aOwner Crop: <<print $ownerCrops.crop>>\u000a\u000a[[Harvest]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000aPlayer Crop: <<print $playerCrops.crop>>\u000aQuality: <<print $playerCrops.quality>>\u000aOwner Crop: <<print $ownerCrops.crop>>\u000a\u000a[[Harvest]]\u000a[[Samizdat]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
 p405
 sg23
 VFarm Debug
@@ -1293,13 +1293,13 @@ p406
 sg25
 g26
 ((I2014
+I12
+I14
 I11
-I28
-I18
-I42
-I3
-I4
-I332
+I7
+I7
+I6
+I348
 I0
 tp407
 (dp408
@@ -1337,7 +1337,7 @@ Tiddler
 p419
 (dp420
 g21
-V<<set //initialize\u000a$season = 1;\u000a\u000a$colonyPop = Math.floor(Math.random() * 50) + 30; \u000a\u000a$playerCrops = {\u000a	acreage: 10, \u000a	crop: 'Cotton',\u000a	quality: 10,\u000a	maxAcres: 10\u000a} \u000a\u000a$ownerCrops = {\u000a	acreage: 90,\u000a	crop: 'Tobacco',\u000a	quality: 20,\u000a	maxAcres: 90,\u000a	totalCash: 0\u000a}\u000a\u000a$player1 = {\u000a	cash: 300,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 50) + 10,\u000a	need: 0\u000a};\u000a\u000a$cannabis = {\u000a	name:"Cannabis",\u000a	pricePerUnit: 10,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$wheat = {	\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$coffee = {	\u000a	name: "Coffee",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$beans = {	\u000a	name: "Soybeans",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a\u000a$allCrops = [$cotton, $cannabis, $wheat, $coffee, $beans];\u000a\u000a>>\u000a<<display Need Increase>>
+V<<set //initialize\u000a$season = 1;\u000a\u000a$colonyPop = Math.floor(Math.random() * 20) + 60; \u000a\u000a$playerCrops = {\u000a	acreage: 10, \u000a	crop: 'Cotton',\u000a	quality: 10,\u000a	maxAcres: 10\u000a} \u000a\u000a$ownerCrops = {\u000a	acreage: 90,\u000a	crop: 'Tobacco',\u000a	quality: 20,\u000a	maxAcres: 90,\u000a	totalCash: 0\u000a}\u000a\u000a$player1 = {\u000a	cash: 300,\u000a}\u000a\u000a$cotton = {\u000a	name:"Cotton",\u000a	pricePerUnit: 5,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 50) + 10,\u000a	need: 0\u000a};\u000a\u000a$cannabis = {\u000a	name:"Cannabis",\u000a	pricePerUnit: 10,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$wheat = {	\u000a	name: "Wheat",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$coffee = {	\u000a	name: "Coffee",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a$beans = {	\u000a	name: "Soybeans",\u000a	pricePerUnit: 2,\u000a	pricePerSeed: 5,\u000a	inStore: Math.floor(Math.random() * 10) + 10,\u000a	need: 0\u000a};\u000a\u000a\u000a$allCrops = [$cotton, $cannabis, $wheat, $coffee, $beans];\u000a\u000a>>\u000a<<display Need Increase>>
 p421
 sg23
 VFarm Init
@@ -1346,12 +1346,12 @@ sg25
 g26
 ((I2014
 I12
-I13
-I19
+I14
+I11
 I22
-I48
-I5
-I347
+I9
+I6
+I348
 I0
 tp423
 (dp424
@@ -2331,7 +2331,7 @@ Tiddler
 p721
 (dp722
 g21
-V<<nobr>>\u000a<<if $season % 4 == 0>>\u000aA new ship of colonists arrives.\u000a<<set $colonyPop = $colonyPop + 10>> \u000a<<display Need Increase>>\u000a<<endif>>\u000a<<endnobr>>
+V<<nobr>>\u000a<<if $season % 4 == 0>>\u000aA new ship of colonists arrives.\u000a<<set $colonyPop = $colonyPop + 20>> \u000a<<display Need Increase>>\u000a<<endif>>\u000a<<endnobr>>
 p723
 sg23
 VPopulation Growth
@@ -2339,13 +2339,13 @@ p724
 sg25
 g26
 ((I2014
+I12
+I14
 I11
-I28
-I17
+I20
 I54
-I40
-I4
-I332
+I6
+I348
 I0
 tp725
 (dp726
@@ -2529,8 +2529,8 @@ g14
 I00
 sg15
 (lp783
-F2236.666666666667
-aF718.3333333333335
+F2361.6666666666656
+aF635.0000000000002
 asg17
 (itiddlywiki
 Tiddler
@@ -3598,7 +3598,7 @@ Tiddler
 p1105
 (dp1106
 g21
-V<<if $sentence eq 0>><<display Samizdat Init>><<endif>>\u005c\u000a<<print $novel[$sentence]>>\u000a<<textblock $playerNovel>>\u000a[[Samizdat Done]]
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<if $sentence eq 0>><<display Samizdat Init>><<endif>>\u005c\u000a<<print $novel[$sentence]>>\u000a<<textblock $playerNovel>>\u000a[[Samizdat Done]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
 p1107
 sg23
 VSamizdat
@@ -3607,12 +3607,12 @@ sg25
 g26
 ((I2014
 I12
-I13
-I0
-I12
+I14
+I11
+I7
 I57
-I5
-I347
+I6
+I348
 I0
 tp1109
 (dp1110
@@ -3650,7 +3650,7 @@ Tiddler
 p1121
 (dp1122
 g21
-V<<print $playerNovel>>\u000a<<set $sentence = $sentence + 1>>\u000a[[Samizdat]]
+V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em">\u000a<<print $playerNovel>>\u000a<<set $sentence = $sentence + 1>>\u000a[[Harvest]]\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>
 p1123
 sg23
 VSamizdat Done
@@ -3659,12 +3659,12 @@ sg25
 g26
 ((I2014
 I12
-I13
-I0
+I14
 I11
-I15
-I5
-I347
+I22
+I48
+I6
+I348
 I0
 tp1125
 (dp1126
@@ -3672,7 +3672,9 @@ tp1127
 Rp1128
 sg31
 (lp1129
-sg33
+Vmoon
+p1130
+asg33
 g26
 ((I2014
 I12
@@ -3683,28 +3685,28 @@ I35
 I4
 I346
 I0
-tp1130
-(dp1131
-tp1132
-Rp1133
-sbsa(dp1134
+tp1131
+(dp1132
+tp1133
+Rp1134
+sbsa(dp1135
 g14
 I00
 sg15
-(lp1135
+(lp1136
 F14.666666666666671
 aF1519.9999999999998
 asg17
 (itiddlywiki
 Tiddler
-p1136
-(dp1137
+p1137
+(dp1138
 g21
 Vtry {\u000a  version.extensions['textblock'] = { \u000a    major:1, minor:0, revision:0 \u000a  };\u000a	macros['textblock'] = {\u000a		handler: function(place, macroName, params, parser) {\u000a				v = params[0].replace("$","");\u000a				var input= document.createElement('textarea');\u000a				input.setAttribute('maxlength', 5000);\u000a				input.setAttribute('cols',60);\u000a				input.setAttribute('rows', 15);\u000a				d = v+"TextInput";\u000a				input.id = d;\u000a				input.addEventListener('keyup', function()\u000a				{\u000a					state.history[0].variables[v] = document.getElementById(d).value;\u000a				});\u000a				place.appendChild(input);\u000a		},	\u000a		init: function() { var v; var d;},\u000a	};\u000a} catch(e) {\u000a  throwError(place,"textblock Setup Error: "+e.message); \u000a}\u000a\u000a(function(){var r="";var s=Wikifier.formatters;for(var j=0;j<s.length;j++){if(s[j].name=="image"){r=s[j].lookahead;\u000abreak;}}var div=$("storeArea").firstChild.nextSibling;while(div){if(r){k(new RegExp(r,"mg"),4);\u000a}var b=String.fromCharCode(92);var u=b+"s*['"+'"]?([^"'+"']+(jpe?g|a?png|gif|bmp))['"+'"]?'+b+"s*";\u000ak(new RegExp("url"+b+"("+u+b+")","mig"),1);k(new RegExp("src"+b+"s*="+u,"mig"),1);\u000adiv=div.nextSibling;}function k(c,e){do{d=c.exec(div.innerHTML);if(d){var i=new Image();\u000ai.src=d[e];}}while(d);}}());
-p1138
+p1139
 sg23
 VSamizdat TextBlock
-p1139
+p1140
 sg25
 g26
 ((I2014
@@ -3716,14 +3718,14 @@ I50
 I4
 I346
 I0
-tp1140
-(dp1141
-tp1142
-Rp1143
+tp1141
+(dp1142
+tp1143
+Rp1144
 sg31
-(lp1144
+(lp1145
 Vscript
-p1145
+p1146
 asg33
 g26
 ((I2014
@@ -3735,28 +3737,28 @@ I19
 I4
 I346
 I0
-tp1146
-(dp1147
-tp1148
-Rp1149
-sbsa(dp1150
+tp1147
+(dp1148
+tp1149
+Rp1150
+sbsa(dp1151
 g14
 I00
 sg15
-(lp1151
+(lp1152
 F2348.6666666666656
 aF921.6666666666664
 asg17
 (itiddlywiki
 Tiddler
-p1152
-(dp1153
+p1153
+(dp1154
 g21
 V<<set //initialize\u000a$novel = [\u000a'This is a sentence of the novel.',\u000a'This is the next sentence of the novel.'\u000a]\u000a\u000a$sentence = 0\u000a>>
-p1154
+p1155
 sg23
 VSamizdat Init
-p1155
+p1156
 sg25
 g26
 ((I2014
@@ -3768,12 +3770,12 @@ I30
 I5
 I347
 I0
-tp1156
-(dp1157
-tp1158
-Rp1159
+tp1157
+(dp1158
+tp1159
+Rp1160
 sg31
-(lp1160
+(lp1161
 sg33
 g26
 ((I2014
@@ -3785,28 +3787,28 @@ I51
 I5
 I347
 I0
-tp1161
-(dp1162
-tp1163
-Rp1164
-sbsa(dp1165
+tp1162
+(dp1163
+tp1164
+Rp1165
+sbsa(dp1166
 g14
 I00
 sg15
-(lp1166
+(lp1167
 F709.9999999999999
 aF1371.6666666666665
 asg17
 (itiddlywiki
 Tiddler
-p1167
-(dp1168
+p1168
+(dp1169
 g21
 V<table id="spreadsheet">\u000a<tr>\u000a</tr><tr>\u000a<th style="width:20px;">&nbsp;</th><th style="width:150px;">A</th><th style="font-weight:bold;border-bottom:2px solid #000000;border-right:2px solid #000000; width:150px;">B</th><th style="width:150px;">C</th><th style="width:150px;">D</th><th style="width:150px;">E</th>\u000a</tr><tr>\u000a<td style="background:#cecece;">1</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece;">2</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece; font-weight:bold; border-bottom:2px solid #000000;">3</td><td></td><td style="border: 4px solid #000000;"><<textinput $spreadsheet>></td><td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece;">4</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a</tr><tr>\u000a<td style="background:#cecece;">5</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a</tr><tr>\u000a<td style="background:#cecece;">6</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr>\u000a</tr></table>\u000a<<button [[Add]]>>
-p1169
+p1170
 sg23
 VSpreadsheet
-p1170
+p1171
 sg25
 g26
 ((I2014
@@ -3818,14 +3820,14 @@ I44
 I5
 I347
 I0
-tp1171
-(dp1172
-tp1173
-Rp1174
+tp1172
+(dp1173
+tp1174
+Rp1175
 sg31
-(lp1175
+(lp1176
 Vearth
-p1176
+p1177
 asg33
 g26
 ((I2014
@@ -3837,28 +3839,28 @@ I11
 I5
 I347
 I0
-tp1177
-(dp1178
-tp1179
-Rp1180
-sbsa(dp1181
+tp1178
+(dp1179
+tp1180
+Rp1181
+sbsa(dp1182
 g14
 I00
 sg15
-(lp1182
+(lp1183
 F879.333333333333
 aF1384.9999999999995
 asg17
 (itiddlywiki
 Tiddler
-p1183
-(dp1184
+p1184
+(dp1185
 g21
 V<table id="spreadsheet">\u000a<tr>\u000a</tr><tr>\u000a<th style="width:20px;">&nbsp;</th><th style="width:150px;">A</th><th style="font-weight:bold;border-bottom:2px solid #000000;border-right:2px solid #000000; width:150px;">B</th><th style="width:150px;">C</th><th style="width:150px;">D</th><th style="width:150px;">E</th>\u000a</tr><tr>\u000a<td style="background:#cecece;">1</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece;">2</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece;">3</td><td></td><td><<print $spreadsheet>></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a<td style="background:#cecece; font-weight:bold; border-bottom:2px solid #000000;">4</td><td></td><td style="border: 4px solid #000000;"><<textinput $spreadsheet>></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a</tr><tr>\u000a<td style="background:#cecece;">5</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr><tr>\u000a</tr><tr>\u000a<td style="background:#cecece;">6</td><td></td><td></td>\u000a<td></td><td></td><td></td>\u000a</tr>\u000a</tr></table>\u000a<<button [[Add]]>>
-p1185
+p1186
 sg23
 VAdd
-p1186
+p1187
 sg25
 g26
 ((I2014
@@ -3870,14 +3872,14 @@ I6
 I5
 I347
 I0
-tp1187
-(dp1188
-tp1189
-Rp1190
+tp1188
+(dp1189
+tp1190
+Rp1191
 sg31
-(lp1191
+(lp1192
 Vearth
-p1192
+p1193
 asg33
 g26
 ((I2014
@@ -3889,28 +3891,28 @@ I45
 I5
 I347
 I0
-tp1193
-(dp1194
-tp1195
-Rp1196
-sbsa(dp1197
+tp1194
+(dp1195
+tp1196
+Rp1197
+sbsa(dp1198
 g14
 I00
 sg15
-(lp1198
+(lp1199
 F1596.6666666666665
 aF704.9999999999999
 asg17
 (itiddlywiki
 Tiddler
-p1199
-(dp1200
+p1200
+(dp1201
 g21
 V<<nobr>>\u000a/%<<display Farm Init>>\u000a<<set $cotton.inStore = 0>>\u005c\u000a<<set $wheat.inStore = 0>>\u005c\u000a<<set $cannabis.inStore = 0>>\u005c\u000a<<set $beans.inStore = 0>>\u005c\u000a<<set $coffee.inStore = 0>>\u005c\u000aCotton Price: <<print $cotton.inStore>>\u000aWheat Price: <<print $wheat.inStore>>\u000aCannabis Price: <<print $cannabis.inStore>>\u000aSoybeans Price: <<print $beans.inStore>>\u000aCoffee Price: <<print $coffee.inStore>>%/\u000a<<if $cotton.inStore lte 0 >>\u000a/%<strong>Cotton Penalty</strong>\u000aPlayer Owner Quality Decrease\u000a	Old Player Crop Quality: <<print $playerCrops.quality>>%/\u000a	<<set $playerCrops.quality = $playerCrops.quality - 2>>\u000a	/%New Player Crop Quality:<<print $playerCrops.quality>>\u000aOwner Quality Decrease\u000a	Old Owner Crop Quality: <<print $ownerCrops.quality>>%/\u000a	<<set $ownerCrops.quality = $ownerCrops.quality - 2>>\u000a	/%New Owner Crop Quality:<<print $ownerCrops.quality>>%/\u000aThe cotton supply of your pod has been completely exhausted. This is setback will decrease the quality of crops you'll be able to produce this season.\u000a<<endif>>\u000a<<if $wheat.inStore lte 0 >>\u000a/%<strong>Wheat Penalty</strong>\u000aPopulation Decrease\u000a	Old Colony Pop: <<print $colonyPop>>%/\u000a	<<set $colonyPop = $colonyPop - 5>>\u000a	/%New Colony Pop: <<print $colonyPop>>\u000aIncreased Soybeans InStore Loss\u000a	Old Soybeans inStore: <<print $beans.inStore>>%/\u000a	<<set $beans.inStore = $beans.inStore - 10>>\u000a	/%New Soybeans inStore: <<print $beans.inStore>>\u000aIncreased Wheat Need in Future\u000a	Old Wheat Need: <<print $wheat.need>>%/\u000a	<<set $wheat.need = $wheat.need + 10>>\u000a	/%New Wheat Need:<<print $wheat.need>>%/\u000aThe wheat supply of your pod has been completely exhausted. The colony population decreases due to malnourishment and starvation. The demand for soybeans jumps. The Agricultural Commission readjusts the projected need for future wheat harvests to support this population increases. \u000a<<endif>>\u000a<<if $cannabis.inStore lte 0 >>\u000a/%<strong>Cannabis Penalty</strong>\u000aPlayer Owner Quality Decrease\u000a	Old Player Crop Quality: <<print $playerCrops.quality>>%/\u000a	<<set $playerCrops.quality = $playerCrops.quality - 2>>\u000a/%	New Player Crop Quality:<<print $playerCrops.quality>>\u000aOwner Quality Decrease\u000a	Old Owner Crop Quality: <<print $ownerCrops.quality>>%/\u000a	<<set $ownerCrops.quality = $ownerCrops.quality - 2>>\u000a/%	New Owner Crop Quality:<<print $ownerCrops.quality>>%/\u000aThe cannabis supply of your pod has been completely exhausted. This is setback will decrease the quality of crops you'll be able to produce this season.\u000a<<endif>>\u000a<<if $beans.inStore lte 0 >>\u000a/%<strong>Soybeans Penalty</strong>\u000aPopulation Decrease\u000a	Old Colony Pop: <<print $colonyPop>>%/\u000a	<<set $colonyPop = $colonyPop - 5>>\u000a/%	New Colony Pop: <<print $colonyPop>>\u000aIncreased Wheat InStore Loss\u000a	Old Wheat inStore: <<print $wheat.inStore>>%/\u000a	<<set $wheat.inStore = $wheat.inStore - 10>>\u000a/%	New Wheat inStore: <<print $wheat.inStore>>\u000aIncreased Soybeans Need in Future\u000a	Old Soybeans Need: <<print $beans.need>>%/\u000a	<<set $beans.need = $beans.need + 10>>\u000a/%	New Soybeans Need:<<print $beans.need>> %/\u000aThe soybean supply of your pod has been completely exhausted. The colony population decreases due to malnourishment and starvation. The demand for wheat jumps. The Agricultural Commission readjusts the projected need for future soybeans harvests to support this population increases. \u000a<<endif>>\u000a<<if $coffee.inStore lte 0 >>\u000a/%<strong>Coffee Penalty</strong>\u000aPlayer Owner Quality Decrease\u000a	Old Player Crop Quality: <<print $playerCrops.quality>>%/\u000a	<<set $playerCrops.quality = $playerCrops.quality - 2>>\u000a/%	New Player Crop Quality:<<print $playerCrops.quality>>\u000aOwner Quality Decrease\u000a	Old Owner Crop Quality: <<print $ownerCrops.quality>>%/\u000a	<<set $ownerCrops.quality = $ownerCrops.quality - 2>>\u000a/%	New Owner Crop Quality:<<print $ownerCrops.quality>>%/\u000aThe coffee supply of your pod has been completely exhausted. This is setback will decrease the quality of crops you'll be able to produce this season.\u000a<<endif>>\u000a<<endnobr>>
-p1201
+p1202
 sg23
 VPenalties
-p1202
+p1203
 sg25
 g26
 ((I2014
@@ -3922,14 +3924,14 @@ I12
 I5
 I347
 I0
-tp1203
-(dp1204
-tp1205
-Rp1206
+tp1204
+(dp1205
+tp1206
+Rp1207
 sg31
-(lp1207
+(lp1208
 Vmoon
-p1208
+p1209
 asg33
 g26
 ((I2014
@@ -3941,14 +3943,14 @@ I47
 I5
 I347
 I0
-tp1209
-(dp1210
-tp1211
-Rp1212
+tp1210
+(dp1211
+tp1212
+Rp1213
 sbsasS'scale'
-p1213
+p1214
 F0.6000000000000001
 sS'snapping'
-p1214
+p1215
 I00
 ss.
