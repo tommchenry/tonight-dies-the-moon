@@ -744,7 +744,7 @@ Tiddler
 p238
 (dp239
 g21
-V<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold;">\u000aOh no! Sudden famine on the other end of the moon! We need wheat badly to support your guals!\u000a\u000a<<set $cotton.need = $cotton.need + 500>>\u000a[[Economy Debug]]\u000a</div>\u000a<div style="width: 300px; float:left;">\u000a[img[moon]]\u000a</div>\u000a
+V<<display Farm Init>>\u000a<div style="width: 300px; float:left; color: #106629; font-family: Terminal, Courier; font-weight: bold;font-size: 0.8em; ">\u000a<<nobr>>\u000a<<set $shiftRoll = Math.floor(Math.random() * 8) + 1 >>\u000a<<set $shiftRoll = 1>>\u000a<<if $shiftRoll eq 1>>\u000aFamine<br><br>\u000aWe need wheat badly.<br>\u000aWheat Need: <<print $wheat.need>><br>\u000a<<set $wheat.need = $wheat.need + 100>>\u000aNew Wheat Need: <<print $wheat.need>><br>\u000aWheat Price: <<print $wheat.pricePerUnit>><br><br>\u000aWe need soybeans badly.<br>\u000aSoybeans Need: <<print $beans.need>><br>\u000a<<set $beans.need = $beans.need + 100>>\u000aNew Soybeans Need: <<print $beans.need>><br><br>\u000a<<display Price Update>>\u000aNew Wheat Price: <<print $wheat.pricePerUnit>><br>\u000a<<display Need Increase>>\u000aNew New Wheat Need: <<print $wheat.need>><br>\u000aNew New Wheat Price: <<print $wheat.pricePerUnit>><br>\u000aNew New Soybeans Need: <<print $beans.need>><br>\u000aNew New Soybeans Price: <<print $beans.pricePerUnit>>\u000a<<endif>>\u000a<<if $shiftRoll eq 2>>\u000aTraitors Found!<br><br>\u000a<<set $revolutionaries = Math.floor(Math.random() * 15) + 5>>\u000aA cell of <<$revolutionaries>> revolutionary capitalist agitators were discovered and purged. Their acreage and supplies have been re-allocated.\u000aThe Records Commission has purged their names, but their crimes and bodies are publicly displayed for a week.\u000a<br>\u000aOld Colony Population: <<print $colonyPop>><br>\u000a<<set $colonyPop = $colonyPop - $revolutionaries>>\u000aNew Colony Population: <<print $colonyPop>>\u000a<<endif>>\u000a<<if $shiftRoll eq 3>>\u000aIrrigation <br><br>\u000aThe Water Commission reports massive under production and water losses from Before attacks on reservoirs and irrigation systems. To get back to optimum levels, the entire colony will be on low-water rations for at least the next two seasons. The crop quality is expected to suffer, along with higher fire risk. <br>\u000aOld Player Quality: <<print $playerCrops.quality>><br>\u000aOld Owner Quality: <<print $ownerCrops.quality>><br>\u000a<<set $playerCrops.quality = $playerCrops.quality - 2>><<set $ownerCrops.quality = $ownerCrops.quality - 2>>\u000aNew Player Quality: <<print $playerCrops.quality>><br>\u000aNew Owner Quality: <<print $ownerCrops.quality>><br>\u000a<<endif>>\u000a<<if $shiftRoll eq 4>>\u000aFlooding<br><br>\u000aThere's major damage to the irrigation system and flooding damages your farmland this season. A Water Commission investigation reveals Before saboteurs are behind the leakage and crop damage, not faulty repairs and outdated technology.<br>\u000aOld Player Acreage: <<print $playerCrops.acreage>><br>\u000aOld Owner Acreage:  <<print $ownerCrops.acreage>><br>\u000a<<set $playerCrops.acreage = Math.floor($playerCrops.acreage * 0.5)>>\u000a<<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage * 0.5)>>\u000aNew Player Acreage: <<print $playerCrops.acreage>><br>\u000aNew Owner Acreage:  <<print $ownerCrops.acreage>><br>\u000a<<endif>>\u000a<<if $shiftRoll eq 5>>\u000aDome Assault<br>\u000aA Before rocket makes it through the defense grid and gets a few laser blasts off before crash landing into the dome of your pod and exploding. There is no pilot to the rocket: these new rockets are entirely automated, piloted from back on planet. That's how they are: Wars at a distance, lines on a screen for the glassy-eyed.<br>\u000aHuge shards of curved domeglass half-melted into the hardpan, gravity and atmosphere gone all loose.  <br>\u000aOld Player Acreage: <<print $playerCrops.acreage>><br>\u000aOld Owner Acreage:  <<print $ownerCrops.acreage>><br>\u000a<<set $playerCrops.acreage = Math.floor($playerCrops.acreage * 0.5)>>\u000a<<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage * 0.5)>>\u000aNew Player Acreage: <<print $playerCrops.acreage>><br>\u000aNew Owner Acreage:  <<print $ownerCrops.acreage>><br>\u000aOld Player Quality: <<print $playerCrops.quality>><br>\u000aOld Owner Quality: <<print $ownerCrops.quality>><br>\u000a<<set $playerCrops.quality = $playerCrops.quality - 2>><<set $ownerCrops.quality = $ownerCrops.quality - 2>>\u000aNew Player Quality: <<print $playerCrops.quality>><br>\u000aNew Owner Quality: <<print $ownerCrops.quality>><br>\u000a<<endif>>\u000a<<if $shiftRoll eq 6>>\u000aFire<br><br>\u000aYou wake up late in the night at the fire sirens. The dry crops and the hyperoxygenated atmosphere means the fire burn and roll over the land like the devil's ocean. Fire repellant foam sprays from up on the cloud layer like Hollywood snow.<br>\u000aFor weeks after you have a bad cough and sooty mucus. <br>\u000aOld Player Acreage: <<print $playerCrops.acreage>><br>\u000aOld Owner Acreage:  <<print $ownerCrops.acreage>><br>\u000a<<set $playerCrops.acreage = Math.floor($playerCrops.acreage * 0.3)>>\u000a<<set $ownerCrops.acreage = Math.floor($ownerCrops.acreage * 0.3)>>\u000aNew Player Acreage: <<print $playerCrops.acreage>><br>\u000aNew Owner Acreage:  <<print $ownerCrops.acreage>><br>\u000a<<endif>>\u000a<<if $shiftRoll eq 7>>\u000aBlight<br><br>\u000aThere are foul-stinking lesions in your crops. It spreads quickly, terribly. You can only destroy acres and hope you get it all.<br>\u000aOld Player Quality: <<print $playerCrops.quality>><br>\u000aOld Owner Quality: <<print $ownerCrops.quality>><br>\u000a<<set $playerCrops.quality = $playerCrops.quality - 2>><<set $ownerCrops.quality = $ownerCrops.quality - 2>>\u000aNew Player Quality: <<print $playerCrops.quality>><br>\u000aNew Owner Quality: <<print $ownerCrops.quality>><br>\u000a<<endif>>\u000a<br>[[Planting Again]]\u000a<<endnobr>>\u000a</div>\u000a<div style="width: 300px; float:left;background:black;color: #106629; font-family: Terminal, Courier; font-weight: bold; font-size: 0.8em; line-height: 1.0em;">\u000a<<display Debug>>\u000a</div>\u000a
 p240
 sg23
 VMarket Shift
@@ -752,13 +752,13 @@ p241
 sg25
 g26
 ((I2014
-I11
-I18
-I15
-I51
-I13
-I1
-I322
+I12
+I14
+I21
+I14
+I23
+I6
+I348
 I0
 tp242
 (dp243
@@ -1641,8 +1641,8 @@ g14
 I00
 sg15
 (lp514
-F1751.666666666666
-aF1102.083333333333
+F1776.666666666666
+aF1128.7500000000002
 asg17
 (itiddlywiki
 Tiddler
@@ -2323,8 +2323,8 @@ g14
 I00
 sg15
 (lp720
-F1614.9999999999998
-aF1100.0000000000002
+F1586.6666666666665
+aF1070.0000000000002
 asg17
 (itiddlywiki
 Tiddler
@@ -2375,8 +2375,8 @@ g14
 I00
 sg15
 (lp736
-F2273.3333333333326
-aF444.9999999999999
+F2301.6666666666656
+aF456.6666666666666
 asg17
 (itiddlywiki
 Tiddler
