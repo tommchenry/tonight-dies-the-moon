@@ -5,7 +5,7 @@ VC:\u005cTom McHenry's Dropbox\u005cDropbox\u005cGames - Twine\u005ctonight-dies
 p2
 sS'saveDestination'
 p3
-VC:\u005cTom McHenry's Dropbox\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
+VZ:\u005chome\u005ctom\u005cDropbox\u005cGames - Twine\u005ctonight-dies-the-moon\u005cthemoon.tws
 p4
 sS'metadata'
 p5
@@ -889,7 +889,7 @@ tp282
 Rp283
 sbsa(dp284
 g14
-I01
+I00
 sg15
 (lp285
 F453.66666666666663
@@ -900,7 +900,7 @@ Tiddler
 p286
 (dp287
 g21
-V<<set //initialize\u000a$fighter = {\u000a	display: '[img[fighter]]',\u000a	solid: 1,\u000a	x: 2,\u000a	y: 0\u000a}\u000a\u000a$bullet = {\u000a	display: '[img[bullet]]',\u000a	exist: 0, \u000a	solid: 1, \u000a	x: 0,\u000a	y: 0\u000a}\u000a\u000a$space = {\u000a	display: '[img[blank]]',\u000a	solid: 0\u000a}\u000a\u000a$ground1 = {\u000a	display: '[img[surface1]]',\u000a	solid: 1\u000a}\u000a\u000a\u000a$ground2 = {\u000a	display: '[img[surface2]]',\u000a	solid: 1\u000a}\u000a\u000a\u000a$ground3 = {\u000a	display: '[img[surface3]]',\u000a	solid: 1\u000a}\u000a\u000a$colonyLive = {\u000a	display: '[img[colony]]',\u000a	solid: 1,\u000a	target: 1\u000a}\u000a\u000a$colonyDead = {\u000a	display: '[img[colonybroke]]',\u000a	solid: 1,\u000a	target: 0\u000a}\u000a\u000a$slot1 = $space\u000a$slot2 = $space\u000a$slot3 = $space\u000a$slot4 = $space\u000a$slot5 = $space\u000a$slot6 = $space\u000a$slot7 = $space\u000a$slot8 = $space\u000a$slot9 = $space\u000a$slot10 = $space\u000a$slot11 = $space\u000a$slot12 = $space\u000a$slot13 = $space\u000a$slot14 = $space\u000a$slot15 = $space\u000a$slot16 = $ground1\u000a$slot17 = $colonyLive\u000a$slot18 = $ground1\u000a$slot19 = $space\u000a$slot20 = $colonyLive\u000a\u000a\u000a$map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]\u000a>>
+V<<set //initialize\u000a$fighter = {\u000a	display: '[img[fighter]]',\u000a	solid: 1,\u000a	x: 2,\u000a	y: 0,\u000a	fuel: 8\u000a}\u000a\u000a$fuel_bar = [0,0,0,0,0,0,0,0]\u000a\u000a$bullet = {\u000a	display: '[img[bullet]]',\u000a	exist: 0, \u000a	solid: 1, \u000a	x: 0,\u000a	y: 0\u000a}\u000a\u000a$space = {\u000a	display: '[img[blank]]',\u000a	solid: 0\u000a}\u000a\u000a$ground1 = {\u000a	display: '[img[surface1]]',\u000a	solid: 1\u000a}\u000a\u000a\u000a$ground2 = {\u000a	display: '[img[surface2]]',\u000a	solid: 1\u000a}\u000a\u000a\u000a$ground3 = {\u000a	display: '[img[surface3]]',\u000a	solid: 1\u000a}\u000a\u000a$colonyLive = {\u000a	display: '[img[colony]]',\u000a	solid: 1,\u000a}\u000a\u000a\u000a$slot1 = $space\u000a$slot2 = $space\u000a$slot3 = $space\u000a$slot4 = $space\u000a$slot5 = $space\u000a$slot6 = $space\u000a$slot7 = $space\u000a$slot8 = $space\u000a$slot9 = $space\u000a$slot10 = $space\u000a$slot11 = $space\u000a$slot12 = $space\u000a$slot13 = $space\u000a$slot14 = $space\u000a$slot15 = $space\u000a$slot16 = $ground1\u000a$slot17 = $colonyLive\u000a$slot18 = $ground1\u000a$slot19 = $space\u000a$slot20 = $colonyLive\u000a\u000a\u000a$map = [[$slot1, $slot2, $slot3, $slot4, $slot5],\u000a		[$slot6, $slot7, $slot8, $slot9, $slot10],\u000a		[$slot11, $slot12, $slot13, $slot14, $slot15],\u000a		[$slot16, $slot17, $slot18, $slot19, $slot20]\u000a		]\u000a>>
 p288
 sg23
 VStarfighter Init
@@ -910,9 +910,9 @@ g26
 ((I2014
 I12
 I16
-I15
-I19
-I43
+I21
+I41
+I33
 I1
 I350
 I0
@@ -2837,15 +2837,15 @@ g14
 I00
 sg15
 (lp877
-F759.9999999999999
-aF1058.3333333333328
+F646.6666666666669
+aF1018.333333333333
 asg17
 (itiddlywiki
 Tiddler
 p878
 (dp879
 g21
-V<div id="compbg">\u000a<<nobr>>\u000a<div id="bg-test" style="background-image:[img[stars-bg]]; background-position:bottom;height:250px;width:310px;background-repeat: repeat-x;">\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<if $bullet.exist eq 1>><<display Bullet Move>><<endif>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>><br>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>><br>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>><br>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>><<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>></div>\u000a/%Begin Control Panel%/\u000a<table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr>\u000a</table> \u000a[[Fire|Starfighter Fire]]\u000a/%End Control Panel%/\u000a<<endnobr>>\u000a</div>
+V<div id="compbg">\u000a<<nobr>>\u000a<div id="bg-test" style="background-image:[img[stars-bg]]; background-position:bottom;height:250px;width:310px;background-repeat: repeat-x;"><<if $fighter.fuel gt 0>>\u000a<<set $map[$fighter.y][$fighter.x] = $fighter>>\u000a<<if $bullet.exist eq 1>><<display Bullet Move>><<endif>>\u000a<<print $map[0][0].display>> <<print $map[0][1].display>> <<print $map[0][2].display>> <<print $map[0][3].display>> <<print $map[0][4].display>><br>\u000a<<print $map[1][0].display>> <<print $map[1][1].display>> <<print $map[1][2].display>> <<print $map[1][3].display>> <<print $map[1][4].display>><br>\u000a<<print $map[2][0].display>> <<print $map[2][1].display>> <<print $map[2][2].display>> <<print $map[2][3].display>> <<print $map[2][4].display>><br>   \u000a<<print $map[3][0].display>> <<print $map[3][1].display>><<print $map[3][2].display>> <<print $map[3][3].display>> <<print $map[3][4].display>><<else>><p style="padding-left:30px;padding-top:100px;font-family: 'Press Start 2P', cursive; font-size:0.8em; background-color: #2f3030;">Transmission Lost</p><<endif>></div>\u000a/%Begin Control Panel%/\u000a<<if $fighter.fuel gt 0>><div style="width: 600px;"><div style="width:500px; height: 200px;float:left;"><br><p style="font-family: 'Press Start 2P', cursive; color: #FFFFFF">Fuel</p><<display Display Fuel Bar>><br></div><div style="float:left;width:100px;"><table>\u000a<tr>\u000a<td></td><td>[[&#11014;|Starfighter Up]]</td><td></td>\u000a</tr><tr>\u000a<td>[[&#11013;|Starfighter Left]]</td><td></td><td>[[&#10145;|Starfighter Right]]</td>\u000a</tr><tr>\u000a<td></td><td>[[&#11015;|Starfighter Down]]</td><td></td>\u000a</tr></table> \u000a[[Fire|Starfighter Fire]]</div></div>\u000a<<else>><br><br>[[Starfighter End]]<<endif>>\u000a<<set $fighter.fuel = $fighter.fuel - 1>>\u000a/%End Control Panel%/\u000a<<endnobr>>\u000a</div>
 p880
 sg23
 VControl Panel
@@ -2855,9 +2855,9 @@ g26
 ((I2014
 I12
 I16
-I14
-I45
-I39
+I21
+I57
+I36
 I1
 I350
 I0
@@ -2867,7 +2867,7 @@ tp884
 Rp885
 sg31
 (lp886
-Vmoon
+Vearth
 p887
 asg33
 g26
@@ -3167,8 +3167,8 @@ g14
 I00
 sg15
 (lp976
-F433.33333333333326
-aF1166.6666666666665
+F348.3333333333333
+aF1185.0
 asg17
 (itiddlywiki
 Tiddler
@@ -3219,8 +3219,8 @@ g14
 I00
 sg15
 (lp992
-F633.3333333333333
-aF1239.9999999999998
+F499.9999999999999
+aF1198.3333333333321
 asg17
 (itiddlywiki
 Tiddler
@@ -3499,7 +3499,7 @@ asg33
 g1075
 sbsa(dp1077
 g14
-I00
+I01
 sg15
 (lp1078
 F408.66666666666663
@@ -4197,7 +4197,7 @@ Tiddler
 p1289
 (dp1290
 g21
-V<<set $bullet.y = $bullet.y + 1>><<if $bullet.y gte 3>><<set $bullet.exist = 0>><<if $map[$bullet.y][$bullet.x].target eq 1>><<set $map[$bullet.y][$bullet.x] = $colonyDead>><<endif>><<else>><<set $map[$bullet.y][$bullet.x] = $bullet>><<endif>>
+V<<set $bullet.y = $bullet.y + 1>><<if $bullet.y gte 3>><<set $bullet.exist = 0>><<if $map[$bullet.y][$bullet.x].display eq '[img[colony]]'>><<set $map[$bullet.y][$bullet.x].display = '[img[colonybroke]]'>><<endif>><<else>><<set $map[$bullet.y][$bullet.x] = $bullet>><<endif>>
 p1291
 sg23
 VBullet Move
@@ -4207,9 +4207,9 @@ g26
 ((I2014
 I12
 I16
-I15
+I20
+I48
 I22
-I37
 I1
 I350
 I0
@@ -4274,10 +4274,150 @@ sg31
 g1259
 asg33
 g1312
+sbsa(dp1314
+g14
+I00
+sg15
+(lp1315
+F758.6666666666665
+aF1156.6666666666665
+asg17
+(itiddlywiki
+Tiddler
+p1316
+(dp1317
+g21
+g896
+sg23
+VStarfighter End
+p1318
+sg25
+g26
+((I2014
+I12
+I16
+I21
+I9
+I15
+I1
+I350
+I0
+tp1319
+(dp1320
+tp1321
+Rp1322
+sg31
+(lp1323
+sg33
+g1322
+sbsa(dp1324
+g14
+I00
+sg15
+(lp1325
+F874.9999999999997
+aF998.3333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1326
+(dp1327
+g21
+V<<nobr>>\u000a<<if $starter eq $temp>>\u000a<<else>>\u000a<<set $fuel_bar[$starter] = '[img[AnxietyMeterSafe]]'>>\u000a<<set $starter = $starter + 1>>\u000a<<display Fuel Bar>>\u000a<<endif>>\u000a<<endnobr>>
+p1328
+sg23
+VFuel Bar
+p1329
+sg25
+g26
+((I2014
+I12
+I16
+I21
+I56
+I45
+I1
+I350
+I0
+tp1330
+(dp1331
+tp1332
+Rp1333
+sg31
+(lp1334
+Vearth
+p1335
+asg33
+g26
+((I2014
+I12
+I16
+I21
+I42
+I10
+I1
+I350
+I0
+tp1336
+(dp1337
+tp1338
+Rp1339
+sbsa(dp1340
+g14
+I00
+sg15
+(lp1341
+F809.9999999999999
+aF868.3333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1342
+(dp1343
+g21
+V<<nobr>><<set $fuel_bar = ['[img[AnxietyMeter]]','[img[AnxietyMeter]]','[img[AnxietyMeter]]','[img[AnxietyMeter]]','[img[AnxietyMeter]]','[img[AnxietyMeter]]','[img[AnxietyMeter]]','[img[AnxietyMeter]]']>>\u000a<<set $starter = 0>>\u000a<<set $temp = $fighter.fuel>>\u000a<<display Fuel Bar>>\u000a<<print $fuel_bar[0]>><<print $fuel_bar[1]>><<print $fuel_bar[2]>><<print $fuel_bar[3]>><<print $fuel_bar[4]>><<print $fuel_bar[5]>><<print $fuel_bar[6]>><<print $fuel_bar[7]>><<endnobr>>
+p1344
+sg23
+VDisplay Fuel Bar
+p1345
+sg25
+g26
+((I2014
+I12
+I16
+I21
+I56
+I36
+I1
+I350
+I0
+tp1346
+(dp1347
+tp1348
+Rp1349
+sg31
+(lp1350
+Vearth
+p1351
+asg33
+g26
+((I2014
+I12
+I16
+I21
+I43
+I38
+I1
+I350
+I0
+tp1352
+(dp1353
+tp1354
+Rp1355
 sbsasS'scale'
-p1314
+p1356
 F0.6000000000000001
 sS'snapping'
-p1315
+p1357
 I00
 ss.
